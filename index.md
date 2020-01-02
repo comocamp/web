@@ -17,27 +17,28 @@ The event is organized by the German-speaking DDD-community as well as internati
 The CoMoCamp will take place in Park Hotel Soltau June 19th and 20th 2020.
 Program: A structured (in the sense of Liberating Structures) unconference:
 Friday:
-1100 langsames Ankommen, Social
-1200 gemeinsames Mittagessen
-1300 Opening und Briefing
-1330 Intro von Methoden, Erfahrungsberichte, 5-10 Minuten Sessions
-1600 Pause
-1630 Collaborative Modeling, 4 Ecken, 4 Probleme
-1830 Pause
-1845 Session-Planung für Samstag, bis ca. 1930
-2000 Abendessen
-bis 2100 oder 2200 
+
+| 1100 | langsames Ankommen, Social |
+| 1200 | gemeinsames Mittagessen |
+| 1300 | Opening und Briefing |
+| 1330 | Intro von Methoden, Erfahrungsberichte, 5-10 Minuten Sessions |
+| 1600 | Pause |
+| 1630 | Collaborative Modeling, 4 Ecken, 4 Probleme |
+| 1830 | Pause |
+| 1845 | Session-Planung für Samstag, bis ca. 1930 |
+| 2000 | Abendessen |
+| bis 2100 oder 2200  |
 
 Saturday:
-1000 Session
-1045 Pause
-1115 Session
-1200 Mittagessen
-1300 Session
-1345 Pause
-1415 Session
-1500 Pause
-1530 Wrap-Up
-1615 Ende
+| 1000 | Session |
+| 1045 | Pause |
+| 1115 | Session |
+| 1200 | Mittagessen |
+| 1300 | Session |
+| 1345 | Pause |
+| 1415 | Session |
+| 1500 | Pause |
+| 1530 | Wrap-Up |
+| 1615 | Ende |
 
 Book your ticket [here](eventbrite.com/comocamp).
