@@ -1,3 +1,4 @@
+# The Collaborative Modeling Camp (or short: the #CoMoCamp)
 We’re living in great times: After decades of misunderstanding our users, we programmers now have better tools. Collaborative Modeling methods make it easy to build the software our users really need (and not the software we only thought they would need). Among these methods are:
 
 - Event Storming
@@ -14,10 +15,16 @@ The CoMoCamp is the great unconference that gathers practioners of all the diffe
 The event is organized by the German-speaking DDD-community as well as international experts.
 #Among the participants are the German-speaking DDD-community as well as international experts: X, Y and Z.
 
+## Time and venue
 The CoMoCamp will take place in Park Hotel Soltau June 19th and 20th 2020.
-Program: A structured (in the sense of Liberating Structures) unconference:
-Friday:
 
+## Program
+A structured (in the sense of Liberating Structures) unconference:
+
+### Friday
+
+| Time |            |
+| -----|:-------------:|
 | 1100 | langsames Ankommen, Social |
 | 1200 | gemeinsames Mittagessen |
 | 1300 | Opening und Briefing |
@@ -29,7 +36,9 @@ Friday:
 | 2000 | Abendessen |
 | bis 2100 oder 2200  |
 
-Saturday:
+### Saturday:
+| Time |            |
+| -----|:-------------:|
 | 1000 | Session |
 | 1045 | Pause |
 | 1115 | Session |
@@ -41,4 +50,5 @@ Saturday:
 | 1530 | Wrap-Up |
 | 1615 | Ende |
 
+## Participate
 Book your ticket [here](eventbrite.com/comocamp).
