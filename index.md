@@ -15,6 +15,8 @@ The CoMoCamp is the great unconference that gathers practioners of all the diffe
 The event is organized by the German-speaking DDD-community as well as international experts.
 #Among the participants are the German-speaking DDD-community as well as international experts: X, Y and Z.
 
+![People modeling collaboratively](event-storming-javaland.jpeg)
+
 ## Time and venue
 The CoMoCamp will take place in Park Hotel Soltau June 19th and 20th 2020.
 
