@@ -9,7 +9,7 @@
       <nav id="navbar" class="navbar">
         <ul>
             {{ range .Params.Menu }}
-                <li><a href="{{ .pageRef }}">{{ .name }}</a></li>
+                <li><a id="id-{{ .id }}" href="#{{ .id }}">{{ .name }}</a></li>
             {{ end }}
         </ul>
       </nav>

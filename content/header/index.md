@@ -2,26 +2,20 @@
 draft = false
 [[menu]]
 name = 'Our Camp'
-pageRef = '#camp'
-weight = 20
+id = 'camp'
 [[menu]]
 name = 'Our Community'
-pageRef = '#community'
-weight = 30
+id = 'community'
 [[menu]]
 name = 'Our Program'
-pageRef = '#program'
-weight = 40
+id = 'program'
 [[menu]]
 name = 'Our Team'
-pageRef = '#team'
-weight = 50
+id = 'team'
 [[menu]]
 name = 'Our Supporters'
-pageRef = '#supporters'
-weight = 60
+id = 'supporters'
 [[menu]]
 name = 'How to participate'
-pageRef = '#participation'
-weight = 70
+id = 'participation'
 +++

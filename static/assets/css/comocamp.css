@@ -1,3 +1,27 @@
+a#id-participation {
+    font-family: var(--font-primary);
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 17px;
+    border-radius: 20px;
+    transition: 0.3s;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    background-color: rgb(249 61 119);
+}
+
+a#id-participation:hover {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar>ul>li>a#id-participation:before {
+    background-color: black;
+}
+
 a.anchor {
     display: block;
     position: relative;
