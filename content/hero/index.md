@@ -11,6 +11,6 @@ locationAndDate = """
 """
 button = "Yes! I want to participate!"
 lastCamp = """
-   <a href="/2023" class="stretched-link">Remember the camp? :) Check out the pics <span style="text-decoration: underline">2023!</span></a>    
+   <a href="/2023" class="stretched-link">Remember the camp? :) Check out our pics <span style="text-decoration: underline">2023</span>!</a>    
 """
 +++
