@@ -4,3 +4,7 @@ a.anchor {
     top: -100px;
     visibility: hidden;
 }
+
+.nav-link.active {
+    background-color: rgb(249 61 119) !important;
+}
