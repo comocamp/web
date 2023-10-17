@@ -1,5 +1,5 @@
 {{ define "main" }}
-  {{ partial "hero.html" }}
+  {{ (.GetPage "hero").Render "hero" }}
   {{ partial "camp.html" }}
   {{ partial "community.html" }}
   {{ partial "program.html" }}
