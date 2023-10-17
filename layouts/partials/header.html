@@ -1,0 +1,20 @@
+<header id="header" class="header d-flex align-items-center">
+
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="comocamp/logos/logo-square.png" alt="">
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+            {{ range site.Menus.main }}
+                <li><a href="{{ .PageRef }}">{{ .Name }}</a></li>
+            {{ end }}
+        </ul>
+      </nav>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+
+</header>
