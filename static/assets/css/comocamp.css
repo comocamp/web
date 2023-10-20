@@ -19,7 +19,7 @@ a#id-participation:hover {
 }
 
 .navbar>ul>li>a#id-participation:before {
-    background-color: black;
+    background-color: transparent;
 }
 
 a.anchor {
@@ -30,5 +30,50 @@ a.anchor {
 }
 
 .nav-link.active {
-    background-color: rgb(249 61 119) !important;
+    background-color: var(--color-secondary) !important;
+    border-radius: 50px;
+}
+
+.testimonial-item .social {
+    display: flex;
+    justify-content: right;
+}
+
+.testimonial-item .social a {
+    color: #a2a2a2;
+    transition: 0.3s;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #bbbbbb;
+}
+
+.testimonials .testimonial-item .quote-icon-left, 
+.testimonials .testimonial-item .quote-icon-right {
+    color: var(--color-secondary);
+    font-size: 22px;
+    line-height: 0;
+}
+
+.pricing .icon::before {
+    background: rgba(255, 151, 57, 0.5);
+}
+
+.pricing .icon::after {
+    background: rgba(255, 151, 57, 0.25);
+}
+
+.pricing ul i {
+    color: var(--color-secondary);
+}
+
+.pricing .buy-btn {
+    border: 1px solid rgba(255, 151, 57, 0.3);
+}
+
+.contact .info-item {
+    background-color: grey;
 }
