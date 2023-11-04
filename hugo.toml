@@ -5,3 +5,29 @@ title = 'ComoCamp 2024'
 extensions = [
   "hardLineBreak", # newlines result in line breaks
 ]
+
+[menu]
+[[menu.main]]
+  name = 'Our Camp'
+  pageRef = 'camp'
+  weight = 1
+[[menu.main]]
+  name = 'Our Community'
+  pageRef = 'community'
+  weight = 2
+[[menu.main]]
+  name = 'Our Program'
+  pageRef = 'program'
+  weight = 3
+[[menu.main]]
+  name = 'Our Team'
+  pageRef = 'team'
+  weight = 4
+[[menu.main]]
+  name = 'Our Supporters'
+  pageRef = 'supporters'
+  weight = 5
+[[menu.main]]
+  name = 'How to participate'
+  pageRef = 'participation'
+  weight = 6

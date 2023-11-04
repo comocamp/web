@@ -39,7 +39,7 @@
         ======================================================== -->
       </head>
   <body>
-    {{ (.GetPage "header").Render "header" }}
+    {{ partial "header.html" . }}
     {{ block "main" . }}
     {{ end }}
     {{ partial "footer.html" . }}

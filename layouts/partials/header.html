@@ -8,8 +8,10 @@
       </a>
       <nav id="navbar" class="navbar">
         <ul>
-            {{ range .Params.Menu }}
-                <li><a id="id-{{ .id }}" href="#{{ .id }}">{{ .name }}</a></li>
+            {{ range .Site.Menus.main }}
+            {{ if (site.GetPage .PageRef) }}
+                <li><a id="id-{{ .PageRef }}" href="#{{ .PageRef }}">{{ .Name }}</a></li>
+            {{ end }}
             {{ end }}
         </ul>
       </nav>

@@ -1,12 +1,6 @@
 {{ define "main" }}
-  {{ (.GetPage "hero").Render "hero" }}
-  {{ partial "camp.html" }}
-  {{ partial "community.html" }}
-  {{ partial "program.html" }}
-  {{ partial "how-to-participate.html" }}
-  {{ partial "bring-your-topics.html" }}
-  {{ partial "faqs.html" }}
-  {{ partial "team.html" }}
-  {{ partial "supporters.html" }}
-  {{ partial "we-are-looking-forward.html" }}
+{{ $sections := slice "hero" "camp" "community" "program" "participation" "bring-your-topics" "faqs" "team" "supporters" "we-are-looking-forward" }}
+  {{ range $sections }}
+    {{ (site.GetPage .).Render . }}
+  {{ end }}
 {{ end }}
