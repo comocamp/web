@@ -77,3 +77,14 @@ a.anchor {
 .contact .info-item {
     background-color: grey;
 }
+
+.call-to-action {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.call-to-action .container {
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+}
+
