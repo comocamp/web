@@ -4,15 +4,15 @@
     <div class="container" data-aos="fade-up">
 
       <div class="section-header pb-5">
-        <h2 class="mb-5">Our Camp</h2>
-        <p>After decades of misunderstanding our users, we programmers now have better tools.</p>
-        <p style="font-weight: bold;">Collaborative Modeling makes it easy to build the software our users really need.</p>
-        <p><br/>(And not the software we only thought they would need.)</p>
+        <h2 class="mb-5">{{ .Title }}</h2>
+        {{ .Content }}
       </div>
 
       <div class="row">
         <div class="col-lg-12 mt-0">
-          <img src="comocamp/mission/como.jpg" class="img-fluid rounded-4 mb-4" alt="">
+          {{ with $.Resources.Get "image-1.jpg" }}
+          <img src="{{ .RelPermalink }}" class="img-fluid rounded-4 mb-4" alt="">
+          {{ end }}
         </div>
       </div>
 
@@ -23,37 +23,32 @@
       <div class="row gy-4">
         <div class="col-lg-6">
           <div class="content ps-0 ps-lg-2">
-            <p>Some Collaborative Modeling methods and mashups are ...</p>
+            <p>{{ $.Params.text1 | markdownify }}</p>
             <ul>
-              <li><i class="bi bi-circle-fill"></i>EventStorming</li>
-              <li><i class="bi bi-circle-fill"></i>User Story Mapping</li>
-              <li><i class="bi bi-circle-fill"></i>Impact Mapping</li>
-              <li><i class="bi bi-circle-fill"></i>Domain Storytelling</li>
-              <li><i class="bi bi-circle-fill"></i>Storystorming</li>
-              <li><i class="bi bi-circle-fill"></i>Context Mapping</li>
-              <li><i class="bi bi-circle-fill"></i>Example Mapping</li>
-              <li><i class="bi bi-circle-fill"></i>Business Model Canvas</li>
-              <li><i class="bi bi-circle-fill"></i>Bounded Context Canvas</li>
-              <li><i class="bi bi-circle-fill"></i>Scenario Casting</li>
-              <li><i class="bi bi-circle-fill"></i>Event Modeling</li>
-              <li><i class="bi bi-circle-fill"></i>Heuristics Mapping</li>
+              {{ range $.Params.methods }}
+              <li><i class="bi bi-circle-fill"></i>{{ . }}</li>
+              {{ end }}
             </ul>
             <div class="position-relative m-0 mb-lg-3">
-              <img src="comocamp/methods/1.jpg" class="img-fluid rounded-4" alt="">
+              {{ with $.Resources.Get "image-2.jpg" }}
+              <img src="{{ .RelPermalink }}" class="img-fluid rounded-4" alt="">
+              {{ end }}
             </div>
-            </div>
-  </div>
-      <div class="col-lg-6">
-        <div class="content ps-0 ps-lg-4">
-          <p>However, our goal is not to pitch specific tools, but to explore their use cases and their relationships. We want to investigate the values behind the tools we love. Why does this new era of Collaborative Modeling feel so different from what many of us associated with “modeling” in a distant past?            </p>
-          <div class="position-relative mt-4 m-0">
-            <img src="comocamp/methods/2.jpg" class="img-fluid rounded-4" alt="">
           </div>
         </div>
-      </div>
+        <div class="col-lg-6">
+          <div class="content ps-0 ps-lg-4">
+            <p>{{ $.Params.text2 | markdownify }}</p>
+            <div class="position-relative mt-4 m-0">
+              {{ with $.Resources.Get "image-3.jpg" }}
+              <img src="{{ .RelPermalink }}" class="img-fluid rounded-4" alt="">
+              {{ end }}
+            </div>
+          </div>
+        </div>
       <div class="col-lg-12">
         <div class="content ps-0 ps-lg-2">
-          <p>The Collaborative Modeling Camp (ComoCamp) is an unconference inspired by <strong>Agile Methods</strong>, <strong>Domain-Driven Design</strong> and <strong>Behavior Driven Development</strong>. We reach out to bring practitioners of collaborative modeling methods together with creators and thought leaders. We also invite everybody interested to be part of this event. Experience collaboration, discuss and share your knowledge! Our camp is not-for-profit, hands-on, community-organized, and meant to be a lot of fun.</p>
+          <p>{{ $.Params.text3 | markdownify }}</p>
         </div>
       </div>
 
