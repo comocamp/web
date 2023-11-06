@@ -8,11 +8,11 @@
             <span>About the&nbsp;</span>
             <img src="hero/comocamp.png">
           </a>
-          <p>The ComoCamp is the unconference reaching out to bring practitioners of collaborative modeling methods together with their creators and thought leaders.</p>
+          <p>{{ $.Params.description }}</p>
           <div class="social-links d-flex mt-4 justify-content-center justify-content-lg-start">
-            <a href="https://www.linkedin.com/company/comocamp" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            <a href="https://twitter.com/CoMoCampOrg" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="https://hachyderm.io/@comocamp" target="_blank" class="mastodon"><i class="bi bi-mastodon"></i></a>
+            <a href="{{ $.Params.linkedin }}" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <a href="{{ $.Params.twitter }}" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="{{ $.Params.mastodon }}" target="_blank" class="mastodon"><i class="bi bi-mastodon"></i></a>
           </div>
         </div>
 
@@ -20,9 +20,7 @@
 
           <h4>Code of Conduct</h4>
           <p>
-            Be open<br>
-            Be honest<br>
-            Be respectful<br>
+            <strong>{{ $.Params.coc | markdownify }}</strong>
           </p>
 
         </div>
@@ -31,11 +29,9 @@
 
           <h4>Organized by</h4>
           <p>
-            <strong>Collaborate Vienna</strong><br>
-            (ZVR 1605397921)<br>
-            Treustraße 45<br>
-            1200 Vienna, Europe<br>
-            <a style="color: white; text-decoration: underline;" href="mailto:hello@comocamp.org">hello@comocamp.org</a><br>
+            <strong>{{ $.Params.author  }}</strong><br>
+            {{ $.Params.address | markdownify }}<br>
+            <a style="color: white; text-decoration: underline;" href="mailto:{{ $.Params.email }}">{{ $.Params.email }}</a><br>
           </p>
 
         </div>
@@ -52,7 +48,7 @@
           <a style="color: white" href="https://plexiti.com/about/">Martin Schimak</a>,<br> 
           <a style="color: white" href="https://hschwentner.io">Henning Schwentner</a> and 
           <a style="color: white" href="https://www.linkedin.com/in/daniel-sack-7298b020/">Daniel Sack</a><br>
-          <a style="text-decoration: underline; color: white" href="mailto:hello@comocamp.org">Get in touch</a> with us.
+          <a style="text-decoration: underline; color: white" href="mailto:{{ $.Params.email }}">Get in touch</a> with us.
         </p>
       </div>
       <div class="credits">
