@@ -3,9 +3,9 @@ title = "ComoCamp"
 description = "The ComoCamp is the unconference reaching out to bring practitioners of collaborative modeling methods together with their creators and thought leaders."
 author = "Collaborate Vienna"
 address = """
-(ZVR 1605397921)  
-Treustraße 45  
-1200 Vienna, Europe
+Verein (ZVR 1605397921) zur Förderung der  
+Zusammenarbeit in der Softwareentwicklung  
+Treustraße 45, 1200 Vienna, Europe
 """
 coc = """
 Be open  
