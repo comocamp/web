@@ -1,12 +1,14 @@
 <section id="location" class="sections-bg">
     <div class="section-header mb-0 p-2">
-      <h2>We're looking forward to seeing you at ComoCamp 2024!</h2>
+      <h2>{{ .Title }}</h2>
     </div>
     <div class="container" data-aos="fade-up">
 
       <div class="row">
         <div class="col-lg-12">
-          <img src="comocamp/community/como-community.jpg" class="img-fluid rounded-4 mb-4" alt="">
+          {{ with $.Resources.GetMatch "*" }}
+          <img src="{{ .RelPermalink }}" class="img-fluid rounded-4 mb-4" alt="">
+          {{ end }}
         </div>
       </div>
 

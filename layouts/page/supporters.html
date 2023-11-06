@@ -4,62 +4,27 @@
         <div class="container" data-aos="fade-up">
   
           <div class="section-header">
-            <h2>Our Supporters in 2023</h2>
-            <p>The Collaborative Modeling Camp (ComoCamp) would not be possible without support and trust from our community, friends and partners. 
-              Thanks for making this possible!
-            </p>
+            <h2>{{ .Title }}</h2>
+            {{ .Content }}
           </div>
   
           <div class="row gy-4">
-  
+
+            {{ range .Params.supporters }}
             <div class="col-xl-3 col-md-6">
               <article>
   
                 <div class="post-img d-flex align-items-center p-5" style="height: 150px; vertical-align: center;">
-                  <img src="comocamp/supporters/techtalk.png" class="img-fluid al">
+                  {{ with $.Resources.Get .logo }}
+                    <img src="{{ .RelPermalink }}" class="img-fluid al">
+                  {{ end }}
                 </div>
 
-                <p class="post-category mb-5">Techtalk is a great ComoCamp partner and the sponsor, which enabled us to bring the first ComoCamp 2023 to Vienna.</p>
+                <p class="post-category mb-5">{{ .text }}</p>
   
               </article>
             </div><!-- End post list item -->
-  
-            <div class="col-xl-3 col-md-6">
-              <article>
-  
-                <div class="post-img d-flex align-items-center p-5" style="height: 150px; vertical-align: center;">
-                  <img src="comocamp/supporters/avanscoperta.png" class="img-fluid al">
-                </div>
-
-                <p class="post-category">Avanscoperta is an ecosystem of professionals sharing a great passion for learning: we like exchanging experiences and ideas and exploring uncharted territories within the software world in its broadest possible meaning. Consulting, training courses and books.</p>
-  
-              </article>
-            </div><!-- End post list item -->
-
-            <div class="col-xl-3 col-md-6">
-              <article>
-  
-                <div class="post-img d-flex align-items-center p-5" style="height: 150px; vertical-align: center;">
-                  <img src="comocamp/supporters/wps.png" class="img-fluid al">
-                </div>
-
-                <p class="post-category">WPS build enjoyable business software.</p>
-  
-              </article>
-            </div><!-- End post list item -->
-
-            <div class="col-xl-3 col-md-6">
-              <article>
-  
-                <div class="post-img d-flex align-items-center p-5" style="height: 150px; vertical-align: center;">
-                  <img src="comocamp/supporters/polygons.png" class="img-fluid al">
-                </div>
-
-                <p class="post-category">POLYGONS, agile company, partner, and sponsor of our event makes sure that everything is put in the right light ... say cheeeeeese!</p>
-  
-              </article>
-            </div><!-- End post list item -->
-
+            {{ end }}
           
           </div><!-- End recent posts list -->
   
