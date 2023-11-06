@@ -17,4 +17,16 @@ linkedin = "https://www.linkedin.com/company/comocamp"
 twitter = "https://twitter.com/CoMoCampOrg"
 mastodon = "https://hachyderm.io/@comocamp"
 draft = false
+[[authors]]
+name = "Stefan Priebsch"
+link = "https://thephp.cc/unternehmen/berater/stefan-priebsch"
+[[authors]]
+name = "Martin Schimak"
+link = "https://plexiti.com/about/"
+[[authors]]
+name = "Henning Schwentner"
+link = "https://hschwentner.io/"
+[[authors]]
+name = "Daniel Sack"
+link = "https://www.linkedin.com/in/daniel-sack-7298b020/"
 +++

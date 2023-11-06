@@ -44,11 +44,10 @@
       <div class="copyright">
         Copyright &copy; 2019-<script>document.write(new Date().getFullYear());</script><br>
         <p>
-          <a style="color: white" href="https://thephp.cc/unternehmen/berater/stefan-priebsch">Stefan Priebsch</a>, 
-          <a style="color: white" href="https://plexiti.com/about/">Martin Schimak</a>,<br> 
-          <a style="color: white" href="https://hschwentner.io">Henning Schwentner</a> and 
-          <a style="color: white" href="https://www.linkedin.com/in/daniel-sack-7298b020/">Daniel Sack</a><br>
-          <a style="text-decoration: underline; color: white" href="mailto:{{ $.Params.email }}">Get in touch</a> with us.
+          {{ $c := sub (len $.Params.authors) 1 }}
+          {{ range $i, $e := $.Params.authors }}{{ if $i }}{{ if not (eq $i $c) }}, {{ end }}{{ if not (math.Mod $i 2) }}<br>{{ end }}{{ if eq $i $c }} and {{ end }}{{ end }}<a target="_blank" href="{{ $e.link }}">{{ $e.name }}</a>{{ end }}
+          <br>
+          <a href="mailto:{{ $.Params.email }}">Get in touch</a> with us.
         </p>
       </div>
       <div class="credits">
