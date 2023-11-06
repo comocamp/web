@@ -3,7 +3,7 @@ draft = false
 title = "Our Supporters in 2023"
 [[supporters]]
 logo = "techtalk.png"
-text = "Techtalk is a great ComoCamp partner and the sponsor, which enabled us to bring the first ComoCamp 2023 to Vienna."
+text = "TechTalk is a great ComoCamp partner and the sponsor, which enabled us to bring the first ComoCamp 2023 to Vienna."
 [[supporters]]
 logo = "avanscoperta.png"
 text = "Avanscoperta is an ecosystem of professionals sharing a great passion for learning: we like exchanging experiences and ideas and exploring uncharted territories within the software world in its broadest possible meaning. Consulting, training courses and books."
