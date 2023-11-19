@@ -31,7 +31,7 @@ price = 590
 included = [
     "Join the Open Space, May 7<sup>th</sup>-8<sup>th</sup>",
     "Join the Hands-On Intro Day, May 6<sup>th</sup>",
-    "Experienced community members will introduce you to three \"Como\" methods",
+    "Some of our most experienced community members will introduce you to three Collaborative Modeling methods",
     "Snacks, lunches and dinners are covered"
 ]
 bookingText = "Buy Now"
