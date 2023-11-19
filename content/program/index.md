@@ -7,7 +7,7 @@ name = "Hands-On Intro Day"
 date = 2024-05-06
 [[days.activities]]
 name = "Hands-On Intro Day"
-from = "10:00"
+from = "09:00"
 to = "17:00"
 description = "Some of our most experienced community members will introduce you to three different Collaborative Modeling (Como) methods in a single day."
 [[days.activities]]
