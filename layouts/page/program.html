@@ -1,171 +1,38 @@
-<section>
+<section class="sections-bg">
     <a class="anchor" id="program"></a>
     <div class="section-header pb-3">
-        <h2 class="mb-0">Our Program</h2>
+        <h2 class="mb-0">{{ .Title }}</h2>
     </div>
   <div class="container py-9 py-lg-11 position-relative z-index-1">
       <div class="row">
               <div class="col-12 col-lg-3 mb-3 mt-0 pt-0">
                   <div class="mt-4 d-flex justify-content-center nav-pills flex-column aos-init aos-animate" id="myTab" role="tablist" data-aos="fade-up">
-                      <button class="nav-link px-4 text-center text-lg-start mb-3" id="d1-tab" data-bs-toggle="tab" data-bs-target="#day1" type="button" role="tab" aria-controls="day1" aria-selected="false">
-                          <span class="d-block fs-5 fw-bold">Intro Trainings Day</span>
-                          <span>Monday, <span style="font-weight: bold; text-decoration: underline;">May 6</span><sup>th</sup>, 2024</span>
-                      </button>                        
-                      <button class="nav-link px-4 mb-3 text-center text-lg-start active" id="d2-tab" data-bs-toggle="tab" data-bs-target="#day2" type="button" role="tab" aria-controls="day2" aria-selected="true" tabindex="-1">
-                          <span class="d-block fs-5 fw-bold">Unconference Day 1</span>
-                          <span>Tuesday, <span style="font-weight: bold; text-decoration: underline;">May 7</span><sup>th</sup>, 2024</span>
-                      </button>
-                      <button class="nav-link px-4 mb-3 text-center text-lg-start" id="d3-tab" data-bs-toggle="tab" data-bs-target="#day3" type="button" role="tab" aria-controls="day3" aria-selected="false" tabindex="-2">
-                        <span class="d-block fs-5 fw-bold">Unconference Day 2</span>
-                        <span>Wesnesday, <span style="font-weight: bold; text-decoration: underline;">May 8</span><sup>th</sup>, 2024</span>
-                    </button>
-                    <button class="nav-link px-4 mb-3 text-center text-lg-start" id="d4-tab" data-bs-toggle="tab" data-bs-target="#day4" type="button" role="tab" aria-controls="day4" aria-selected="false" tabindex="-3">
-                        <span class="d-block fs-5 fw-bold">Hike & Relax Day</span>
-                        <span>Ascension Day, <span style="font-weight: bold; text-decoration: underline;">May 9</span><sup>th</sup>, 2024</span>
-                    </button>
+                    {{ range .Params.days }}                    
+                      <button class="nav-link px-4 text-center text-lg-start mb-3 {{ if eq .id 1 }}active{{ end }}" id="d{{ .id }}-tab" data-bs-toggle="tab" data-bs-target="#day-{{ .id }}" type="button" role="tab" aria-controls="day-{{ .id }}" aria-selected="{{ if eq .id 1 }}true{{ else }}false{{ end }}">
+                          <span class="d-block fs-5 fw-bold">{{ .name }}</span>
+                          {{ $date := .date | time }}
+                          <span>{{ $date.Format "Monday" }}, <span style="font-weight: bold; text-decoration: underline;">{{ $date.Format "January 2" }}</span><sup>{{ if eq $date.Day 1 }}st{{ else if eq $date.Day 2 }}nd{{ else if eq $date.Day 3 }}rd{{ else }}th{{ end }}</sup>, {{ $date.Format "2006" }}</span>
+                      </button>                                          
+                    {{ end }}
                 </div>
               </div>                
               <div class="col-12 col-lg-9 col-xl-6">
                   <div data-aos="fade-up" class="tab-content aos-init aos-animate" id="myTabContent">
-                      <div class="tab-pane fade" id="day1" role="tabpanel" aria-labelledby="d1-tab">
-                          <ul class="list-unstyled mb-0">
-                              <li class="d-flex flex-column flex-md-row py-4">
-                                  <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 text-muted">09:00
-                                      AM - 10:00 AM</span>
+                    {{ range .Params.days }}                    
+                      <div class="tab-pane fade {{ if eq .id 1 }}active show{{ end }}" id="day-{{ .id }}" role="tabpanel" aria-labelledby="d{{ .id }}-tab">
+                        <ul class="list-unstyled mb-0">
+                            {{ range .activities }}                    
+                            <li class="d-flex flex-column flex-md-row py-4">
+                                  <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 text-muted" style="min-width: 100px">{{ .from }} - {{ .to }}</span>
                                   <div class="flex-grow-1 ps-4 border-start border-3">
-                                      <h4>Registration and Coffee</h4>
-                                      <p class="mb-0">
-                                          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                          officia deserunt mollit anim id est laborum.
-                                      </p>
+                                      <h4>{{ .name }}</h4>
+                                      <p class="mb-0">{{ .description }}</p>
                                   </div>
                               </li>
-                              <li class="d-flex flex-column flex-md-row py-4">
-                                  <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 text-muted">10:00
-                                      AM - 11:00 AM</span>
-                                  <div class="flex-grow-1 ps-4 border-start border-3">
-                                      <h4>Culpa qui officia deserunt</h4>
-                                      <p class="mb-0">
-                                          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                          officia deserunt mollit anim id est laborum.
-                                      </p>
-                                  </div>
-                              </li>
-                              <li class="d-flex flex-column flex-md-row py-4">
-                                  <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 text-muted">11:00
-                                      AM - 12:30 PM</span>
-                                  <div class="flex-grow-1 ps-4 border-start border-3">
-                                      <h4>Excepteur sint occaecat cupidatat</h4>
-                                      <p class="mb-0">
-                                          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                          officia deserunt mollit anim id est laborum.
-                                      </p>
-                                  </div>
-                              </li>
-                              <li class="d-flex flex-column flex-md-row py-4">
-                                  <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 text-muted">12:30
-                                      PM - 01:30 PM</span>
-                                  <div class="flex-grow-1 ps-4 border-start border-3">
-                                      <h4>Lunch break</h4>
-                                      <p class="mb-0">
-                                          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                          officia deserunt mollit anim id est laborum.
-                                      </p>
-                                  </div>
-                              </li>
+                              {{ end }}
                           </ul>
                       </div>
-                      <div class="tab-pane fade active show" id="day2" role="tabpanel" aria-labelledby="d2-tab">
-                          <ul class="list-unstyled mb-0">
-                              <li class="d-flex flex-column flex-md-row py-4">
-                                  <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 text-muted">09:00
-                                      AM - 10:00 AM</span>
-                                  <div class="flex-grow-1 ps-4 border-start border-3">
-                                      <h4>Excepteur sint occaecat</h4>
-                                      <p class="mb-0">
-                                          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                          officia deserunt mollit anim id est laborum.
-                                      </p>
-                                  </div>
-                              </li>
-                              <li class="d-flex flex-column flex-md-row py-4">
-                                  <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 text-muted">10:00
-                                      AM - 11:00 AM</span>
-                                  <div class="flex-grow-1 ps-4 border-start border-3">
-                                      <h4>Culpa qui officia deserunt</h4>
-                                      <p class="mb-0">
-                                          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                          officia deserunt mollit anim id est laborum.
-                                      </p>
-                                  </div>
-                              </li>
-                              <li class="d-flex flex-column flex-md-row py-4">
-                                  <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 text-muted">11:00
-                                      AM - 12:30 PM</span>
-                                  <div class="flex-grow-1 ps-4 border-start border-3">
-                                      <h4>Excepteur sint occaecat cupidatat</h4>
-                                      <p class="mb-0">
-                                          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                          officia deserunt mollit anim id est laborum.
-                                      </p>
-                                  </div>
-                              </li>
-                
-                         
-                          </ul>
-                      </div>
-                      <div class="tab-pane fade" id="day3" role="tabpanel" aria-labelledby="d3-tab">
-                        <ul class="list-unstyled mb-0">
-                            <li class="d-flex flex-column flex-md-row py-4">
-                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 text-muted">09:00
-                                    AM - 10:00 AM</span>
-                                <div class="flex-grow-1 ps-4 border-start border-3">
-                                    <h4>Excepteur sint occaecat</h4>
-                                    <p class="mb-0">
-                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                        officia deserunt mollit anim id est laborum.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="d-flex flex-column flex-md-row py-4">
-                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 text-muted">11:00
-                                    AM - 12:30 PM</span>
-                                <div class="flex-grow-1 ps-4 border-start border-3">
-                                    <h4>Excepteur sint occaecat cupidatat</h4>
-                                    <p class="mb-0">
-                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                        officia deserunt mollit anim id est laborum.
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tab-pane fade" id="day4" role="tabpanel" aria-labelledby="d4-tab">
-                        <ul class="list-unstyled mb-0">
-                            <li class="d-flex flex-column flex-md-row py-4">
-                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 text-muted">09:00
-                                    AM - 10:00 AM</span>
-                                <div class="flex-grow-1 ps-4 border-start border-3">
-                                    <h4>Excepteur sint occaecat</h4>
-                                    <p class="mb-0">
-                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                        officia deserunt mollit anim id est laborum.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="d-flex flex-column flex-md-row py-4">
-                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 text-muted">11:00
-                                    AM - 12:30 PM</span>
-                                <div class="flex-grow-1 ps-4 border-start border-3">
-                                    <h4>Excepteur sint occaecat cupidatat</h4>
-                                    <p class="mb-0">
-                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                        officia deserunt mollit anim id est laborum.
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                      {{ end }}
                 </div>
               </div>
           </div>

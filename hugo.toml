@@ -31,3 +31,6 @@ extensions = [
   name = 'How to participate'
   pageRef = 'participation'
   weight = 6
+
+[Params]
+	DateForm = "2006-01-02"
