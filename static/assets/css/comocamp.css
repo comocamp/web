@@ -91,3 +91,7 @@ a.anchor {
 .copyright a {
     color: white !important;
 }
+
+.pricing .hotel {
+    border: 2px dashed grey;
+}

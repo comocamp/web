@@ -1,5 +1,5 @@
 +++
-draft = false
+draft = true
 title = "Our program"
 [[days]]
 id = 0
@@ -14,7 +14,7 @@ description = "Some of our most experienced community members will introduce you
 name = "Intro Dinner"
 from = "18:00"
 to = "23:00"
-description = "After an intensive intro day, you are invited to have dinner in the bistro. Maybe you already meet the first gurus arriving for the unconference? :)"
+description = "After an intensive intro day, you are invited to have dinner in the bistro. Maybe you already meet the first people arriving for the open space only? Yes, they are invited, too! :)"
 [[days]]
 id = 1
 name = "Open Space Day 1"
