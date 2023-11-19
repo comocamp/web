@@ -1,5 +1,5 @@
       <!-- ======= Call To Action Section ======= -->
-      <section class="call-to-action sections-bg">
+      <section class='call-to-action{{ if eq .Params.background "grey" }} sections-bg{{ end }}'>
         <div class="container text-center" data-aos="zoom-out">
           <h3>{{ .Title }}</h3>
           {{ .Content }}

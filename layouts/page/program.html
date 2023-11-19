@@ -1,4 +1,4 @@
-<section class="sections-bg">
+<section class="{{ if eq .Params.background "grey" }} sections-bg{{ end }}">
     <a class="anchor" id="program"></a>
     <div class="section-header pb-3">
         <h2 class="mb-0">{{ .Title }}</h2>

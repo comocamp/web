@@ -1,6 +1,7 @@
 +++
 draft = false
 title = "Our Camp"
+background = "white"
 text1 = """
 Some Collaborative Modeling methods and mashups are ...
 """

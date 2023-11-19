@@ -1,6 +1,7 @@
 +++
 draft = true
 title = "Our program"
+background = "white"
 [[days]]
 id = 0
 name = "Hands-On Intro Day"
