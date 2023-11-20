@@ -1,0 +1,2 @@
+User-agent: *
+{{ if not (strings.Contains site.BaseURL "https://comocamp.org") }}Disallow: /{{ end }}

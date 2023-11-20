@@ -3,6 +3,7 @@ languageCode = 'en-us'
 title = 'ComoCamp 2024'
 
 enableInlineShortcodes = true
+enableRobotsTXT = true
 
 extensions = [
   "hardLineBreak", # newlines result in line breaks
