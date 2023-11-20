@@ -95,3 +95,11 @@ a.anchor {
 .pricing .hotel {
     border: 2px dashed grey;
 }
+
+.team .member .social {
+    justify-content: center;
+}
+
+team .member .social a {
+    margin: 10px !important;
+}
