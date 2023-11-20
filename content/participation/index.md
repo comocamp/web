@@ -13,7 +13,7 @@ icon = "postcard"
 price = 390
 included = [
     "Join the Open Space, May 7<sup>th</sup>-8<sup>th</sup>",
-    "All sessions and workshops are included",
+    "Bring your own topics, ideas and issues",
     "Snacks, lunches and dinners are covered",
     "Join the intro dinner on May 6<sup>th</sup>&nbsp;as well" 
 ]
@@ -29,9 +29,10 @@ featured = "featured"
 icon = "postcard-heart"
 price = 590
 included = [
-    "Join the Open Space, May 7<sup>th</sup>-8<sup>th</sup>",
     "Join the Hands-On Intro Day, May 6<sup>th</sup>",
     "Some of our most experienced community members will introduce you to three Collaborative Modeling methods",
+    "Join the Open Space, May 7<sup>th</sup>-8<sup>th</sup>&nbsp;as well",
+    "Bring your own topics, ideas and issues",
     "Snacks, lunches and dinners are covered"
 ]
 bookingText = "Buy Now"
