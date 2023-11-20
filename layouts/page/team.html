@@ -1,5 +1,5 @@
     <!-- ======= Our Team Section ======= -->
-    <section class="team{{ if eq .Params.background "grey" }} sections-bg{{ end }}">
+    <section class='team {{ printf "%s" ((partial "background.html" .) | replaceRE "\\s+" "") }}'>
       <a class="anchor" id="team"></a>
         <div class="container" data-aos="fade-up">
   

@@ -1,5 +1,5 @@
      <!-- ======= Recent Blog Posts Section ======= -->
-     <section class="recent-posts{{ if eq .Params.background "grey" }} sections-bg{{ end }}">
+     <section class='recent-posts {{ printf "%s" ((partial "background.html" .) | replaceRE "\\s+" "") }}'>
       <a class="anchor" id="supporters"></a>
         <div class="container" data-aos="fade-up">
   

@@ -2,7 +2,7 @@
 title = "Our Organizer Team"
 description = "Since the original idea for the ComoCamp in early 2019, a core team of true believers went through \"pandemic\" cancellations, but made it finally happen! :)"
 draft = true
-background = "grey"
+background = "alternate"
 [[organizers]]
 name = "Stefan Priebsch"
 image = "stefan-priebsch.png"

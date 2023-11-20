@@ -1,5 +1,6 @@
 +++
 draft = false
+background = "white"
 conference = """
     <span class="h2" style="font-weight: normal">The</span><br/>
     <span>Collaborative Modeling</span> 

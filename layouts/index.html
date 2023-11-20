@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ $sections := slice "hero" "camp" "community" "program" "participation" "bring-your-topics" "faqs" "team" "supporters" "we-are-looking-forward" }}
+{{ $sections := site.Params.Sections }}
   {{ range $sections }}
     {{ (site.GetPage .).Render . }}
   {{ end }}

@@ -1,4 +1,4 @@
 +++
 draft = true
-background = "white"
+background = "follow"
 +++

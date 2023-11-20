@@ -1,4 +1,4 @@
 +++
 draft = true
-background = "grey"
+background = "alternate"
 +++

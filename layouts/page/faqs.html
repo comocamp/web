@@ -1,5 +1,5 @@
     <!-- ======= Frequently Asked Questions Section ======= -->
-    <section id="faq" class="faq pt-0{{ if eq .Params.background "grey" }} sections-bg{{ end }}">
+    <section id="faq" class='faq pt-0 {{ printf "%s" ((partial "background.html" .) | replaceRE "\\s+" "") }}'>
         <div class="container" data-aos="fade-up">
   
           <div class="row gy-4">

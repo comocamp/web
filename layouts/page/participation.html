@@ -1,5 +1,5 @@
     <!-- ======= Participation Section ======= -->
-    <section class="pricing{{ if eq .Params.background "grey" }} sections-bg{{ end }}">
+    <section class='pricing {{ printf "%s" ((partial "background.html" .) | replaceRE "\\s+" "") }}'>
       <a class="anchor" id="participation"></a>
 
         <div class="container" data-aos="fade-up">

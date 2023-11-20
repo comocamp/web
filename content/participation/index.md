@@ -2,7 +2,7 @@
 draft = true
 title = "How to participate"
 description = "Please note: ticket prices do not contain VAT, as the camp is organized by the non-profit association Collaborate Vienna."
-background = "grey"
+background = "alternate"
 [[ tickets ]]
 title = """
     Get your 2-Day <strong style=\"text-decoration: underline\">Essential</strong><br>

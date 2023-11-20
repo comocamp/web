@@ -1,7 +1,7 @@
 +++
 draft = false
 title = "Our Supporters in 2023"
-background = "white"
+background = "alternate"
 [[supporters]]
 logo = "techtalk.png"
 text = "TechTalk is a great ComoCamp partner and the sponsor, which enabled us to bring the first ComoCamp 2023 to Vienna."
