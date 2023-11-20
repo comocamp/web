@@ -30,8 +30,8 @@ icon = "postcard-heart"
 price = 590
 included = [
     "Join the Hands-On Intro Day, May 6<sup>th</sup>",
-    "Some of our most experienced community members will introduce you to three Collaborative Modeling methods",
-    "Join the Open Space, May 7<sup>th</sup>-8<sup>th</sup>&nbsp;as well",
+    "Some of our most experienced community members introduce you to three different Collaborative Modeling (\"Como\") methods",
+    "Join the Open Space, May 7<sup>th</sup>-8<sup>th</sup>",
     "Bring your own topics, ideas and issues",
     "Snacks, lunches and dinners are covered"
 ]

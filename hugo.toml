@@ -24,7 +24,7 @@ extensions = [
   weight = 3
 [[menu.main]]
   name = 'Our Team'
-  pageRef = 'team'
+  pageRef = 'organizer'
   weight = 4
 [[menu.main]]
   name = 'Our Supporters'
@@ -66,4 +66,4 @@ extensions = [
 
 [Params]
 	DateForm = "2006-01-02"
-  Sections = ["hero", "camp", "community", "program", "participation", "bring-your-topics", "faqs", "team", "supporters", "we-are-looking-forward"]
+  Sections = ["hero", "camp", "community", "program", "participation", "bring-your-topics", "faqs", "organizer", "team", "supporters", "we-are-looking-forward"]

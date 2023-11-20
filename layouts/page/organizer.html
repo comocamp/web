@@ -1,23 +1,23 @@
     <!-- ======= Our Team Section ======= -->
-    <section class='team pt-0 {{ printf "%s" ((partial "background.html" .) | replaceRE "\\s+" "") }}'>
-      <a class="anchor" id="team"></a>
+    <section class='team {{ printf "%s" ((partial "background.html" .) | replaceRE "\\s+" "") }}'>
+      <a class="anchor" id="organizer"></a>
         <div class="container" data-aos="fade-up">
-<!--
+  
           <div class="section-header">
             <h2>{{ .Title }}</h2>
             <p>{{ .Description }}</p>
           </div>
-  -->
+  
           <div class="row gy-4">
   
-            {{ range .Params.team }}
-            <div class="col-xl-2 col-md-4 d-flex" data-aos="fade-up" data-aos-delay="100" style="justify-content: center;">
+            {{ range .Params.organizers }}
+            <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
               <div class="member">
                 {{ with $.Resources.Get .image }}
                   <img src="{{ .RelPermalink }}" class="img-fluid" alt="">
                 {{ end }}
-                <h4>{{ .name | replaceRE "\\s+" "<br>" | safeHTML }}</h4>
-                <!--<span>Web Development</span>-->
+                <h4>{{ .name }}</h4>
+                <span>{{ .line }}</span>
                 <div class="social">
                   {{ with .web }}
                   <a href="{{ . }}" target="_blank" style="margin: 0px 5px 0px 5px"><i class="bi bi-link-45deg"></i></a>
