@@ -24,7 +24,7 @@ extensions = [
   weight = 3
 [[menu.main]]
   name = 'Our Team'
-  pageRef = 'organizer'
+  pageRef = 'team'
   weight = 4
 [[menu.main]]
   name = 'Our Supporters'
@@ -34,36 +34,7 @@ extensions = [
   name = 'How to participate'
   pageRef = 'participation'
   weight = 6
-[[menu.sections]]
-  pageRef = "hero"
-  weight = 1
-[[menu.sections]]
-  pageRef = "camp"
-  weight = 2
-[[menu.sections]]
-  pageRef = "community"
-  weight = 3
-[[menu.sections]]
-  pageRef = "program"
-  weight = 4
-[[menu.sections]]
-  pageRef = "participation"
-  weight = 5
-[[menu.sections]]
-  pageRef = "bring-your-topics"
-  weight = 6
-[[menu.sections]]
-  pageRef = "faqs"
-  weight = 7
-[[menu.sections]]
-  pageRef = "team"
-  weight = 8
-[[menu.sections]]
-  pageRef = "supporters"
-  weight = 9
-[[menu.sections]]
-  pageRef = "we-are-looking-forward"
 
 [Params]
 	DateForm = "2006-01-02"
-  Sections = ["hero", "camp", "community", "program", "participation", "bring-your-topics", "faqs", "organizer", "team", "supporters", "we-are-looking-forward"]
+  Sections = ["hero", "camp", "community", "program", "participation", "bring-your-topics", "faqs", "team", "supporters", "we-are-looking-forward"]

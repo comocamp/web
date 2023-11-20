@@ -1,5 +1,5 @@
 {{ $page := . }}
-{{ $this := printf "%s" ( .RelPermalink | replaceRE "\\/" "") }}
+{{ $this := printf "%s" ( .RelPermalink | replaceRE ".*\\/(.+?)\\/" "$1") }}
 {{ if eq .Params.background "grey" }}
     sections-bg
 {{ else if eq .Params.background "white" }}
