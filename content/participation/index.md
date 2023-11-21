@@ -15,7 +15,7 @@ included = [
     "Join the Open Space, May 7<sup>th</sup>-8<sup>th</sup>",
     "Bring your own topics, ideas and issues",
     "Snacks, lunches and dinners are covered",
-    "Join the intro dinner on May 6<sup>th</sup>&nbsp;as well" 
+    "Bonus! Join the intro dinner on May 6<sup>th</sup>, as well as the optional 'Hiking in the Wienerwald' on Ascension Day May 9<sup>th</sup>" 
 ]
 bookingText = "Buy Now"
 bookingLink = "https://ti.to/collaborate-vienna/comocamp-2024/with/ltuk3uslyik"
@@ -33,7 +33,8 @@ included = [
     "Some of our most experienced community members introduce you to three different Collaborative Modeling (\"Como\") methods",
     "Join the Open Space, May 7<sup>th</sup>-8<sup>th</sup>",
     "Bring your own topics, ideas and issues",
-    "Snacks, lunches and dinners are covered"
+    "Snacks, lunches and dinners are covered",
+    "Bonus! Join the optional 'Hiking in the Wienerwald' on Ascension Day May 9<sup>th</sup>" 
 ]
 bookingText = "Buy Now"
 bookingLink = "https://ti.to/collaborate-vienna/comocamp-2024/with/ecnpxliocpw"
