@@ -50,7 +50,7 @@
         * License: https://bootstrapmade.com/license/
         ======================================================== -->
       </head>
-  <body>
+  <body onload="correct('testimonial-text'); correct('testimonial-line')">
     {{ partial "header.html" . }}
     {{ block "main" . }}
     {{ end }}
@@ -71,6 +71,25 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+      function correct(className) {
+        var elements = document.getElementsByClassName(className);
+        var maxHeight = 0;
+        for (var i = 0; i < elements.length; ++i) {
+            var element = elements[i];
+            height = element.offsetHeight;
+            height -= parseFloat(getComputedStyle(element).paddingTop) + parseFloat(getComputedStyle(element).paddingBottom)
+            if (height > maxHeight) {
+              maxHeight = height;
+            }
+        }
+        for (var i = 0; i < elements.length; ++i) {
+            var element = elements[i];
+            element.style.height = maxHeight + "px";
+        }
+      }
+    </script>
 
   </body>
 

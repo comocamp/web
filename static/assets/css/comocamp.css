@@ -100,6 +100,6 @@ a.anchor {
     justify-content: center;
 }
 
-team .member .social a {
-    margin: 10px !important;
+.testimonial-text {
+    width: 95%;
 }
