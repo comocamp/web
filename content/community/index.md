@@ -44,4 +44,11 @@ line = "Business Analyst and Software Architect - Merging Expert Analysis with A
 text = """Comocamp in 2023 was really, really, really good fun, but 2024 will be #awesome! 🔥🔥🔥"""
 social = "linkedin"
 link = "https://www.linkedin.com/in/gottfriedszing/"
+[[people]]
+name = "Richard Brenner"
+image = "richard-brenner.jpg"
+line = "Enterprise Agile Coach, Gadget master ;)"
+text = "I had good discussions and got many new perspectives for my work. I also loved to use a lot of postits of course ;)"
+social = "linkedin"
+link = "https://www.linkedin.com/in/ri5b6/"
 +++
