@@ -1,6 +1,7 @@
 +++
 title = "ComoCamp"
 description = "The ComoCamp is the unconference reaching out to bring practitioners of collaborative modeling methods together with their creators and thought leaders."
+smallprint = "https://smallprint.tito.io/collaborate-vienna/comocamp-2024"
 author = "Collaborate Vienna"
 address = """
 Verein (ZVR 1605397921) zur Förderung der  
