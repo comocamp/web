@@ -1,8 +1,8 @@
 +++
-draft = true
+draft = false
 title = "How to participate"
 description = """
-Please note, our tickets are **non-refundable**, as we organize this conference non-profit on a pure cost basis and without any risk premium. Please also note, for the same reason our ticket prices do not contain any value added tax (VAT), as the camp is organized by the non-profit association Collaborate Vienna.
+Please note that our tickets are **non-refundable** and that they do not contain any deductible value added tax (VAT), as the camp is organized by "Collaborate Vienna", a non-profit association registered by austrian law.
 """
 background = "alternate"
 [[ tickets ]]
