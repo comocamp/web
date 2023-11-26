@@ -1,5 +1,5 @@
 +++
-draft = false
+draft = true
 title = "How to participate"
 description = """
 Please note that our tickets are **non-refundable** and that they do not contain any deductible value added tax (VAT), as the camp is organized by "Collaborate Vienna", a non-profit association registered by austrian law.
