@@ -22,6 +22,16 @@ a#id-participation:hover {
     background-color: transparent;
 }
 
+#faq a { 
+    text-decoration: underline;
+}
+
+#faq a:hover {
+    text-decoration: underline;
+    color: #ff9739;
+    ;
+}
+
 a.anchor {
     display: block;
     position: relative;

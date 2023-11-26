@@ -6,22 +6,22 @@
   
           <div class="section-header">
             <h2>{{ .Title }}</h2>
-            <p>{{ .Description }}</p>
+            <p>{{ .Description | markdownify }}</p>
           </div>
   
           <div class="row g-4 py-lg-5" data-aos="zoom-out" data-aos-delay="100">
 
             {{ range .Params.tickets }}                    
             <div class="col-lg-4">
-              <div class="pricing-item {{ .featured }}">
+              <div class="pricing-item {{ .style }}">
   
                 <h3>{{ .title | safeHTML }}</h3>
   
                 <div class="icon">
                   <i class="bi bi-{{ .icon }}"></i>
                 </div>
-                {{ if eq .featured "hotel" }}<p>Prices start from</p>{{ end }}
-                <h4><sup>€ </sup>{{ .price }}{{ if eq .featured "hotel" }}<span> per night</span>{{ end }}</h4>
+                {{ if eq .style "hotel" }}<p>Prices start from</p>{{ end }}
+                <h4><sup>€ </sup>{{ .price }}{{ if eq .style "hotel" }}<span> per night</span>{{ end }}</h4>
                 <ul>
                   {{ range .included }}                    
                   <li><i class="bi bi-check"></i><span>{{ . | safeHTML }}</span></li>

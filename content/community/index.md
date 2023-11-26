@@ -24,6 +24,13 @@ text = "Collaborative modelling is a super broad and evolving subject. Comocamp 
 social = "linkedin"
 link = "https://www.linkedin.com/in/steve-on-linked-in/"
 [[people]]
+name = "Gáspár Nagy"
+image = "gaspar-nagy.jpg"
+line = "SpecFlow/BDD coach, trainer, test automation expert"
+text = "Attending ComoCamp 2023 was a wonderful experience. Superb venue, good food, nice people... Everything ready for collaboration!"
+social = "linkedin"
+link = "https://www.linkedin.com/in/gasparnagy/"
+[[people]]
 name = "Florian Raimann"
 image = "florian-raimann.jpg"
 line = "In a world where you can be anything, I want to be kind, curious and humble."
@@ -51,4 +58,11 @@ line = "Enterprise Agile Coach, Gadget master ;)"
 text = "I had good discussions and got many new perspectives for my work. I also loved to use a lot of postits of course ;)"
 social = "linkedin"
 link = "https://www.linkedin.com/in/ri5b6/"
+[[people]]
+name = "Raffael Šala"
+image = "raffael-sala.jpg"
+line = "Never Stop Improving - DevOps, QA, Agile Enthusiast"
+text = "Sharing insights and getting real input in how to use collaborative modelling in daily business was an eye opening and amazing experience!"
+social = "linkedin"
+link = "https://www.linkedin.com/in/raffael-%C5%A1ala-7127b81b7/"
 +++
