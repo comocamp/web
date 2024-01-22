@@ -1,5 +1,5 @@
 +++
-draft = true
+draft = false
 title = "Our program"
 background = "alternate"
 [[days]]

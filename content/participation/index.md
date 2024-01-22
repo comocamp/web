@@ -1,5 +1,5 @@
 +++
-draft = true
+draft = false
 title = "How to participate"
 description = """
 Please note that our tickets are **non-refundable** and that they do not contain any deductible value added tax (VAT), as the camp is organized by "Collaborate Vienna", a non-profit association registered by austrian law.
@@ -23,8 +23,8 @@ bookingText = "Buy Now"
 bookingLink = "https://ti.to/collaborate-vienna/comocamp-2024/with/ltuk3uslyik"
 [[ tickets ]]
 title = """
-    Get your 3-Day <strong style=\"text-decoration: underline\">Full</strong><br>  
-    ComoCamp 2024 Ticket<br>
+    Get your 3-Day <strong style=\"text-decoration: underline\">Full</strong>
+    ComoCamp 2024 Ticket
     with Hands-On Intro Day
 """
 style = "featured"
@@ -40,6 +40,22 @@ included = [
 ]
 bookingText = "Buy Now"
 bookingLink = "https://ti.to/collaborate-vienna/comocamp-2024/with/ecnpxliocpw"
+[[ tickets ]]
+style = ""
+title = """
+    Get your 3-Day Full ComoCamp 2024 <strong style=\"text-decoration: underline\">Community Support</strong>
+    Ticket
+"""
+icon = "heart"
+price = 790
+included = [
+    "Get the full 👈 3-Day ComoCamp 2024 Ticket with Hands-On Intro Day",
+    "Voluntarily support our non-profit ComoCamp to make it even better",
+    "Get in touch and allow us to highlight your personal support on our website",
+    "If you want, allow us to highlight your personal support at the camp, too",
+]
+bookingText = "Buy Now"
+bookingLink = "https://ti.to/collaborate-vienna/comocamp-2024/with/95sigrw10p4"
 [[ tickets ]]
 title = """
     ... then book your Hotel Room

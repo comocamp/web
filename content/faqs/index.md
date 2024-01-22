@@ -1,5 +1,5 @@
 +++
-draft = true
+draft = false
 title = "Frequently Asked **Questions**"
 description = """
 Any other questions than the ones listed here? Don't hesitate to [contact us](mailto:hello@comocamp.org)!

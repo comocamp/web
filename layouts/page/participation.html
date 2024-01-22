@@ -8,11 +8,13 @@
             <h2>{{ .Title }}</h2>
             <p>{{ .Description | markdownify }}</p>
           </div>
+
+          {{ $width := div 12 (len .Params.tickets) }}
   
           <div class="row g-4 py-lg-5" data-aos="zoom-out" data-aos-delay="100">
 
             {{ range .Params.tickets }}                    
-            <div class="col-lg-4">
+            <div class="col-lg-{{ $width }}">
               <div class="pricing-item {{ .style }}">
   
                 <h3>{{ .title | safeHTML }}</h3>
