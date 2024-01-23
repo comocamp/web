@@ -10,17 +10,19 @@
   
           <div class="row gy-4">
 
+            {{ $width := div 12 .Params.width }}
+  
             {{ range .Params.supporters }}
-            <div class="col-xl-3 col-md-6">
-              <article>
+            <div class="col-xl-{{ $width }} col-md-6">
+              <article class="{{ .logo }}">
   
                 <div class="post-img d-flex align-items-center p-5" style="height: 150px; vertical-align: center;">
-                  {{ with $.Resources.Get .logo }}
+                  {{ with $.Resources.Get (print .logo ".png") }}
                     <img src="{{ .RelPermalink }}" class="img-fluid al">
                   {{ end }}
                 </div>
 
-                <p class="post-category mb-5">{{ .text }}</p>
+                <p class="post-category mb-5">{{ .text | safeHTML }}</p>
   
               </article>
             </div><!-- End post list item -->

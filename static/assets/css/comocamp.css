@@ -106,6 +106,24 @@ a.anchor {
     border: 2px dashed grey;
 }
 
+.recent-posts article.become-a-sponsor {
+    background-color: var(--color-primary);
+} 
+
+.recent-posts article.become-a-sponsor p {
+    color: white;
+} 
+
+.recent-posts article.become-a-sponsor a {
+    color: white;
+    text-decoration: underline;
+} 
+
+.recent-posts article.become-a-sponsor a:hover {
+    color: var(--color-secondary);
+    text-decoration: underline;
+} 
+
 .team .member .social {
     justify-content: center;
 }
