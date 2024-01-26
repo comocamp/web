@@ -22,7 +22,7 @@ bookingText = "Buy Now"
 bookingLink = "https://ti.to/collaborate-vienna/comocamp-2024/with/ltuk3uslyik"
 [[ tickets ]]
 title = """
-    3-Day <strong style=\"text-decoration: underline\">Full</strong> Ticket with Hands-On Intro Day
+    3-Day <br> <strong style=\"text-decoration: underline\">Full</strong> Ticket with <br> Hands-On Intro Day
 """
 style = "featured"
 icon = "postcard-heart"
