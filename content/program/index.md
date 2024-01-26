@@ -28,7 +28,7 @@ description = "The first day of the Open Space always starts with a marketplace.
 [[days.activities]]
 name = "Orangerie Dinner"
 from = "19:00"
-to = "00:00"
+to = "23:00"
 description = "After the first unconference day and a little break to check in and refresh you meet for a nice dinner in the so called \"Orangerie\", a particularly nice place in the hotel's park."
 [[days]]
 id = 2
