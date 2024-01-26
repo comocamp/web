@@ -122,7 +122,11 @@ a.anchor {
 .recent-posts article.become-a-sponsor a:hover {
     color: var(--color-secondary);
     text-decoration: underline;
-} 
+}
+
+.recent-posts .img-fluid {
+    max-width: 210px;
+}
 
 .team .member .social {
     justify-content: center;

@@ -14,7 +14,7 @@ Be honest
 Be respectful
 """
 email = "hello@comocamp.org"
-linkedin = "https://www.linkedin.com/company/comocamp"
+linkedin = "https://www.linkedin.com/groups/9315473/"
 twitter = "https://twitter.com/CoMoCampOrg"
 mastodon = "https://hachyderm.io/@comocamp"
 draft = false
