@@ -2,15 +2,15 @@
 draft = false
 title = "Our Supporters"
 background = "alternate"
-width = 3
+width = 4
+[[supporters]]
+logo = "techtalk"
+class = ""
+text = "TechTalk is a very special ComoCamp partner, because they enabled us to bring the first ComoCamp 2023 to Vienna. We are thankful for their continued support."
 [[supporters]]
 logo = "wps"
 class = ""
-text = "WPS build enjoyable business software."
-# [[supporters]]
-# logo = "techtalk"
-# class = ""
-# text = "TechTalk is a great ComoCamp partner and the sponsor, which enabled us to bring the first ComoCamp 2023 to Vienna."
+text = "WPS has believed in the ComoCamp idea right from the start and helps continuously to bring the Collaborative Modeling community together."
 # [[supporters]]
 # logo = "avanscoperta"
 # class = ""
