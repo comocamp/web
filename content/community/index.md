@@ -65,4 +65,11 @@ line = "Never Stop Improving - DevOps, QA, Agile Enthusiast"
 text = "Sharing insights and getting real input in how to use collaborative modelling in daily business was an eye opening and amazing experience!"
 social = "linkedin"
 link = "https://www.linkedin.com/in/raffael-%C5%A1ala-7127b81b7/"
+[[people]]
+name = "Paul Rohorzka"
+image = "paul-rohorzka.jpg"
+line = "Software Gardener at SQUER Solutions"
+text = """At no other conference I experienced such an outstanding spirit. A wonderful team provided a space where true and humble sharing, learning and passionate discussions could happen. ComoCamp 2024 is marked in my calendar!"""
+social = "linkedin"
+link = "https://www.linkedin.com/in/paulroho/"
 +++
