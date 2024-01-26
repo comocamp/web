@@ -116,10 +116,13 @@ a.anchor {
 
 .recent-posts article.become-a-sponsor a {
     color: white;
+} 
+
+.recent-posts article a {
     text-decoration: underline;
 } 
 
-.recent-posts article.become-a-sponsor a:hover {
+.recent-posts article a:hover {
     color: var(--color-secondary);
     text-decoration: underline;
 }
