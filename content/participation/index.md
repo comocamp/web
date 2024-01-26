@@ -45,7 +45,7 @@ title = """
 icon = "heart"
 price = 790
 included = [
-    "Get the full 👈 3-Day ComoCamp 2024 Ticket with Hands-On Intro Day",
+    "Get the 3-Day Full 👈 Ticket with Hands-On Intro Day",
     "You financially support our non-profit ComoCamp to make it even better",
     "Get in touch and allow us to highlight your personal support on our website",
     "If you want, allow us to highlight your personal support at the camp, too",
@@ -54,7 +54,7 @@ bookingText = "Buy Now"
 bookingLink = "https://ti.to/collaborate-vienna/comocamp-2024/with/95sigrw10p4"
 [[ tickets ]]
 title = """
-    ... then book your Hotel Room
+    ... and book your Hotel Room
     directly with Europahaus!
 """
 style = "hotel"
