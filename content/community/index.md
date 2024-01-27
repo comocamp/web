@@ -3,6 +3,20 @@ title = "Our Community"
 draft = false
 background = "alternate"
 [[people]]
+name = "Stefan Hofer"
+image = "stefan-hofer.jpg"
+line = "Requirements & DDD Expert bei WPS - Workplace Solutions GmbH"
+text = """Last year's ComoCamp was an exceptional experience! I learned, I taught, and I built lasting connections with other participants. Get your ticket for ComoCamp 2024!"""
+social = "linkedin"
+link = "https://www.linkedin.com/feed/update/urn:li:share:7156664071054872577/?actorCompanyId=98348123"
+[[people]]
+name = "Michael Plöd"
+image = "michael-ploed.jpg"
+line = "Fellow at INNOQ"
+text = """I just bought my ticket for ComoCamp, The Collaborative Modeling Unconference in 2024. I still have many great memories of this unconference in Vienna from last year, it certainly was among my professional / conference highlights of 2023. You should get your tickets as well because this one will sell out again for sure!"""
+social = "linkedin"
+link = "https://www.linkedin.com/feed/update/urn:li:share:7156911265909473280/?actorCompanyId=98348123"
+[[people]]
 name = "Nick Tune"
 image = "nick-tune.jpg"
 line = "Author of Architecture Modernization"
