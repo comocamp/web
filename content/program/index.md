@@ -1,6 +1,6 @@
 +++
 draft = false
-title = "Our program"
+title = "Our Program"
 background = "alternate"
 [[days]]
 id = 0
