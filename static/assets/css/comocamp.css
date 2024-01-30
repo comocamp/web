@@ -29,7 +29,6 @@ a#id-participation:hover {
 #faq a:hover {
     text-decoration: underline;
     color: #ff9739;
-    ;
 }
 
 a.anchor {
@@ -137,4 +136,20 @@ a.anchor {
 
 .testimonial-text {
     width: 95%;
+}
+
+.blog a {
+    text-decoration: underline;
+} 
+
+.blog a:hover {
+    color: #ff9739;
+} 
+
+.blog .posts-list article {
+    padding: 0px;
+}
+
+.blog .posts-list article .post-img {
+    margin: 0px;
 }

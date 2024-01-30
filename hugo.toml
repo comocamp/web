@@ -19,22 +19,26 @@ extensions = [
   pageRef = 'community'
   weight = 2
 [[menu.main]]
+  name = 'Our Location'
+  pageRef = 'location'
+  weight = 3
+[[menu.main]]
   name = 'Our Program'
   pageRef = 'program'
-  weight = 3
+  weight = 4
 [[menu.main]]
   name = 'Our Team'
   pageRef = 'team'
-  weight = 4
+  weight = 5
 [[menu.main]]
   name = 'Our Supporters'
   pageRef = 'supporters'
-  weight = 5
+  weight = 6
 [[menu.main]]
   name = 'How to participate'
   pageRef = 'participation'
-  weight = 6
+  weight = 7
 
 [Params]
 	DateForm = "2006-01-02"
-  Sections = ["hero", "camp", "community", "bring-your-topics", "program", "participation", "faqs", "team", "supporters", "we-are-looking-forward"]
+  Sections = ["hero", "camp", "community", "bring-your-topics", "location", "program", "participation", "faqs", "team", "supporters", "we-are-looking-forward"]
