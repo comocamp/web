@@ -1,7 +1,5 @@
      <!-- ======= Recent Blog Posts Section ======= -->
      <section class='recent-posts {{ printf "%s" ((partial "background.html" .) | replaceRE "\\s+" "") }}'>
-      <a class="anchor" id="supporters"></a>
-      
         <div class="container" data-aos="fade-up">
   
           <div class="section-header">
@@ -12,20 +10,19 @@
           <div class="row gy-4">
 
             {{ $width := div 12 .Params.width }}
+            <div class="col-xl-2 d-none d-xl-block">
+            </div>
   
             {{ range .Params.supporters }}
             <div class="col-xl-{{ $width }} col-md-6">
-              <article class="{{ .logo }}">
-  
+              <article class="supporter {{ .logo }}">  
                 <div class="post-img align-items-center" style="vertical-align: middle; text-align: center;">
                   {{ $link := .link }}
                   {{ with $.Resources.Get (print .logo ".png") }}
-                    <a href="{{ $link }}" style="text-align: center"><img style="height:100%" src="{{ .RelPermalink }}" class="mx-auto d-block"></a>
+                    <a href="{{ $link }}"><img src="{{ .RelPermalink }}" class="mx-auto d-block"></a>
                   {{ end }}
                 </div>
-
-                <p class="post-category mb-5">{{ .text | markdownify }}</p>
-  
+                <p class="post-category">{{ .text | markdownify }}</p>  
               </article>
             </div><!-- End post list item -->
             {{ end }}

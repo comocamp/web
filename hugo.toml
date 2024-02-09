@@ -41,4 +41,4 @@ extensions = [
 
 [Params]
 	DateForm = "2006-01-02"
-  Sections = ["hero", "camp", "community", "bring-your-topics", "location", "program", "participation", "faqs", "team", "supporters", "we-are-looking-forward"]
+  Sections = ["hero", "camp", "community", "bring-your-topics", "location", "program", "participation", "faqs", "team", "supporters", "media-partners", "we-are-looking-forward"]

@@ -126,8 +126,20 @@ a.anchor {
     text-decoration: underline;
 }
 
-.recent-posts .img-fluid {
-    max-width: 210px;
+.recent-posts article {
+    height: 400px;
+}
+
+.recent-posts .post-img a {
+    margin-top: 20px;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.recent-posts .mx-auto {
+    max-height: 80px;
+    max-width: 240px;
 }
 
 .team .member .social {
