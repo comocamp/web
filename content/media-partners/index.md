@@ -5,9 +5,9 @@ background = "alternate"
 width = 3
 [[supporters]]
 logo = "avanscoperta"
-link = "https://www.avanscoperta.it/"
+link = "https://www.avanscoperta.it/en/?utm_source=sito&utm_medium=mention&utm_campaign=sponsorship"
 class = ""
-text = "[Avanscoperta](https://www.avanscoperta.it/) is a growing community of professionals who are passionate about learning. We love exploring uncharted territories within software development, sharing experiences and spreading new ideas through consulting activities, training classes, events, and books."
+text = "[Avanscoperta](https://www.avanscoperta.it/en/?utm_source=sito&utm_medium=mention&utm_campaign=sponsorship) is a growing community of professionals who are passionate about learning. We love exploring uncharted territories within software development, sharing experiences and spreading new ideas through consulting activities, training classes, events, and books."
 [[supporters]]
 logo = "polygons"
 link = "https://polygons.at/"
