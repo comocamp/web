@@ -24,7 +24,7 @@ date = 2024-05-07
 name = "Open Space Day 1"
 from = "09:00"
 to = "17:00"
-description = "The first day of the Open Space always starts with a marketplace. What will happen this time? It totally depends on YOU. Bring your own topics, ideas and issues!"
+description = "The first day of the Open Space always starts with a marketplace. What will happen this time? It totally depends on YOU. Please [bring your own questions, ideas and issues](#call-to-action) to the camp!"
 [[days.activities]]
 name = "Orangerie Dinner"
 from = "19:00"
@@ -52,7 +52,7 @@ date = 2024-05-09
 name = "Hiking in the Wienerwald"
 from = "10:00"
 to = "13:00"
-description = "On Ascension Day, you meet the ComoCamp organizers and go on a little tour (max 3 hours max 300m altitude): with a little bit of luck leading us to a nice view over Vienna."
+description = "On **Ascension Day**, you meet the ComoCamp organizers and go on a little tour (max 3 hours max 300m altitude): with a little bit of weather luck leading us to a nice view over Vienna."
 [[days.activities]]
 name = "Pizza with La Mama"
 from = "13:00"

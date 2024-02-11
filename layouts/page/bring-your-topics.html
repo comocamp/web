@@ -1,5 +1,6 @@
       <!-- ======= Call To Action Section ======= -->
       <section class='call-to-action {{ $.Params.background }} {{ printf "%s" ((partial "background.html" .) | replaceRE "\\s+" "") }}'>
+        <a class="anchor" id="call-to-action"></a>
         <div class="container text-center" data-aos="zoom-out">
           <h3>{{ .Title }}</h3>
           {{ .Content }}

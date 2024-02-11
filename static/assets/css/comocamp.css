@@ -92,6 +92,14 @@ a.anchor {
     padding-right: 1em;
 }
 
+.program a {
+    text-decoration: underline;
+}
+
+.program a:hover {
+    color: var(--color-secondary);
+}
+
 .call-to-action .container {
     padding-left: 10% !important;
     padding-right: 10% !important;
