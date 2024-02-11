@@ -1,5 +1,5 @@
     <!-- ======= Our Team Section ======= -->
-    <section class='team mb-2 {{ printf "%s" ((partial "background.html" .) | replaceRE "\\s+" "") }}'>
+    <section class='team mb-2 {{ $.Params.background }} {{ printf "%s" ((partial "background.html" .) | replaceRE "\\s+" "") }}'>
       <a class="anchor" id="team"></a>
         <div class="container" data-aos="fade-up">
   

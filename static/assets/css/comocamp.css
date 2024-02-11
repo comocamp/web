@@ -165,3 +165,7 @@ a.anchor {
 .blog .posts-list article .post-img {
     margin: 0px;
 }
+
+section.follow {
+    padding-top: 0px !important;
+}

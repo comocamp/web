@@ -1,5 +1,5 @@
     <!-- ======= Participation Section ======= -->
-    <section class='pricing {{ printf "%s" ((partial "background.html" .) | replaceRE "\\s+" "") }}'>
+    <section class='pricing {{ $.Params.background }} {{ printf "%s" ((partial "background.html" .) | replaceRE "\\s+" "") }}'>
       <a class="anchor" id="participation"></a>
 
         <div class="container" data-aos="fade-up">

@@ -1,4 +1,4 @@
-<section class='{{ printf "%s" ((partial "background.html" .) | replaceRE "\\s+" "") }}'>
+<section class='{{ $.Params.background }} {{ printf "%s" ((partial "background.html" .) | replaceRE "\\s+" "") }}'>
     <a class="anchor" id="program"></a>
     <div class="section-header pb-3">
         <h2 class="mb-0">{{ .Title }}</h2>

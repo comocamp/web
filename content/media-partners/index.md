@@ -1,7 +1,7 @@
 +++
 draft = false
 title = "... and long-term media partners!"
-background = "alternate"
+background = "follow"
 width = 3
 [[supporters]]
 logo = "avanscoperta"

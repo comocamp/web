@@ -1,4 +1,4 @@
-<section class='testimonials {{ printf "%s" ((partial "background.html" .) | replaceRE "\\s+" "") }}'>
+<section class='testimonials {{ $.Params.background }} {{ printf "%s" ((partial "background.html" .) | replaceRE "\\s+" "") }}'>
   <a class="anchor" id="community"></a>
 
     <div class="container" data-aos="fade-up">
