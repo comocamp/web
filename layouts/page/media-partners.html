@@ -10,16 +10,15 @@
           <div class="row gy-4">
 
             {{ $width := div 12 .Params.width }}
-            <div class="col-xl-2 d-none d-xl-block">
-            </div>
   
             {{ range .Params.supporters }}
             <div class="col-xl-{{ $width }} col-md-6">
-              <article class="supporter {{ .logo }}">  
+              <article class="supporter media-partner {{ .logo }}">  
                 <div class="post-img align-items-center" style="vertical-align: middle; text-align: center;">
                   {{ $link := .link }}
+                  {{ $logo := .logo }}
                   {{ with $.Resources.Get (print .logo ".png") }}
-                    <a href="{{ $link }}"><img src="{{ .RelPermalink }}" class="mx-auto d-block"></a>
+                    <a href="{{ $link }}"><img src="{{ .RelPermalink }}" class="mx-auto d-block {{ $logo }}"></a>
                   {{ end }}
                 </div>
                 <p class="post-category">{{ .text | markdownify }}</p>  

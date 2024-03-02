@@ -1,6 +1,6 @@
 +++
 draft = false
-title = "Our committed 2024 room sponsors ..."
+title = "Our committed 2024 sponsors ..."
 background = "alternate"
 width = 3
 [[supporters]]
@@ -14,10 +14,11 @@ link = "https://www.wps.de/"
 class = ""
 text = "[WPS](https://www.wps.de/) has believed in the ComoCamp idea right from the start and helps continuously to bring the Collaborative Modeling community together."
 [[supporters]]
-logo = "become-a-sponsor"
-link = "supporters/why-you-should-support-comocamp.pdf"
-text = """Do you also want to become a ComoCamp 2024 sponsor? That's awesome. You can check out [why you should definitely support](supporters/why-you-should-support-comocamp.pdf) 😊 the ComoCamp and [get in touch with us](mailto:hello@comocamp.org)!"""
+logo = "polygons"
+link = "https://polygons.at/"
+class = ""
+text = "[POLYGONS](https://polygons.at/) is proud to support the vision of ComoCamp as an advocate for the intersection of technology and innovation. Our commitment to promoting collaborative modelling and the development of socio-technical systems is reflected in our enthusiasm for ComoCamp."
 +++
 
-The ComoCamp and its ticket prices would not be possible without direct financial support. Thank you **very much** for making the camp fly!
+The ComoCamp and its affordable ticket prices would not be possible without financial support. Thank you **very much** for making the camp fly!
 

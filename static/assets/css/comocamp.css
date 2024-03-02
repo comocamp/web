@@ -203,15 +203,15 @@ a.anchor {
     text-decoration: underline;
 }
 
-.recent-posts article {
-    height: 400px;
-}
-
 .recent-posts .post-img a {
     margin-top: 20px;
     min-height: 150px;
     display: flex;
     align-items: center;
+}
+
+.wastian img {
+    min-height: 130px;    
 }
 
 .recent-posts .mx-auto {
