@@ -10,6 +10,7 @@ title = """
     2-Day <br> <strong style=\"text-decoration: underline\">Essential</strong> Ticket
 """
 style = ""
+soldout = false
 icon = "postcard"
 price = 390
 included = [
@@ -25,6 +26,7 @@ title = """
     3-Day <br> <strong style=\"text-decoration: underline\">Full</strong> Ticket with <br> Hands-On Intro Day
 """
 style = "featured"
+soldout = false
 icon = "postcard-heart"
 price = 590
 included = [
@@ -40,9 +42,10 @@ bookingLink = "https://ti.to/collaborate-vienna/comocamp-2024/with/ecnpxliocpw"
 [[ tickets ]]
 style = ""
 title = """
-    3-Day <strong style=\"text-decoration: underline\">Community Support</strong> Ticket
+    3-Day <br> <strong style=\"text-decoration: underline\">Community Support</strong> <br> Ticket
 """
 icon = "heart"
+soldout = false
 price = 790
 included = [
     "Get the 3-Day Full 👈 Ticket with Hands-On Intro Day",
@@ -59,10 +62,11 @@ title = """
 """
 style = "hotel"
 icon = "house"
+soldout = false
 price = 69
 included = [
     "Use our contingent \"ComoCamp\"",
-    "<span style=\"text-decoration: underline\">Available until March 5th, 2024</span>",
+    "Contingent available until <span style=\"text-decoration: underline\">March 5th, 2024</span>, rooms as such maybe longer!",
     "Breakfast typically included",
     "Parking lot tickets at the reception"
 ]

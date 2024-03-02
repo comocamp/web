@@ -15,21 +15,24 @@
 
             {{ range .Params.tickets }}                    
             <div class="col-lg-{{ $width }}">
-              <div class="pricing-item {{ .style }}">
+              <div class="pricing-item  {{ if not .soldout }}{{ .style }}{{ end }} {{ if .soldout }}soldout-item{{ end }}">
+                {{ if .soldout }}<img width="200" height="200" class="soldout-image" src="participation/sold-out.png"></img>{{ end }}
   
-                <h3>{{ .title | safeHTML }}</h3>
+                <h3 {{ if .soldout }}class="soldout"{{ end }}>{{ .title | safeHTML }}</h3>
   
-                <div class="icon">
+                <div class="icon {{ if .soldout }}soldout{{ end }}">
                   <i class="bi bi-{{ .icon }}"></i>
                 </div>
                 {{ if eq .style "hotel" }}<p>Prices start from</p>{{ end }}
-                <h4><sup>€ </sup>{{ .price }}{{ if eq .style "hotel" }}<span> per night</span>{{ end }}</h4>
-                <ul>
+                <h4 {{ if .soldout }}class="soldout"{{ end }}><sup>€ </sup>{{ .price }}{{ if eq .style "hotel" }}<span> per night</span>{{ end }}</h4>
+                <ul {{ if .soldout }}class="soldout"{{ end }}>
                   {{ range .included }}                    
                   <li><i class="bi bi-check"></i><span>{{ . | safeHTML }}</span></li>
                   {{ end }}
                 </ul>
+                {{ if not .soldout }}
                 <div class="text-center"><a href="{{ .bookingLink }}" target="_blank" class="buy-btn">{{ .bookingText }}</a></div> 
+                {{ end }}
               </div>
   
             </div><!-- End Pricing Item -->

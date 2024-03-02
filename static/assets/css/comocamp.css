@@ -67,6 +67,70 @@ a.anchor {
     line-height: 0;
 }
 
+.soldout {
+    opacity: 0.3
+}
+
+.soldout-image {
+    z-index: 10; 
+    position: absolute; 
+}
+
+
+@media (max-width: 575px) {
+
+    .soldout-image {
+        top: 145px; 
+        left: 103px;
+    }
+    
+}
+
+@media (min-width: 576px) {
+
+    .soldout-image {
+        top: 145px; 
+        left: 178px;
+    }
+    
+}
+
+@media (min-width: 768px) {
+
+    .soldout-image {
+        top: 147px; 
+        left: 268px;
+    }
+    
+}
+
+@media (min-width: 992px) {
+
+    .soldout-image {
+        top: 192px; 
+        left: 29px;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+
+    .soldout-image {
+        top: 169px; 
+        left: 52px;
+    }
+    
+}
+
+@media (min-width: 1400px) {
+
+    .soldout-image {
+        top: 145px; 
+        left: 72px;
+    }
+    
+}
+
 .pricing .icon::before {
     background: rgba(255, 151, 57, 0.5);
 }
@@ -81,6 +145,11 @@ a.anchor {
 
 .pricing .buy-btn {
     border: 1px solid rgba(255, 151, 57, 0.3);
+}
+
+.pricing .buy.btn:hover {
+    border: 1px solid black;
+    background-color: rgb(249 61 119) !important;
 }
 
 .contact .info-item {
