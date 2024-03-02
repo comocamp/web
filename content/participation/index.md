@@ -19,7 +19,8 @@ included = [
     "Snacks, lunches and dinners are covered",
     "Bonus! Join the intro dinner on May 6<sup>th</sup>, as well as the optional 'Hiking in the Wienerwald' on Ascension Day May 9<sup>th</sup>"
 ]
-bookingText = "Buy Now"
+bookingText = "Buy now"
+waitingText = "Join the <br/> waiting list"
 bookingLink = "https://ti.to/collaborate-vienna/comocamp-2024/with/ltuk3uslyik"
 [[ tickets ]]
 title = """
@@ -38,6 +39,7 @@ included = [
     "Bonus! Join the optional 'Hiking in the Wienerwald' on Ascension Day May 9<sup>th</sup>" 
 ]
 bookingText = "Buy Now"
+waitingText = "Join the <br/> waiting list"
 bookingLink = "https://ti.to/collaborate-vienna/comocamp-2024/with/ecnpxliocpw"
 [[ tickets ]]
 style = ""
@@ -54,6 +56,7 @@ included = [
     "If you want, allow us to highlight your personal support at the camp, too",
 ]
 bookingText = "Buy Now"
+waitingText = "Join the <br/> waiting list"
 bookingLink = "https://ti.to/collaborate-vienna/comocamp-2024/with/95sigrw10p4"
 [[ tickets ]]
 title = """
