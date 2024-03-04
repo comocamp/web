@@ -25,6 +25,13 @@ link = "https://social.wps.de/@carolali/109999205730632156"
 # social = "linkedin"
 # link = "https://www.linkedin.com/posts/christophkober_comocamp-2024-activity-7158834054648246272-wBMt"
 [[people]]
+name = "Paul van der Slot"
+image = "paul-van-der-slot.jpg"
+line = "Freelance Hands-on Architect with a passion for DDD, Clean Code and Collaborative Design"
+text = """I bought my ComoCamp ticket yesterday! Last year I had some Como FOMO, so I am very excited this is happening! This will be the first time I will visit an unconference. I am very curious what it will bring. Hopefully connecting with likeminded people and getting inspired 🙏🏻"""
+social = "linkedin"
+link = "https://www.linkedin.com/posts/paul-van-der-slot-03545b37_comocamp-2024-activity-7170002664968171520-E4ST"
+[[people]]
 name = "Adam Dymitruk"
 image = "adam-dymitruk.jpg"
 line = "Author of Event Modeling, Event-Driven Information Systems Expert, old rules no longer apply"
