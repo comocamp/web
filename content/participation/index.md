@@ -10,6 +10,7 @@ title = """
     2-Day <br> <strong style=\"text-decoration: underline\">Essential</strong> Ticket
 """
 style = ""
+display = true
 soldout = false
 icon = "postcard"
 price = 390
@@ -27,6 +28,7 @@ title = """
     3-Day <br> <strong style=\"text-decoration: underline\">Full</strong> Ticket with <br> Hands-On Intro Day
 """
 style = "featured"
+display = true
 soldout = false
 icon = "postcard-heart"
 price = 590
@@ -47,6 +49,7 @@ title = """
     3-Day <br> <strong style=\"text-decoration: underline\">Community Support</strong> <br> Ticket
 """
 icon = "heart"
+display = true
 soldout = false
 price = 790
 included = [
@@ -65,6 +68,7 @@ title = """
 """
 style = "hotel"
 icon = "house"
+display = true
 soldout = false
 price = 69
 included = [

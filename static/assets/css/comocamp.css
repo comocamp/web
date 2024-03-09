@@ -71,64 +71,24 @@ a.anchor {
     opacity: 0.3
 }
 
+.pricing .icon.soldout {
+    opacity: 1.0;
+    background: rgba(0,0,0, 0.3);
+}
+
+.pricing .icon.soldout::before {
+    background: rgba(255, 151, 57, 0.15);
+}
+
+.pricing .icon.soldout::after {
+    background: rgba(255, 151, 57, 0.075);
+}
+
 .soldout-image {
     z-index: 10; 
     position: absolute; 
-}
-
-
-@media (max-width: 575px) {
-
-    .soldout-image {
-        top: 145px; 
-        left: 103px;
-    }
-    
-}
-
-@media (min-width: 576px) {
-
-    .soldout-image {
-        top: 145px; 
-        left: 178px;
-    }
-    
-}
-
-@media (min-width: 768px) {
-
-    .soldout-image {
-        top: 147px; 
-        left: 268px;
-    }
-    
-}
-
-@media (min-width: 992px) {
-
-    .soldout-image {
-        top: 192px; 
-        left: 29px;
-    }
-    
-}
-
-@media (min-width: 1200px) {
-
-    .soldout-image {
-        top: 169px; 
-        left: 52px;
-    }
-    
-}
-
-@media (min-width: 1400px) {
-
-    .soldout-image {
-        top: 145px; 
-        left: 72px;
-    }
-    
+    top: -10px;
+    left: -45px;
 }
 
 .pricing .icon::before {

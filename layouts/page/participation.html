@@ -9,19 +9,20 @@
             <p>{{ .Description | markdownify }}</p>
           </div>
 
-          {{ $width := div 12 (len .Params.tickets) }}
+          {{ $width := div 12 (len (where .Params.tickets "display" true)) }}
   
           <div class="row g-4 py-lg-5" data-aos="zoom-out" data-aos-delay="100">
 
-            {{ range .Params.tickets }}                    
+            {{ range .Params.tickets }}
+            {{ if .display }}                    
             <div class="col-lg-{{ $width }}">
               <div class="pricing-item  {{ if not .soldout }}{{ .style }}{{ end }} {{ if .soldout }}soldout-item{{ end }}">
-                {{ if .soldout }}<img width="200" height="200" class="soldout-image" src="participation/sold-out.png"></img>{{ end }}
   
                 <h3 {{ if .soldout }}class="soldout"{{ end }}>{{ .title | safeHTML }}</h3>
   
                 <div class="icon {{ if .soldout }}soldout{{ end }}">
-                  <i class="bi bi-{{ .icon }}"></i>
+                  <i class="bi bi-{{ .icon }} {{ if .soldout }}soldout{{ end }}"></i>
+                  {{ if .soldout }}<img width="200" height="200" class="soldout-image" src="participation/sold-out.png"></img>{{ end }}
                 </div>
                 {{ if eq .style "hotel" }}<p>Prices start from</p>{{ end }}
                 <h4 {{ if .soldout }}class="soldout"{{ end }}><sup>€ </sup>{{ .price }}{{ if eq .style "hotel" }}<span> per night</span>{{ end }}</h4>
@@ -39,6 +40,7 @@
               </div>
   
             </div><!-- End Pricing Item -->
+            {{ end }}
             {{ end }}
   
           </div>
