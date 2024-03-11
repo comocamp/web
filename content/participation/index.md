@@ -72,8 +72,8 @@ display = true
 soldout = false
 price = 69
 included = [
-    "Use our contingent \"ComoCamp\"",
-    "Contingent available until <span style=\"text-decoration: underline\">March 5th, 2024</span>, rooms as such maybe longer!",
+    "Please always use our contingent <strong>\"ComoCamp\"</strong>",
+ #   "Contingent available until <span style=\"text-decoration: underline\">March 5th, 2024</span>, rooms as such maybe longer!",
     "Breakfast typically included",
     "Parking lot tickets at the reception"
 ]
