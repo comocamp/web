@@ -50,7 +50,7 @@ title = """
     3-Day <br> <strong style=\"text-decoration: underline\">Community Support</strong> <br> Ticket
 """
 icon = "heart"
-display = false
+display = true
 soldout = false
 price = 790
 included = [
