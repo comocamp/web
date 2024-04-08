@@ -30,7 +30,6 @@ title = """
 style = "featured"
 display = true
 soldout = false
-note = """We are temporarily sold out, please join the waiting list. Due to the incredibly high demand for the "3-Day Full  Tickets", we are currently working on a fourth track and are almost there. Stay tuned!"""
 icon = "postcard-heart"
 price = 590
 included = [
@@ -41,9 +40,9 @@ included = [
     "Snacks, lunches and dinners are covered",
     "Bonus! Join the optional 'Hiking in the Wienerwald' on Ascension Day May 9<sup>th</sup>" 
 ]
-bookingText = "Join the <br/> waiting list"
+bookingText = "Buy Now"
 waitingText = "Join the <br/> waiting list"
-bookingLink = "https://ti.to/collaborate-vienna/comocamp-2024/with/ecnpxliocpw?tito=%2Fcollaborate-vienna%2Fcomocamp-2024%2Fen%2Freleases%2Fecnpxliocpw%2Fwaitlisted_people%2Fnew"
+bookingLink = "https://ti.to/collaborate-vienna/comocamp-2024/with/ecnpxliocpw"
 waitingLink = "https://ti.to/collaborate-vienna/comocamp-2024/with/ecnpxliocpw?tito=%2Fcollaborate-vienna%2Fcomocamp-2024%2Fen%2Freleases%2Fecnpxliocpw%2Fwaitlisted_people%2Fnew"
 [[ tickets ]]
 style = ""
