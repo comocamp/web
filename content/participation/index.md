@@ -11,7 +11,7 @@ title = """
 """
 style = ""
 display = true
-soldout = false
+soldout = true
 icon = "postcard"
 price = 390
 included = [
@@ -21,15 +21,16 @@ included = [
     "Bonus! Join the intro dinner on May 6<sup>th</sup>, as well as the optional 'Hiking in the Wienerwald' on Ascension Day May 9<sup>th</sup>"
 ]
 bookingText = "Buy now"
-waitingText = "Join the <br/> waiting list"
+waitingText = "Join the <br/> waiting list <br/> <strong>for 2025</strong>"
 bookingLink = "https://ti.to/collaborate-vienna/comocamp-2024/with/ltuk3uslyik"
+waitingLink = "https://ti.to/collaborate-vienna/comocamp-2024/with/ecnpxliocpw?tito=%2Fcollaborate-vienna%2Fcomocamp-2024%2Fen%2Freleases%2Fecnpxliocpw%2Fwaitlisted_people%2Fnew"
 [[ tickets ]]
 title = """
     3-Day <br> <strong style=\"text-decoration: underline\">Full</strong> Ticket with <br> Hands-On Intro Day
 """
 style = "featured"
 display = true
-soldout = false
+soldout = true
 icon = "postcard-heart"
 price = 590
 included = [
@@ -41,7 +42,7 @@ included = [
     "Bonus! Join the optional 'Hiking in the Wienerwald' on Ascension Day May 9<sup>th</sup>" 
 ]
 bookingText = "Buy Now"
-waitingText = "Join the <br/> waiting list"
+waitingText = "Join the <br/> waiting list <br/> <strong>for 2025</strong>"
 bookingLink = "https://ti.to/collaborate-vienna/comocamp-2024/with/ecnpxliocpw"
 waitingLink = "https://ti.to/collaborate-vienna/comocamp-2024/with/ecnpxliocpw?tito=%2Fcollaborate-vienna%2Fcomocamp-2024%2Fen%2Freleases%2Fecnpxliocpw%2Fwaitlisted_people%2Fnew"
 [[ tickets ]]
@@ -50,7 +51,7 @@ title = """
     3-Day <br> <strong style=\"text-decoration: underline\">Community Support</strong> <br> Ticket
 """
 icon = "heart"
-display = true
+display = false
 soldout = false
 price = 790
 included = [
