@@ -1,17 +1,21 @@
      <!-- ======= Recent Blog Posts Section ======= -->
-     <section class='recent-posts {{ $.Params.background }} {{ printf "%s" ((partial "background.html" .) | replaceRE "\\s+" "") }} mb-0 pb-4'>
-      <a class="anchor" id="supporters"></a>
-    
+     <section class='recent-posts {{ $.Params.background }} {{ printf "%s" ((partial "background.html" .) | replaceRE "\\s+" "") }} mt-0 pt-0'>
+      
         <div class="container" data-aos="fade-up">
   
+          <!--
           <div class="section-header">
             <h2>{{ .Title }}</h2>
             {{ .Content }}
           </div>
-  
+          -->  
+
           <div class="row gy-4">
 
             {{ $width := div 12 .Params.width }}
+
+            <div class="col-xl-{{ div $width 2 }} col-md-0 mt-0 pt-0">
+            </div>
   
             {{ range .Params.supporters }}
             <div class="col-xl-{{ $width }} col-md-6">

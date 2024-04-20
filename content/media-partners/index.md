@@ -1,6 +1,6 @@
 +++
 draft = false
-title = "... our long-term media partners!"
+title = "... and our long-term media partners!"
 background = "follow"
 width = 4
 [[supporters]]
