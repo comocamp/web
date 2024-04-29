@@ -10,7 +10,7 @@ title = """
     2-Day <br> <strong style=\"text-decoration: underline\">Essential</strong> Ticket
 """
 style = ""
-display = true
+display = false
 soldout = true
 icon = "postcard"
 price = 390
@@ -44,7 +44,7 @@ included = [
 bookingText = "Buy Now"
 waitingText = "Join the <br/> waiting list <br/> <strong>for 2025</strong>"
 bookingLink = "https://ti.to/collaborate-vienna/comocamp-2024/with/ecnpxliocpw"
-waitingLink = "https://ti.to/collaborate-vienna/comocamp-2024/with/ecnpxliocpw?tito=%2Fcollaborate-vienna%2Fcomocamp-2024%2Fen%2Freleases%2Fecnpxliocpw%2Fwaitlisted_people%2Fnew"
+waitingLink = "https://ti.to/collaborate-vienna/comocamp-2025?tito=%2Fcollaborate-vienna%2Fcomocamp-2025%2Fen%2Freleases%2Fsktec9zjh0w%2Fwaitlisted_people%2Fnew"
 [[ tickets ]]
 style = ""
 title = """
