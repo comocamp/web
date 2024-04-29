@@ -5,7 +5,7 @@ background = "alternate"
 [[days]]
 id = 0
 name = "Hands-On Intro Day"
-date = 2024-05-06
+date = 2025-05-07
 [[days.activities]]
 name = "Hands-On Intro Day"
 from = "09:00"
@@ -19,7 +19,7 @@ description = "After an intensive intro day, you are invited to have dinner in t
 [[days]]
 id = 1
 name = "Open Space Day 1"
-date = 2024-05-07
+date = 2025-05-08
 [[days.activities]]
 name = "Open Space Day 1"
 from = "09:00"
@@ -33,7 +33,7 @@ description = "After the first unconference day and a little break to check in a
 [[days]]
 id = 2
 name = "Open Space Day 2"
-date = 2024-05-08
+date = 2025-05-09
 [[days.activities]]
 name = "Open Space Day 2"
 from = "09:00"
@@ -47,12 +47,12 @@ description = "After the unconference finale, you have a relaxed dinner in the b
 [[days]]
 id = 3
 name = "Hiking in the Wienerwald"
-date = 2024-05-09
+date = 2025-05-10
 [[days.activities]]
 name = "Hiking in the Wienerwald"
 from = "10:00"
 to = "13:00"
-description = "On **Ascension Day**, you meet the ComoCamp organizers and go on a little tour (max 3 hours max 300m altitude): with a little bit of weather luck leading us to a nice view over Vienna."
+description = "On **Saturday**, you meet the ComoCamp organizers and go on a little tour (max 3 hours max 300m altitude): with a little bit of weather luck leading us to a nice view over Vienna."
 [[days.activities]]
 name = "Pizza with La Mama"
 from = "13:00"

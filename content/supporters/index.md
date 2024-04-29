@@ -1,6 +1,6 @@
 +++
 draft = false
-title = "Our committed 2024 sponsors ..."
+title = "Our 2024 sponsors ..."
 background = "alternate"
 width = 3
 [[supporters]]

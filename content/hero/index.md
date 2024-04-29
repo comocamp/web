@@ -8,7 +8,7 @@ conference = """
 """
 locationAndDate = """
     <span style="font-weight: normal">Vienna</span><br/>
-    <span>May 6<sup>th</sup>-9<sup>th</sup>, 2024</span> 
+    <span>May 7<sup>th</sup>-10<sup>th</sup>, 2025</span> 
 """
 button = "Yes! I want to participate!"
 lastCamp = """
