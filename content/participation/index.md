@@ -14,10 +14,10 @@ display = false
 icon = "postcard"
 price = 390
 included = [
-    "Join the Open Space, May 8<sup>th</sup>-9<sup>th</sup>",
+    "Join the Open Space, May 8<sup>th</sup>-9<sup>th</sup> 2025",
     "Bring your own topics, ideas and issues",
     "Snacks, lunches and dinners are covered",
-    "Bonus! Join the intro dinner on May 7<sup>th</sup>, as well as the optional 'Hiking in the Wienerwald' on Saturday May 10<sup>th</sup>"
+    "Bonus! Join the intro dinner on May 7<sup>th</sup> 2025, as well as the optional 'Hiking in the Wienerwald' on Saturday May 10<sup>th</sup> 2025"
 ]
 bookingText = "Buy now"
 waitingText = "Join the <br/> waiting list <br/> <strong>for 2026</strong>"
@@ -33,12 +33,12 @@ soldout = false
 icon = "postcard-heart"
 price = 590
 included = [
-    "Join the Hands-On Intro Day, May 7<sup>th</sup>",
+    "Join the Hands-On Intro Day, May 7<sup>th</sup> 2025",
     "Some of our most experienced community members introduce you to three different Collaborative Modeling (\"Como\") methods",
-    "Join the Open Space, May 8<sup>th</sup>-9<sup>th</sup>",
+    "Join the Open Space, May 8<sup>th</sup>-9<sup>th</sup> 2025",
     "Bring your own topics, ideas and issues",
     "Snacks, lunches and dinners are covered",
-    "Bonus! Join the optional 'Hiking in the Wienerwald' on Saturday May 10<sup>th</sup>" 
+    "Bonus! Join the optional 'Hiking in the Wienerwald' on Saturday May 10<sup>th</sup> 2025" 
 ]
 bookingText = "Buy Now"
 waitingText = "Join the waiting list"
