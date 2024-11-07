@@ -27,10 +27,6 @@ line = "Software Architect, Developer, Team Player"
 image = "daniel-sack.png"
 linkedin = "https://www.linkedin.com/in/daniel-sack-7298b020/"
 [[helpingHand]]
-name = "Hans Sowa"
-image = "hans-sowa.png"
-linkedin = "https://www.linkedin.com/in/hans-sowa/"
-[[helpingHand]]
 name = "Gottfried Szing"
 image = "gottfried-szing.png"
 linkedin = "https://www.linkedin.com/in/gottfriedszing/"
