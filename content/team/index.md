@@ -1,13 +1,13 @@
 +++
 title = "Our Team"
-description = "Since the original idea for the ComoCamp in early 2019, a team of true believers went through \"pandemic\" cancellations, but made it finally happen! :)"
+description = "Since the original idea for the ComoCamp in early 2019, a team of true believers went through \"pandemic\" cancellations, but then we made it happen."
 draft = false
 background = "alternate"
 [[organizer]]
 name = "Stefan Priebsch"
-line = "IT Strategy, Software Architecture and DDD"
+line = "Software Success Consultant, thePHP.cc"
 image = "stefan-priebsch.png"
-web = "https://thephp.cc/unternehmen/berater/stefan-priebsch"
+web = "https://thephp.cc/company/consultants/stefan-priebsch"
 linkedin = "https://www.linkedin.com/in/stefanpriebsch/"
 [[organizer]]
 name = "Martin Schimak"

@@ -22,7 +22,7 @@ a#id-participation:hover {
     background-color: transparent;
 }
 
-#faq a { 
+#faq a {
     text-decoration: underline;
 }
 
@@ -60,7 +60,7 @@ a.anchor {
     border: 1px solid #bbbbbb;
 }
 
-.testimonials .testimonial-item .quote-icon-left, 
+.testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
     color: var(--color-secondary);
     font-size: 22px;
@@ -85,8 +85,8 @@ a.anchor {
 }
 
 .soldout-image {
-    z-index: 10; 
-    position: absolute; 
+    z-index: 10;
+    position: absolute;
     top: -10px;
     left: -45px;
 }
@@ -144,19 +144,19 @@ a.anchor {
 
 .recent-posts article.become-a-sponsor {
     background-color: var(--color-primary);
-} 
+}
 
 .recent-posts article.become-a-sponsor p {
     color: white;
-} 
+}
 
 .recent-posts article.become-a-sponsor a {
     color: white;
-} 
+}
 
 .recent-posts article a {
     text-decoration: underline;
-} 
+}
 
 .recent-posts article a:hover {
     color: var(--color-secondary);
@@ -171,7 +171,7 @@ a.anchor {
 }
 
 .wastian img {
-    min-height: 130px;    
+    min-height: 130px;
 }
 
 .recent-posts .mx-auto {
@@ -189,20 +189,20 @@ a.anchor {
 
 .blog a {
     text-decoration: underline;
-} 
+}
 
 .blog a:hover {
     color: #ff9739;
-} 
+}
 
 .blog .posts-list article {
-    padding: 0px;
+    padding: 0;
 }
 
 .blog .posts-list article .post-img {
-    margin: 0px;
+    margin: 0;
 }
 
 section.follow {
-    padding-top: 0px !important;
+    padding-top: 0 !important;
 }

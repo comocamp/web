@@ -1,6 +1,6 @@
 +++
 draft = false
-title = "Our Location"
+title = "Location: Europahaus Wien"
 background = "alternate"
 +++
 

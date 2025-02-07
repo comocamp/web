@@ -1,5 +1,5 @@
 +++
-title = "Our Community"
+title = "Community Voices"
 draft = false
 background = "alternate"
 [[people]]

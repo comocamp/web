@@ -11,34 +11,38 @@ extensions = [
 
 [menu]
 [[menu.main]]
-  name = 'Our Camp'
-  pageRef = 'camp'
+  name = 'What is Collaborative Modeling?'
+  pageRef = 'como'
   weight = 1
 [[menu.main]]
-  name = 'Our Community'
-  pageRef = 'community'
+  name = 'ComoCamp'
+  pageRef = 'camp'
   weight = 2
 [[menu.main]]
-  name = 'Our Location'
-  pageRef = 'location'
+  name = 'Community'
+  pageRef = 'community'
   weight = 3
 [[menu.main]]
-  name = 'Our Program'
-  pageRef = 'program'
+  name = 'Location'
+  pageRef = 'location'
   weight = 4
 [[menu.main]]
-  name = 'Our Supporters'
-  pageRef = 'supporters'
+  name = 'Program'
+  pageRef = 'program'
   weight = 5
 [[menu.main]]
-  name = 'Our Team'
-  pageRef = 'team'
+  name = 'Sponsors'
+  pageRef = 'supporters'
   weight = 6
+[[menu.main]]
+  name = 'Team'
+  pageRef = 'team'
+  weight = 7
 [[menu.main]]
   name = 'How to participate'
   pageRef = 'participation'
-  weight = 7
+  weight = 8
 
 [Params]
 	DateForm = "2006-01-02"
-  Sections = ["hero", "camp", "community", "bring-your-topics", "location", "program", "participation", "faqs", "supporters", "supporters-2", "media-partners", "team", "we-are-looking-forward"]
+  Sections = ["hero", "como", "camp", "community", "bring-your-topics", "location", "program", "participation", "faqs", "supporters", "supporters-2", "media-partners", "team", "we-are-looking-forward"]

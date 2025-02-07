@@ -1,0 +1,12 @@
+<section class='como {{ $.Params.background }} {{ printf "%s" ((partial "background.html" .) | replaceRE "\\s+" "") }}'>
+    <a class="anchor" id="como"></a>
+
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-header pb-5">
+            <h2 class="mb-5">{{ .Title }}</h2>
+            {{ .Content }}
+        </div>
+
+    </div>
+</section>

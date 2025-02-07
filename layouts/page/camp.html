@@ -1,4 +1,4 @@
-<section class='about {{ $.Params.background }} pt-0 {{ printf "%s" ((partial "background.html" .) | replaceRE "\\s+" "") }}'>
+<section class='about {{ $.Params.background }} {{ printf "%s" ((partial "background.html" .) | replaceRE "\\s+" "") }}'>
     <a class="anchor" id="camp"></a>
 
     <div class="container" data-aos="fade-up">
@@ -46,7 +46,8 @@
             </div>
           </div>
         </div>
-      <div class="col-lg-12">
+
+      <div class="section-header pb-5">
         <div class="content ps-0 ps-lg-2">
           <p>{{ $.Params.text3 | markdownify }}</p>
         </div>
