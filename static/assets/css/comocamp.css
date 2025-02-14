@@ -206,3 +206,7 @@ a.anchor {
 section.follow {
     padding-top: 0 !important;
 }
+
+.centered {
+    text-align: center;
+}

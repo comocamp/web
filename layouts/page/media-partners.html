@@ -2,11 +2,6 @@
      <section class='recent-posts {{ $.Params.background }} {{ printf "%s" ((partial "background.html" .) | replaceRE "\\s+" "") }}'>
         <div class="container" data-aos="fade-up">
   
-          <div class="section-header">
-            <h2>{{ .Title }}</h2>
-            {{ .Content }}
-          </div>
-  
           <div class="row gy-4">
 
             {{ $width := div 12 .Params.width }}
@@ -21,7 +16,7 @@
                     <a href="{{ $link }}"><img src="{{ .RelPermalink }}" class="mx-auto d-block {{ $logo }}"></a>
                   {{ end }}
                 </div>
-                <p class="post-category">{{ .text | markdownify }}</p>  
+                <p class="post-category centered">{{ .text | markdownify }}</p>  
               </article>
             </div><!-- End post list item -->
             {{ end }}
@@ -30,4 +25,3 @@
   
         </div>
       </section><!-- End Recent Blog Posts Section -->
-  
