@@ -13,4 +13,9 @@ logo = "thephpcc"
 link = "https://thephp.cc/"
 class = ""
 text = "[PHP Expertise Meets Collaborative Modeling](https://thephp.cc)"
+[[supporters]]
+logo = "tangible-concepts"
+link = "https://tangible-concepts.de/"
+class = ""
+text = "[empowered teams. sustainable architecture.](https://tangible-concepts.de)"
 +++
