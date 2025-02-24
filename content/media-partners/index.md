@@ -18,4 +18,9 @@ logo = "tangible-concepts"
 link = "https://tangible-concepts.de/"
 class = ""
 text = "[empowered teams. sustainable architecture.](https://tangible-concepts.de)"
+[[supporters]]
+logo = "innoq"
+link = "https://www.innoq.com/"
+class = ""
+text = "[Diversity Sponsor](https://innoq.com)"
 +++
