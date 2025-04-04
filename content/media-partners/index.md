@@ -23,4 +23,9 @@ logo = "innoq"
 link = "https://www.innoq.com/"
 class = ""
 text = "[Diversity Sponsor](https://innoq.com)"
+[[supporters]]
+logo = "avanscoperta"
+link = "https://www.avanscoperta.it/"
+class = ""
+text = "[Media Partner](https://www.avanscoperta.it)"
 +++
