@@ -27,6 +27,10 @@ line = "Software Architect, Developer, Team Player"
 image = "daniel-sack.png"
 linkedin = "https://www.linkedin.com/in/daniel-sack-7298b020/"
 [[helpingHand]]
+name = "Andra Stefanescu"
+image = "andra-stefanescu.png"
+linkedin = "https://www.linkedin.com/in/andracristianastefanescu/"
+[[helpingHand]]
 name = "Gottfried Szing"
 image = "gottfried-szing.png"
 linkedin = "https://www.linkedin.com/in/gottfriedszing/"
