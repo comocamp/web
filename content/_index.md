@@ -1,8 +1,10 @@
 +++
 title = "ComoCamp"
 description = "ComoCamp is the annual gathering of modeling practitioners and visionaries. We teach the status quo, and we explore the next innovations."
-smallprint = "https://smallprint.tito.io/collaborate-vienna/comocamp-2024"
+smallprint = "https://smallprint.tito.io/collaborate-vienna/comocamp-2025"
 author = "Collaborate Vienna"
+authorweb = "http://collab.or.at"
+authorlinkedin = "https://www.linkedin.com/company/collaborate-vienna/"
 address = """
 Verein (ZVR 1605397921) zur Förderung der  
 Zusammenarbeit in der Softwareentwicklung  

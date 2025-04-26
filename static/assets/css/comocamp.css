@@ -134,10 +134,6 @@ a.anchor {
     padding-right: 10% !important;
 }
 
-.copyright a {
-    color: white !important;
-}
-
 .pricing .hotel {
     border: 2px dashed grey;
 }
@@ -210,3 +206,12 @@ section.follow {
 .centered {
     text-align: center;
 }
+
+.footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer .dataprotection {
+    text-align: center;
+  }

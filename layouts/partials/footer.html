@@ -4,10 +4,10 @@
       <div class="row gy-4">
 
         <div class="col-lg-4 col-12 footer-info text-center text-lg-start mb-3">
-          <a class="logo d-flex align-items-center justify-content-center justify-content-lg-start">
+          <span class="logo d-flex align-items-center justify-content-center justify-content-lg-start">
             <span>About the&nbsp;</span>
             <img src="hero/comocamp.png">
-          </a>
+          </span>
           <p>{{ $.Params.description }}</p>
           <div class="social-links d-flex mt-4 justify-content-center justify-content-lg-start">
             <a href="{{ $.Params.linkedin }}" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
@@ -31,11 +31,13 @@
           <p>
             <strong>{{ $.Params.author  }}</strong><br>
             {{ $.Params.address | markdownify }}<br>
-            <a style="color: white; text-decoration: underline;" href="mailto:{{ $.Params.email }}">{{ $.Params.email }}</a><br>
+            <a href="mailto:{{ $.Params.email }}">{{ $.Params.email }}</a><br>
           </p>
-
-          <p><a style="color: white; text-decoration: underline;" href="https://smallprint.tito.io/collaborate-vienna/comocamp-2025" target="_blank">Data Protection Policy and Event Terms and Conditions.</a></p>
-
+          <div class="social-links d-flex mt-4 justify-content-center justify-content-lg-end">
+            <a href="{{ $.Params.authorweb }}" target="_blank" class="linkedin"><i class="bi bi-link-45deg"></i></a>
+            <a href="{{ $.Params.authorlinkedin }}" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+          
         </div>
 
       </div>
@@ -43,6 +45,11 @@
     </div>
 
     <div class="container mt-4">
+      <div class="dataprotection">
+        <p>
+            <a href="{{ $.Params.smallprint }}" target="_blank">Data Protection Policy and Event Terms and Conditions.</a>
+          </p>
+      </div>
       <div class="copyright">
         Copyright &copy; 2019-<script>document.write(new Date().getFullYear());</script><br>
         <p>
