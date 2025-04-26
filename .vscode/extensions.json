@@ -2,6 +2,7 @@
     "recommendations": [
         "budparr.language-hugo-vscode",
         "rusnasonov.vscode-hugo",
-        "gydunhn.hugo-essentials"
+        "gydunhn.hugo-essentials",
+        "eliostruyf.vscode-hugo-themer"
     ]
 }

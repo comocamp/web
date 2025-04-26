@@ -7,6 +7,11 @@ id = 0
 name = "Hands-On Intro Day"
 date = 2025-05-07
 [[days.activities]]
+name = "Arrival & Check-In"
+from = "08:30"
+to = "09:00"
+description = "Grab your badge, a cup of coffee ☕, tea 🍵 and snack 🥐."
+[[days.activities]]
 name = "Hands-On Intro Day"
 from = "09:00"
 to = "18:00"
@@ -21,6 +26,11 @@ id = 1
 name = "Open Space Day 1"
 date = 2025-05-08
 [[days.activities]]
+name = "Arrival & Check-In"
+from = "08:30"
+to = "09:00"
+description = "Grab your badge, a cup of coffee ☕, tea 🍵 and snack 🥐."
+[[days.activities]]
 name = "Open Space Day 1"
 from = "09:00"
 to = "17:00"
@@ -34,6 +44,11 @@ description = "After the first unconference day and a little break to check in a
 id = 2
 name = "Open Space Day 2"
 date = 2025-05-09
+[[days.activities]]
+name = "Arrival & Check-In"
+from = "08:30"
+to = "09:00"
+description = "Grab your badge, a cup of coffee ☕, tea 🍵 and snack 🥐."
 [[days.activities]]
 name = "Open Space Day 2"
 from = "09:00"
