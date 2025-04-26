@@ -40,7 +40,7 @@
                 {{ with $.Resources.Get .image }}
                   <img src="{{ .RelPermalink }}" class="img-fluid" alt="">
                 {{ end }}
-                <h4 style="margin-top: 0;">{{ .name | replaceRE "\\s+" "<br>" | safeHTML }}</h4>
+                <h4>{{ .name | replaceRE "\\s+" "<br>" | safeHTML }}</h4>
                 <span>{{ .line }}</span>
                 <div class="social">
                   {{ with .linkedin }}
