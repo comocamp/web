@@ -15,7 +15,9 @@
             <div class="testimonial-wrap">
               <div class="testimonial-item">
                 <div class="d-flex align-items-center">
-                  {{ with $.Resources.Get .image }}
+                  {{ $image := $.Resources.Get .image }}
+                  {{ $image := $image.Process "resize width 200x" }}
+                  {{ with $image }}
                   <img src="{{ .RelPermalink }}" class="testimonial-img flex-shrink-0" alt="">
                   {{ end }}
                   <div>

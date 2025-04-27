@@ -22,7 +22,13 @@
   
                 <div class="icon {{ if .soldout }}soldout{{ end }}">
                   <i class="bi bi-{{ .icon }} {{ if .soldout }}soldout{{ end }}"></i>
-                  {{ if .soldout }}<img width="200" height="200" class="soldout-image" src="participation/sold-out.png"></img>{{ end }}
+                  {{ if .soldout }}
+                    {{ $image := $.Resources.Get "sold-out.png" }}
+                    {{ $image := $image.Process "resize width 200x" }}
+                    {{ with $image }}
+                      <img width="200" height="200" class="soldout-image" src="{{ .RelPermalink }}">
+                    {{ end }}
+                  {{ end }}
                 </div>
                 {{ if eq .style "hotel" }}<p>Prices start from</p>{{ end }}
                 <h4 {{ if .soldout }}class="soldout"{{ end }}><sup>€ </sup>{{ .price }}{{ if eq .style "hotel" }}<span> per night</span>{{ end }}</h4>

@@ -14,7 +14,9 @@
             <article style="padding: 0px; margin: 0px;">
 
                 <div class="post-img">
-                    {{ with $.Resources.Get (printf "%d.png" .) }}
+                    {{ $image := $.Resources.Get (printf "%d.png" .)}}
+                    {{ $image := $image.Process "resize width 416x" }}
+                    {{ with $image }}
                     <img src="{{ .RelPermalink }}" class="img-fluid" alt="">
                     {{ end }}
                 </div>

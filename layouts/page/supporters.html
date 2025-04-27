@@ -19,8 +19,10 @@
   
                 <div class="post-img align-items-center" style="vertical-align: middle; text-align: center;">
                   {{ $link := .link }}
-                  {{ with $.Resources.Get (print .logo ".png") }}
-                    <a href="{{ $link }}" style="text-align: center"><img style="height:100%" src="{{ .RelPermalink }}" class="mx-auto d-block"></a>
+                  {{ $image := $.Resources.Get (print .logo ".png") }}
+                  {{ $image := $image.Process "resize width 400x" }}
+                  {{ with $image }}
+                    <a href="{{ $link }}" style="text-align: center"><img style="height:100%" src="{{ .RelPermalink }}" alt="Logo {{ $link }}" class="mx-auto d-block"></a>
                   {{ end }}
                 </div>
 

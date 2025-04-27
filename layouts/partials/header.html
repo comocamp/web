@@ -2,7 +2,10 @@
 
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="." class="logo d-flex align-items-center">
-        {{ with .Resources.Get "comocamp-smaller.png" }}
+        {{ $p := site.GetPage "hero" }}
+        {{ $image := $p.Resources.Get "comocamp.png"}}
+        {{ $image := $image.Process "resize width 107x" }}
+        {{ with $image }}
           <img src="{{ .RelPermalink }}" alt="{{ site.Title }}" title="{{ site.Title }}">
         {{ end }} 
       </a>

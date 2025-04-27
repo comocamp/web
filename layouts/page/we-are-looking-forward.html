@@ -6,7 +6,9 @@
 
       <div class="row">
         <div class="col-lg-12">
-          {{ with $.Resources.GetMatch "*" }}
+          {{ $image := $.Resources.GetMatch "*" }}
+          {{/*  {{ $image := $image.Process "resize width 936x" }}  */}}
+          {{ with $image }}
           <img src="{{ .RelPermalink }}" class="img-fluid rounded-4 mb-4" alt="">
           {{ end }}
         </div>

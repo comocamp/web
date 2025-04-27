@@ -8,7 +8,9 @@
       </div>
       <div class="row gy-5" data-aos="fade-in">
         <div class="col-lg-9 order-1 order-lg-2 offset-lg-3 offset-xs-0">
-          {{ with .Resources.Get "comocamp-smaller.png" }}
+          {{ $image := .Resources.Get "comocamp.png"}}
+          {{ $image := $image.Process "resize width 966x" }}
+          {{ with $image }}
             <img src="{{ .RelPermalink }}" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
           {{ end }}
         </div>

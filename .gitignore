@@ -1,3 +1,5 @@
 .hugo_build.lock
 .idea
 public/
+# directory of generated images with reduzed size
+resources/_gen/

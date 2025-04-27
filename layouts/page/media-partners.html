@@ -12,8 +12,10 @@
                 <div class="post-img align-items-center" style="vertical-align: middle; text-align: center;">
                   {{ $link := .link }}
                   {{ $logo := .logo }}
-                  {{ with $.Resources.Get (print .logo ".png") }}
-                    <a href="{{ $link }}"><img src="{{ .RelPermalink }}" class="mx-auto d-block {{ $logo }}"></a>
+                  {{ $image := $.Resources.Get (print .logo ".png") }}
+                  {{ $image := $image.Process "resize width 400x" }}
+                  {{ with $image }}
+                    <a href="{{ $link }}"><img src="{{ .RelPermalink }}" alt="Logo {{ $link }}" class="mx-auto d-block {{ $logo }}"></a>
                   {{ end }}
                 </div>
                 <p class="post-category centered">{{ .text | markdownify }}</p>  
