@@ -1,11 +1,12 @@
 +++
+hide = true
 draft = false
 title = "Our Program"
 background = "alternate"
 [[days]]
 id = 0
 name = "Hands-On Intro Day"
-date = 2025-05-07
+date = 2026-05-06
 [[days.activities]]
 name = "Arrival & Check-In"
 from = "08:30"
@@ -24,7 +25,7 @@ description = "After an intensive intro day, you are invited to have dinner in t
 [[days]]
 id = 1
 name = "Open Space Day 1"
-date = 2025-05-08
+date = 2026-05-07
 [[days.activities]]
 name = "Arrival & Check-In"
 from = "08:30"
@@ -43,7 +44,7 @@ description = "After the first unconference day and a little break to check in a
 [[days]]
 id = 2
 name = "Open Space Day 2"
-date = 2025-05-09
+date = 2026-05-08
 [[days.activities]]
 name = "Arrival & Check-In"
 from = "08:30"
@@ -62,7 +63,7 @@ description = "After the unconference finale, you have a relaxed dinner in the b
 [[days]]
 id = 3
 name = "Hiking in the Wienerwald"
-date = 2025-05-10
+date = 2026-05-09
 [[days.activities]]
 name = "Hiking in the Wienerwald"
 from = "10:00"

@@ -6,9 +6,18 @@
   
           <div class="section-header">
             <h2>{{ .Title }}</h2>
+            {{ if .Site.Params.SaveTheDate   }}
+            <p>
+              The ticket shop is not open yet — but it will be launched soon!<br/>
+              In the meantime, mark your calendar and stay tuned.<br/>
+              We can't wait to welcome you to another unforgettable unconference experience.
+            </p>
+            {{ else }}
             <p>{{ .Description | markdownify }}</p>
+            {{ end }}
           </div>
-
+{{ if .Site.Params.SaveTheDate   }}
+{{ else }}
           {{ $width := div 12 (len (where .Params.tickets "display" true)) }}
   
           <div class="row g-4 py-lg-5" data-aos="zoom-out" data-aos-delay="100">
@@ -58,4 +67,4 @@
   
         </div>
       </section><!-- End Pricing Section -->
-  
+{{ end }}

@@ -1,4 +1,5 @@
     <!-- ======= Frequently Asked Questions Section ======= -->
+{{ if not .Site.Params.SaveTheDate  }}
     <section id="faq" class='faq {{ $.Params.background }} {{ printf "%s" ((partial "background.html" .) | replaceRE "\\s+" "") }}'>
         <div class="container" data-aos="fade-up">
   
@@ -37,5 +38,5 @@
   
         </div>
       </section><!-- End Frequently Asked Questions Section -->
-  
+{{ end}}
   

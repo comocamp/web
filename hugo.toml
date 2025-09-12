@@ -1,6 +1,6 @@
 baseURL = 'https://comocamp.org/'
 languageCode = 'en-us'
-title = 'ComoCamp 2025'
+title = 'ComoCamp 2026'
 
 enableInlineShortcodes = true
 enableRobotsTXT = true
@@ -26,10 +26,10 @@ extensions = [
   name = 'Location'
   pageRef = 'location'
   weight = 4
-[[menu.main]]
-  name = 'Program'
-  pageRef = 'program'
-  weight = 5
+# [[menu.main]]
+#   name = 'Program'
+#   pageRef = 'program'
+#   weight = 5
 [[menu.main]]
   name = 'Sponsors'
   pageRef = 'supporters'
@@ -45,4 +45,5 @@ extensions = [
 
 [Params]
 	DateForm = "2006-01-02"
+  SaveTheDate = true
   Sections = ["hero", "como", "camp", "community", "bring-your-topics", "location", "program", "participation", "faqs", "supporters", "supporters-2", "media-partners", "team", "we-are-looking-forward"]

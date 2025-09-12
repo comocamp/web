@@ -1,3 +1,4 @@
+{{ if not .Params.hide }}
 <section class='program {{ $.Params.background }} {{ printf "%s" ((partial "background.html" .) | replaceRE "\\s+" "") }}'>
     <a class="anchor" id="program"></a>
     <div class="section-header pb-3">
@@ -39,3 +40,5 @@
       </div>
 
   </section>
+{{ else }}
+{{ end }}
