@@ -1,3 +1,4 @@
 User-agent: *
 Disallow: /2024
+Disallow: /2025
 {{ if not (strings.Contains site.BaseURL "https://comocamp.org") }}Disallow: /{{ end }}
