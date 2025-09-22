@@ -16,55 +16,57 @@
             <p>{{ .Description | markdownify }}</p>
             {{ end }}
           </div>
-{{ if .Site.Params.SaveTheDate   }}
-{{ else }}
+
+          {{ if .Site.Params.SaveTheDate   }}
+          {{ else }}
           {{ $width := div 12 (len (where .Params.tickets "display" true)) }}
   
-          <div class="row g-4 py-lg-5" data-aos="zoom-out" data-aos-delay="100">
+            <div class="row g-4 py-lg-5" data-aos="zoom-out" data-aos-delay="100">
 
-            {{ range .Params.tickets }}
-            {{ if .display }}                    
-            <div class="col-lg-{{ $width }}">
-              <div class="pricing-item  {{ if not .soldout }}{{ .style }}{{ end }} {{ if .soldout }}soldout-item{{ end }}">
-  
-                <h3 {{ if .soldout }}class="soldout"{{ end }}>{{ .title | safeHTML }}</h3>
-  
-                <div class="icon {{ if .soldout }}soldout{{ end }}">
-                  <i class="bi bi-{{ .icon }} {{ if .soldout }}soldout{{ end }}"></i>
-                  {{ if .soldout }}
-                    {{ $image := $.Resources.Get "sold-out.png" }}
-                    {{ $image := $image.Process "resize width 200x" }}
-                    {{ with $image }}
-                      <img width="200" height="200" class="soldout-image" src="{{ .RelPermalink }}">
+              {{ range .Params.tickets }}
+              {{ if .display }}                    
+              <div class="col-lg-{{ $width }}">
+                <div class="pricing-item  {{ if not .soldout }}{{ .style }}{{ end }} {{ if .soldout }}soldout-item{{ end }}">
+    
+                  <h3 {{ if .soldout }}class="soldout"{{ end }}>{{ .title | safeHTML }}</h3>
+    
+                  <div class="icon {{ if .soldout }}soldout{{ end }}">
+                    <i class="bi bi-{{ .icon }} {{ if .soldout }}soldout{{ end }}"></i>
+                    {{ if .soldout }}
+                      {{ $image := $.Resources.Get "sold-out.png" }}
+                      {{ $image := $image.Process "resize width 200x" }}
+                      {{ with $image }}
+                        <img width="200" height="200" class="soldout-image" src="{{ .RelPermalink }}">
+                      {{ end }}
                     {{ end }}
+                  </div>
+                  {{ if eq .style "hotel" }}<p>Prices start from</p>{{ end }}
+                  <h4 {{ if .soldout }}class="soldout"{{ end }}><sup>€ </sup>{{ .price }}{{ if eq .style "hotel" }}<span> per night</span>{{ end }}</h4>
+                  <ul {{ if .soldout }}class="soldout"{{ end }}>
+                    {{ range .included }}                    
+                    <li><i class="bi bi-check"></i><span>{{ . | safeHTML }}</span></li>
+                    {{ end }}
+                  </ul>
+                  {{ if .soldout }}
+                  <div class="text-center"><a href="{{ .waitingLink }}" target="_blank" class="buy-btn">{{ .waitingText | safeHTML }}</a></div> 
+                  {{ end }}
+                  {{ if not .soldout }}
+                  <div class="text-center"><a href="{{ .bookingLink }}" target="_blank" class="buy-btn">{{ .bookingText | safeHTML }}</a></div> 
+                  {{ end }}
+                  {{ if .note }}
+                  <ul>
+                    <li style="text-align: justify;"><i style="font-size: 3em; color: rgb(249 61 119)" class="bi bi-exclamation"></i>{{ .note | markdownify }}<i style="font-size: 3em; color: rgb(249 61 119)" class="bi bi-exclamation"></i></li>
+                  </ul>
                   {{ end }}
                 </div>
-                {{ if eq .style "hotel" }}<p>Prices start from</p>{{ end }}
-                <h4 {{ if .soldout }}class="soldout"{{ end }}><sup>€ </sup>{{ .price }}{{ if eq .style "hotel" }}<span> per night</span>{{ end }}</h4>
-                <ul {{ if .soldout }}class="soldout"{{ end }}>
-                  {{ range .included }}                    
-                  <li><i class="bi bi-check"></i><span>{{ . | safeHTML }}</span></li>
-                  {{ end }}
-                </ul>
-                {{ if .soldout }}
-                <div class="text-center"><a href="{{ .waitingLink }}" target="_blank" class="buy-btn">{{ .waitingText | safeHTML }}</a></div> 
-                {{ end }}
-                {{ if not .soldout }}
-                <div class="text-center"><a href="{{ .bookingLink }}" target="_blank" class="buy-btn">{{ .bookingText | safeHTML }}</a></div> 
-                {{ end }}
-                {{ if .note }}
-                <ul>
-                  <li style="text-align: justify;"><i style="font-size: 3em; color: rgb(249 61 119)" class="bi bi-exclamation"></i>{{ .note | markdownify }}<i style="font-size: 3em; color: rgb(249 61 119)" class="bi bi-exclamation"></i></li>
-                </ul>
-                {{ end }}
-              </div>
-  
-            </div><!-- End Pricing Item -->
-            {{ end }}
-            {{ end }}
-  
-          </div>
-  
+    
+              </div><!-- End Pricing Item -->
+              {{ end }}
+              {{ end }}
+    
+            </div>
+          {{ end }}
+        
         </div>
-      </section><!-- End Pricing Section -->
-{{ end }}
+
+    </section><!-- End Pricing Section -->
