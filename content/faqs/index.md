@@ -20,6 +20,6 @@ After you have bought a ticket, we will ask you to choose your basic preference,
 [[faq]]
 question = "Do you have a **code of conduct**? What happens if somebody violates basic rules?"
 answer = """
-Our simple motto for the camp is **"Be open, be honest, be respectful!"**. If somebody violates these principles in a way that you as a participant find unacceptable for our host, our camp's reputation or a successful event organisation, please bring this to the attention of the [organizers](#team). The team will collectively decide whether a. a violation is occuring and whether b. the violating visitor is given a warning or is excluded from the event.
+Our simple motto for the camp is **"Be open, be honest, be respectful!"**. If somebody violates these principles in a way that you as a participant find unacceptable for our host, our camp's reputation or a successful event organization, please bring this to the attention of the [organizers](#team). The team will collectively decide whether a. a violation is occurring and whether b. the violating visitor is given a warning or is excluded from the event.
 """
 +++
