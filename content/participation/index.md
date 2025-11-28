@@ -26,20 +26,20 @@ background = "alternate"
 # waitingLink = ""
 [[ tickets ]]
 title = """
-    3-Day <br> <strong style=\"text-decoration: underline\">Full</strong> Ticket with <br> Hands-On Intro Day
+    ComoCamp 2026
 """
 style = "featured"
 display = true
 soldout = false
 icon = "postcard-heart"
-price = 590
+price = 690
 included = [
     "Join the Hands-On Intro Day, May 6<sup>th</sup> 2026",
-    "Some of our most experienced community members introduce you to three different Collaborative Modeling (\"Como\") methods",
-    "Join the Open Space, May 8<sup>th</sup>-9<sup>th</sup> 2026",
+    "Some of our most experienced community members introduce you to three different Collaborative Modeling topics",
+    "Join the Open Space, May 7<sup>th</sup>-8<sup>th</sup> 2026",
     "Bring your own topics, ideas and issues",
     "Snacks, lunches and dinners are covered",
-    "Bonus! Join the optional 'Hiking in the Wienerwald' on Saturday May 9<sup>th</sup> 2026" 
+    "Bonus! Join the optional 'Hiking Day' on Saturday May 9<sup>th</sup> 2026" 
 ]
 bookingText = "Buy Now"
 waitingText = "Join the waiting list"

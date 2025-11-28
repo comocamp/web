@@ -45,5 +45,5 @@ extensions = [
 
 [Params]
 	DateForm = "2006-01-02"
-  SaveTheDate = true
+  SaveTheDate = false
   Sections = ["hero", "como", "camp", "community", "bring-your-topics", "location", "program", "participation", "faqs", "supporters", "supporters-2", "media-partners", "team", "we-are-looking-forward"]
