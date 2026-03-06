@@ -1,0 +1,11 @@
+services:
+  hugo:
+    image: ghcr.io/gohugoio/hugo:v${HUGO_VERSION}   # ${HUGO_VERSION} is defined in .env
+    ports:
+      - "1313:1313"
+    volumes:
+      - .:/site
+    working_dir: /site
+    environment:
+      - HUGO_ENV=development
+    command: server --bind 0.0.0.0

@@ -32,11 +32,19 @@ This repository contains the source code for the **ComoCamp** website, built usi
     git clone https://github.com/your-repo/comocamp.git
     cd comocamp
     ```
+2. Run the development server:
+    ```bash
+    docker compose up
+    ```
 
-2. Install Hugo:
+3. Open your browser and navigate to `http://localhost:1313`.
+
+### Without Docker
+
+1. Install Hugo:
     Follow the [Hugo installation guide](https://gohugo.io/getting-started/installing/).
 
-3. Run the development server:
+2. Run the development server:
     ```bash
     hugo server
 
@@ -44,8 +52,6 @@ This repository contains the source code for the **ComoCamp** website, built usi
     # https://gohugo.io/commands/hugo_server/
     hugo server -D --cleanDestinationDir --printPathWarnings --disableFastRender -O --navigateToChanged
     ```
-
-4. Open your browser and navigate to `http://localhost:1313`.
 
 ## Deployment
 
