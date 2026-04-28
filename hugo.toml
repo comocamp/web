@@ -11,35 +11,35 @@ extensions = [
 
 [menu]
 [[menu.main]]
-  name = 'What is Collaborative Modeling?'
+  name = 'What is the ComoCamp About?'
   pageRef = 'como'
   weight = 1
-[[menu.main]]
-  name = 'ComoCamp'
-  pageRef = 'camp'
-  weight = 2
-[[menu.main]]
-  name = 'Community'
-  pageRef = 'community'
-  weight = 3
+#[[menu.main]]
+#  name = 'ComoCamp'
+#  pageRef = 'camp'
+#  weight = 2
+#[[menu.main]]
+#  name = 'Community'
+#  pageRef = 'community'
+#  weight = 3
 [[menu.main]]
   name = 'Location'
   pageRef = 'location'
   weight = 4
-# [[menu.main]]
-#   name = 'Program'
-#   pageRef = 'program'
-#   weight = 5
+#[[menu.main]]
+#  name = 'Program'
+#  pageRef = 'program'
+#  weight = 5
+#[[menu.main]]
+#  name = 'Sponsors'
+#  pageRef = 'supporters'
+#  weight = 6
+#[[menu.main]]
+#  name = 'Team'
+#  pageRef = 'team'
+#  weight = 7
 [[menu.main]]
-  name = 'Sponsors'
-  pageRef = 'supporters'
-  weight = 6
-[[menu.main]]
-  name = 'Team'
-  pageRef = 'team'
-  weight = 7
-[[menu.main]]
-  name = 'How to participate'
+  name = 'Tickets'
   pageRef = 'participation'
   weight = 8
 

@@ -30,7 +30,7 @@ title = """
 """
 style = "featured"
 display = true
-soldout = false
+soldout = true
 icon = "postcard-heart"
 price = 690
 included = [
@@ -42,7 +42,7 @@ included = [
     "Bonus! Join the optional 'Hiking Day' on Saturday May 9<sup>th</sup> 2026" 
 ]
 bookingText = "Buy Now"
-waitingText = "Join the waiting list"
+waitingText = "Join the waiting list for 2027"
 # bookingLink = "https://ti.to/collaborate-vienna/comocamp-2026/with/hj-7herf9nw"
 bookingLink = "https://ti.to/collaborate-vienna/comocamp-2026?source=website"
 waitingLink = "https://ti.to/collaborate-vienna/comocamp-2026?source=waitinglist"

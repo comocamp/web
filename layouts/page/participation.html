@@ -47,7 +47,7 @@
                     <li><i class="bi bi-check"></i><span>{{ . | safeHTML }}</span></li>
                     {{ end }}
                   </ul>
-                  {{ if .soldout }}
+                  {{ if and .soldout .waitingLink }}
                   <div class="text-center"><a href="{{ .waitingLink }}" target="_blank" class="buy-btn">{{ .waitingText | safeHTML }}</a></div> 
                   {{ end }}
                   {{ if not .soldout }}
