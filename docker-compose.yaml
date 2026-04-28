@@ -1,6 +1,6 @@
 services:
   hugo:
-    image: ghcr.io/gohugoio/hugo:v${HUGO_VERSION}   # ${HUGO_VERSION} is defined in .env
+    image: hugomods/hugo:${HUGO_VERSION}   # ${HUGO_VERSION} is defined in .env
     ports:
       - "1313:1313"
     volumes:

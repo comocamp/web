@@ -1,5 +1,6 @@
 +++
 draft = false
+type = "page"
 title = "Location: Europahaus Wien"
 background = "alternate"
 +++

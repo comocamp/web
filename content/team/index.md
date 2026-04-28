@@ -2,6 +2,7 @@
 title = "Our Team"
 description = "Since the original idea for the ComoCamp in early 2019, a team of true believers went through \"pandemic\" cancellations, but then we made it happen."
 draft = false
+type = "page"
 background = "alternate"
 [[organizer]]
 name = "Stefan Priebsch"

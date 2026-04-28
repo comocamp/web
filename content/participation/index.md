@@ -1,6 +1,7 @@
 +++
 draft = false
 title = "How to participate"
+type = "page"
 description = """
 Please note that our tickets are non-refundable, but **freely transferable**, in other words there is no very good reason to wait until we are sold out. 😉 You may pay per **credit-card**, but we also offer to pay **by invoice**, feel free to choose this option during your checkout process. And by the way: the tickets do not contain any deductible value added tax (VAT), as the camp is organized by "Collaborate Vienna", a non-profit association registered by austrian law.
 """

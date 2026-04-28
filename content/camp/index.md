@@ -2,6 +2,7 @@
 draft = false
 title = "What is ComoCamp?"
 background = "white"
+type = "page"
 text1 = """
 Some Collaborative Modeling methods and mashups are ...
 """

@@ -1,5 +1,6 @@
 +++
 draft = false
+type = "page"
 title = "What is Collaborative Modeling?"
 background = "alternate"
 +++

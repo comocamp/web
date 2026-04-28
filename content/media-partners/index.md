@@ -1,6 +1,7 @@
 +++
 draft = false
 title = ""
+type = "page"
 background = "follow"
 width = 4
 [[supporters]]

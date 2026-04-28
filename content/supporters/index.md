@@ -1,5 +1,6 @@
 +++
 draft = false
+type = "page"
 title = "Our 2026 sponsors ..."
 # title = "Last year sponsors ..."
 background = "alternate"

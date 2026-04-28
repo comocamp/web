@@ -1,6 +1,7 @@
 +++
 draft = true
 background = "follow"
+type = "page"
 width = 3
 [[supporters]]
 logo = "innoq"

@@ -1,6 +1,7 @@
 +++
 title = "Bring your own questions, ideas and issues!"
 draft = false
+type = "page"
 background = "alternate"
 +++
 

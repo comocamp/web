@@ -1,5 +1,6 @@
 +++
 draft = false
+type = "page"
 background = "white"
 conference = """
     <span class="h2" style="font-weight: normal">The</span><br/>

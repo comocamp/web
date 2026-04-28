@@ -1,6 +1,7 @@
 +++
 title = "Community Voices"
 draft = false
+type = "page"
 background = "alternate"
 [[people]]
 name = "Michael Plöd"

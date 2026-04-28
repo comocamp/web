@@ -1,5 +1,6 @@
 +++
 draft = false
+type = "page"
 title = "Our Program"
 background = "alternate"
 [[days]]
