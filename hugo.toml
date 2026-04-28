@@ -26,10 +26,10 @@ extensions = [
   name = 'Location'
   pageRef = 'location'
   weight = 4
-#[[menu.main]]
-#  name = 'Program'
-#  pageRef = 'program'
-#  weight = 5
+[[menu.main]]
+  name = 'Program'
+  pageRef = 'program'
+  weight = 5
 #[[menu.main]]
 #  name = 'Sponsors'
 #  pageRef = 'supporters'
