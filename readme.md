@@ -22,7 +22,7 @@ This repository contains the source code for the **ComoCamp** website, built usi
 
 ## Prerequisites
 
-- [Hugo](https://gohugo.io/) (version 0.142.0, not yet compatible with 0.1.46.0 or higher)
+- [Hugo](https://gohugo.io/)
 - Node.js (optional, for managing additional dependencies)
 
 ## Getting Started
