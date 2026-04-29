@@ -1,0 +1,16 @@
+{
+  "name": "comocamp-web",
+  "dockerComposeFile": "../docker-compose.yaml",
+  "service": "hugo",
+  "workspaceFolder": "/site",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "budparr.language-hugo-vscode",
+        "rusnasonov.vscode-hugo",
+        "gydunhn.hugo-essentials",
+        "eliostruyf.vscode-hugo-themer"
+      ]
+    }
+  }
+}
