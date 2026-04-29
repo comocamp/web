@@ -1,7 +1,7 @@
 +++
 draft = false
 type = "page"
-title = "Hands-On Intro Day"
+title = "Hands-On Intro Sessions"
 background = "follow"
 [[workshops]]
 speaker = "Tom Asel, Daniel Sack"
@@ -58,3 +58,5 @@ topic = "The Archetypes Funnel"
 speaker = "Xin Yao"
 topic = "Who Are We Now: A Conversation on Our Identity Shift in the AI Era"
 +++
+
+The ComoCamp starts with a day packed with two-hour workshops by experienced community members. Every participant will be able to attend three of them. This year there will be:

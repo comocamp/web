@@ -3,6 +3,7 @@
     <a class="anchor" id="program-hands-on-intro-day"></a>
     <div class="section-header pb-3">
         <h2 class="mb-0">{{ .Title }}</h2>
+        {{ with .Content }}<div class="section-description">{{ . }}</div>{{ end }}
     </div>
     <div class="container py-9 py-lg-11 position-relative z-index-1">
         <div class="row" data-aos="fade-up">
