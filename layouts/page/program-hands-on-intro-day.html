@@ -1,0 +1,20 @@
+{{ if not .Params.hide }}
+<section class='program-hands-on-intro-day {{ $.Params.background }} {{ printf "%s" ((partial "background.html" .) | replaceRE "\\s+" "") }}'>
+    <a class="anchor" id="program-hands-on-intro-day"></a>
+    <div class="section-header pb-3">
+        <h2 class="mb-0">{{ .Title }}</h2>
+    </div>
+    <div class="container py-9 py-lg-11 position-relative z-index-1">
+        <div class="row" data-aos="fade-up">
+            {{ range .Params.workshops }}
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="p-4 h-100 border rounded">
+                    <h4 class="mb-1">{{ if .topic }}{{ .topic }}{{ else }}{{ .speaker }}{{ end }}</h4>
+                    {{ if .topic }}<p class="text-muted mb-0">{{ .speaker }}</p>{{ end }}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
