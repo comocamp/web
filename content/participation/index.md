@@ -46,7 +46,7 @@ bookingText = "Buy Now"
 waitingText = "Join the waiting list for 2027"
 # bookingLink = "https://ti.to/collaborate-vienna/comocamp-2026/with/hj-7herf9nw"
 bookingLink = "https://ti.to/collaborate-vienna/comocamp-2026?source=website"
-waitingLink = "https://ti.to/collaborate-vienna/comocamp-2026?source=waitinglist"
+waitingLink = "https://ti.to/collaborate-vienna/comocamp-2027/?tito=%2Fcollaborate-vienna%2Fcomocamp-2027%2Fen%2Freleases%2F9dwgwjmgnmg%2Fwaitlisted_people%2Fnew"
 [[ tickets ]]
 title = """
     ... and book your Hotel Room
