@@ -215,3 +215,9 @@ section.follow {
 .footer .dataprotection {
     text-align: center;
   }
+
+@media (min-width: 1200px) {
+    .helping-hand-row {
+        max-width: 83.333333%;
+    }
+}

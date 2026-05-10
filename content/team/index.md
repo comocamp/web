@@ -62,4 +62,8 @@ linkedin = "https://www.linkedin.com/in/tobias-brennecke/"
 name = "Pascal Brennecke"
 image = "pascal-brennecke.jpg"
 linkedin = "https://www.linkedin.com/in/pascal-brennecke-experte-f%C3%BCr-schnellere-webseiten-4b32ba13b/"
+[[helpingHand]]
+name = "Andreas Melcher"
+image = "andreas-melcher.png"
+linkedin = "https://www.linkedin.com/in/andymel/"
 +++

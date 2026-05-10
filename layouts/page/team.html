@@ -34,28 +34,32 @@
  
           </div>
 
-          <div class="row gy-4 justify-content-center">
-  
-            {{ range .Params.helpingHand }}
-            <div class="col-xl-2 col-md-4 d-flex" data-aos="fade-up" data-aos-delay="100" style="justify-content: center;">
-              <div class="member">
-                {{ $image := $.Resources.Get .image }}
-                {{ $image := $image.Process "resize width 280x" }}
-                {{ with $image }}
-                  <img src="{{ .RelPermalink }}" class="img-fluid" alt="">
+            {{ range $index, $helpingHand := .Params.helpingHand }}
+            {{ if eq (mod $index 5) 0 }}
+            <div class="row gy-4 justify-content-center mb-4">
                 {{ end }}
-                <h4>{{ .name | replaceRE "\\s+" "<br>" | safeHTML }}</h4>
-                <span>{{ .line }}</span>
-                <div class="social">
-                  {{ with .linkedin }}
-                  <a href="{{ . }}" target="_blank" style="margin: 0px 5px 0px 5px"><i class="bi bi-linkedin"></i></a>
-                  {{ end }}
-                </div>
-              </div>
-            </div><!-- End Team Member -->
+
+                <div class="col-xl-2 col-md-4 d-flex" data-aos="fade-up" data-aos-delay="100" style="justify-content: center;">
+                    <div class="member">
+                        {{ $image := $.Resources.Get $helpingHand.image }}
+                        {{ $image := $image.Process "resize width 280x" }}
+                        {{ with $image }}
+                        <img src="{{ .RelPermalink }}" class="img-fluid" alt="">
+                        {{ end }}
+                        <h4>{{ $helpingHand.name | replaceRE "\\s+" "<br>" | safeHTML }}</h4>
+                        <span>{{ $helpingHand.line }}</span>
+                        <div class="social">
+                            {{ with $helpingHand.linkedin }}
+                            <a href="{{ . }}" target="_blank" style="margin: 0px 5px 0px 5px"><i class="bi bi-linkedin"></i></a>
+                            {{ end }}
+                        </div>
+                    </div>
+                </div><!-- End Team Member -->
+
+                {{ if or (eq (mod $index 5) 4) (eq $index (sub (len $.Params.helpingHand) 1)) }}
+            </div>
             {{ end }}
- 
-          </div>
+            {{ end }}
 
         </div>
       </section><!-- End Our Team Section -->
