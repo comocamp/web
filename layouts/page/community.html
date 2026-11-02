@@ -15,10 +15,12 @@
             <div class="testimonial-wrap">
               <div class="testimonial-item">
                 <div class="d-flex align-items-center">
-                  {{ $image := $.Resources.Get .image }}
-                  {{ $image := $image.Process "resize width 200x" }}
-                  {{ with $image }}
-                  <img src="{{ .RelPermalink }}" class="testimonial-img flex-shrink-0" alt="">
+                  {{ $name := .name }}
+                  {{ with $.Resources.Get .image }}
+                  {{ $x1 := .Process "resize 90x webp q80" }}
+                  {{ $x2 := .Process "resize 180x webp q80" }}
+                  {{ $x3 := .Process "resize 270x webp q80" }}
+                  <img src="{{ $x1.RelPermalink }}" srcset="{{ $x1.RelPermalink }} 1x, {{ $x2.RelPermalink }} 2x, {{ $x3.RelPermalink }} 3x" width="{{ $x1.Width }}" height="{{ $x1.Height }}" loading="lazy" decoding="async" class="testimonial-img flex-shrink-0" alt="{{ $name }}">
                   {{ end }}
                   <div>
                     <h3>{{ .name }}</h3>

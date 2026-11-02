@@ -221,6 +221,16 @@ section.follow {
     text-align: center;
   }
 
+@media (min-width: 992px) {
+    /* Footer headings share the height of the "About the [logo]" line so all three columns line up. */
+    .footer h4 {
+        height: 40px;
+        line-height: 40px;
+        padding-bottom: 0;
+        margin-bottom: 25px;
+    }
+}
+
 @media (min-width: 1200px) {
     .helping-hand-row {
         max-width: 83.333333%;

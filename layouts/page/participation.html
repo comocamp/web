@@ -33,10 +33,10 @@
                   <div class="icon {{ if .soldout }}soldout{{ end }}">
                     <i class="bi bi-{{ .icon }} {{ if .soldout }}soldout{{ end }}"></i>
                     {{ if .soldout }}
-                      {{ $image := $.Resources.Get "sold-out.png" }}
-                      {{ $image := $image.Process "resize width 200x" }}
-                      {{ with $image }}
-                        <img width="200" height="200" class="soldout-image" src="{{ .RelPermalink }}">
+                      {{ with $.Resources.Get "sold-out.png" }}
+                      {{ $x1 := .Process "resize 200x webp q90" }}
+                      {{ $x2 := .Process (printf "resize %dx webp q90" (int (math.Min 400 .Width))) }}
+                        <img width="200" height="200" class="soldout-image" src="{{ $x1.RelPermalink }}" srcset="{{ $x1.RelPermalink }} 1x, {{ $x2.RelPermalink }} 2x" loading="lazy" decoding="async" alt="Sold out">
                       {{ end }}
                     {{ end }}
                   </div>

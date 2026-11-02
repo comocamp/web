@@ -8,10 +8,10 @@
       </div>
       <div class="row gy-5" data-aos="fade-in">
         <div class="col-lg-9 order-1 order-lg-2 offset-lg-3 offset-xs-0">
-          {{ $image := .Resources.Get "comocamp.png"}}
-          {{ $image := $image.Process "resize width 966x" }}
-          {{ with $image }}
-            <img src="{{ .RelPermalink }}" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
+          {{ with .Resources.Get "comocamp.png" }}
+          {{ $x1 := .Process "resize 966x webp q90" }}
+          {{ $x2 := .Process (printf "resize %dx webp q90" (int (math.Min 1932 .Width))) }}
+            <img src="{{ $x1.RelPermalink }}" srcset="{{ $x1.RelPermalink }} 1x, {{ $x2.RelPermalink }} 2x" width="{{ $x1.Width }}" height="{{ $x1.Height }}" fetchpriority="high" decoding="async" class="img-fluid" alt="{{ site.Title }}" data-aos="zoom-out" data-aos-delay="100">
           {{ end }}
         </div>
       </div>

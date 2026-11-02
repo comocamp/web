@@ -3,13 +3,13 @@
     <div class="container">
       <div class="row gy-4">
 
-        <div class="col-lg-4 col-12 footer-info text-center text-lg-start mb-3">
+        <div class="col-lg-4 col-12 footer-info text-center text-lg-start d-flex flex-column">
           <span class="logo d-flex align-items-center justify-content-center justify-content-lg-start">
             <span>About the&nbsp;</span>
             {{ partial "logo.html" (dict "alt" "ComoCamp Logo") }}
           </span>
           <p>{{ $.Params.description }}</p>
-          <div class="social-links d-flex mt-4 justify-content-center justify-content-lg-start">
+          <div class="social-links d-flex mt-auto pt-4 justify-content-center justify-content-lg-start">
             <a href="{{ $.Params.linkedin }}" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
             <a href="{{ $.Params.twitter }}" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
             <a href="{{ $.Params.mastodon }}" target="_blank" class="mastodon"><i class="bi bi-mastodon"></i></a>
@@ -25,7 +25,7 @@
 
         </div>
 
-        <div class="col-lg-4 col-12 text-center text-lg-end mt-0 mt-lg-4">
+        <div class="col-lg-4 col-12 text-center text-lg-end mt-0 mt-lg-4 d-flex flex-column">
 
           <h4>Organized by</h4>
           <p>
@@ -33,7 +33,7 @@
             {{ $.Params.address | markdownify }}<br>
             <a href="mailto:{{ $.Params.email }}">{{ $.Params.email }}</a><br>
           </p>
-          <div class="social-links d-flex mt-4 justify-content-center justify-content-lg-end">
+          <div class="social-links d-flex mt-auto pt-4 justify-content-center justify-content-lg-end">
             <a href="{{ $.Params.authorweb }}" target="_blank" class="linkedin"><i class="bi bi-link-45deg"></i></a>
             <a href="{{ $.Params.authorlinkedin }}" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
           </div>

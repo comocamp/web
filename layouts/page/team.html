@@ -13,10 +13,11 @@
             {{ range .Params.organizer }}
             <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
               <div class="member">
-                {{ $image := $.Resources.Get .image }}
-                {{ $image := $image.Process "resize width 500x" }}
-                {{ with $image }}
-                  <img src="{{ .RelPermalink }}" class="img-fluid" alt="">
+                {{ $name := .name }}
+                {{ with $.Resources.Get .image }}
+                {{ $x1 := .Process "resize 500x webp q80" }}
+                {{ $x2 := .Process (printf "resize %dx webp q80" (int (math.Min 1000 .Width))) }}
+                  <img src="{{ $x1.RelPermalink }}" srcset="{{ $x1.RelPermalink }} 1x, {{ $x2.RelPermalink }} 2x" width="{{ $x1.Width }}" height="{{ $x1.Height }}" loading="lazy" decoding="async" class="img-fluid" alt="{{ $name }}">
                 {{ end }}
                 <h4>{{ .name }}</h4>
                 <span>{{ .line }}</span>
@@ -41,10 +42,10 @@
 
                 <div class="col-xl-2 col-md-4 d-flex" data-aos="fade-up" data-aos-delay="100" style="justify-content: center;">
                     <div class="member">
-                        {{ $image := $.Resources.Get $helpingHand.image }}
-                        {{ $image := $image.Process "resize width 280x" }}
-                        {{ with $image }}
-                        <img src="{{ .RelPermalink }}" class="img-fluid" alt="">
+                        {{ with $.Resources.Get $helpingHand.image }}
+                        {{ $x1 := .Process "resize 280x webp q80" }}
+                        {{ $x2 := .Process (printf "resize %dx webp q80" (int (math.Min 560 .Width))) }}
+                        <img src="{{ $x1.RelPermalink }}" srcset="{{ $x1.RelPermalink }} 1x, {{ $x2.RelPermalink }} 2x" width="{{ $x1.Width }}" height="{{ $x1.Height }}" loading="lazy" decoding="async" class="img-fluid" alt="{{ $helpingHand.name }}">
                         {{ end }}
                         <h4>{{ $helpingHand.name | replaceRE "\\s+" "<br>" | safeHTML }}</h4>
                         <span>{{ $helpingHand.line }}</span>

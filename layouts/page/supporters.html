@@ -19,10 +19,10 @@
   
                 <div class="post-img align-items-center" style="vertical-align: middle; text-align: center;">
                   {{ $link := .link }}
-                  {{ $image := $.Resources.Get (print .logo ".png") }}
-                  {{ $image := $image.Process "resize width 400x" }}
-                  {{ with $image }}
-                    <a href="{{ $link }}" style="text-align: center"><img style="height:100%" src="{{ .RelPermalink }}" alt="Logo {{ $link }}" class="mx-auto d-block"></a>
+                  {{ with $.Resources.Get (print .logo ".png") }}
+                  {{ $x1 := .Process "resize 400x webp q90" }}
+                  {{ $x2 := .Process (printf "resize %dx webp q90" (int (math.Min 800 .Width))) }}
+                    <a href="{{ $link }}" style="text-align: center"><img style="height:100%" src="{{ $x1.RelPermalink }}" srcset="{{ $x1.RelPermalink }} 1x, {{ $x2.RelPermalink }} 2x" loading="lazy" decoding="async" alt="Logo {{ $link }}" class="mx-auto d-block"></a>
                   {{ end }}
                 </div>
 
