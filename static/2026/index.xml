@@ -2,107 +2,107 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ComoCamp on ComoCamp 2026</title>
-    <link>http://localhost:1313/</link>
+    <link>/2026/</link>
     <description>Recent content in ComoCamp on ComoCamp 2026</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/2026/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost:1313/hero/</link>
+      <link>/2026/hero/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hero/</guid>
+      <guid>/2026/hero/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/media-partners/</link>
+      <link>/2026/media-partners/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/media-partners/</guid>
+      <guid>/2026/media-partners/</guid>
       <description></description>
     </item>
     <item>
       <title>Bring your own questions, ideas and issues!</title>
-      <link>http://localhost:1313/bring-your-topics/</link>
+      <link>/2026/bring-your-topics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bring-your-topics/</guid>
+      <guid>/2026/bring-your-topics/</guid>
       <description>&lt;p&gt;The &lt;strong&gt;ComoCamp&lt;/strong&gt; unconference is organized as a large open space. Join us in creating an engaging and dynamic experience where your voice truly matters! We believe that the heart of any open space event lies in the diverse perspectives and knowledge of its participants. That&amp;rsquo;s why we encourage everyone to bring their own topics to the table. Whether it&amp;rsquo;s a burning question, a fascinating idea, or a pressing issue, your input is invaluable in shaping the discussions and fostering meaningful interactions. By contributing your own topics, you help ensure that our open space is a reflection of the collective wisdom and interests of our community. So, &lt;strong&gt;come prepared&lt;/strong&gt; to share, explore, and inspire as we come together to exchange ideas, learn from one another, and co-create a memorable experience.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Community Voices</title>
-      <link>http://localhost:1313/community/</link>
+      <link>/2026/community/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/community/</guid>
+      <guid>/2026/community/</guid>
       <description></description>
     </item>
     <item>
       <title>Frequently Asked **Questions**</title>
-      <link>http://localhost:1313/faqs/</link>
+      <link>/2026/faqs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/faqs/</guid>
+      <guid>/2026/faqs/</guid>
       <description></description>
     </item>
     <item>
       <title>Hands-On Intro Day</title>
-      <link>http://localhost:1313/program-hands-on-intro-day/</link>
+      <link>/2026/program-hands-on-intro-day/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/program-hands-on-intro-day/</guid>
+      <guid>/2026/program-hands-on-intro-day/</guid>
       <description>&lt;p&gt;Experts will give workshops.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to participate</title>
-      <link>http://localhost:1313/participation/</link>
+      <link>/2026/participation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/participation/</guid>
+      <guid>/2026/participation/</guid>
       <description></description>
     </item>
     <item>
       <title>Location: Europahaus Wien</title>
-      <link>http://localhost:1313/location/</link>
+      <link>/2026/location/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/location/</guid>
+      <guid>/2026/location/</guid>
       <description>&lt;p&gt;The &lt;strong&gt;&lt;a href=&#34;https://www.europahauswien.at/tagungshotel-bildungszentrum-wien/&#34;&gt;Europahaus Vienna&lt;/a&gt;&lt;/strong&gt; provides a comfortable atmosphere for relaxed collaboration as well as concentrated work.&lt;br&gt;&#xA;We have direct access to the spacious park area and if the weather conditions allow for it, sessions can take place outside, too! 😊&lt;/p&gt;</description>
     </item>
     <item>
       <title>Our 2026 sponsors ...</title>
-      <link>http://localhost:1313/supporters/</link>
+      <link>/2026/supporters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/supporters/</guid>
+      <guid>/2026/supporters/</guid>
       <description>&lt;p&gt;The ComoCamp and its affordable ticket prices would not be possible without financial support. Thank you &lt;strong&gt;very much&lt;/strong&gt; for making the camp fly!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Our Program</title>
-      <link>http://localhost:1313/program/</link>
+      <link>/2026/program/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/program/</guid>
+      <guid>/2026/program/</guid>
       <description></description>
     </item>
     <item>
       <title>Our Team</title>
-      <link>http://localhost:1313/team/</link>
+      <link>/2026/team/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/team/</guid>
+      <guid>/2026/team/</guid>
       <description></description>
     </item>
     <item>
       <title>We&#39;re looking forward to seeing you at ComoCamp 2026!</title>
-      <link>http://localhost:1313/we-are-looking-forward/</link>
+      <link>/2026/we-are-looking-forward/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/we-are-looking-forward/</guid>
+      <guid>/2026/we-are-looking-forward/</guid>
       <description></description>
     </item>
     <item>
       <title>What is Collaborative Modeling?</title>
-      <link>http://localhost:1313/como/</link>
+      <link>/2026/como/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/como/</guid>
+      <guid>/2026/como/</guid>
       <description>&lt;p&gt;The essence of Collaborative Modeling lies in &lt;strong&gt;cooperation&lt;/strong&gt; and &lt;strong&gt;knowledge sharing&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;All participants bring in their different perspectives, expertise, and experiences.&lt;/p&gt;&#xA;&lt;p&gt;This leads to a shared understanding of the problem, which helps to develop a shared software-related solution.&lt;/p&gt;&#xA;&lt;p&gt;The goal is to achieve better and more innovative solutions through collaboration.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What is ComoCamp?</title>
-      <link>http://localhost:1313/camp/</link>
+      <link>/2026/camp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camp/</guid>
+      <guid>/2026/camp/</guid>
       <description>&lt;p&gt;ComoCamp is the annual gathering of modeling practitioners and visionaries.&lt;/p&gt;&#xA;&lt;p&gt;We teach the status quo, and we explore the next innovations.&lt;/p&gt;&#xA;&lt;p&gt;Our mission is to provide a home for the global Collaborative Modelling community.&lt;/p&gt;</description>
     </item>
   </channel>

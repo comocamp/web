@@ -63,6 +63,23 @@ hugo
 
 The generated files will be located in the `public/` directory.
 
+### Archived editions
+
+Previous editions are stored as self-contained static snapshots in `static/<year>/`.
+Hugo copies these files unchanged into `public/<year>/` during the normal build.
+Fixes to an existing snapshot can therefore be deployed without checking out or
+merging an old source revision.
+
+When creating an archive, build the corresponding year's sources with
+`hugo --environment production --baseURL "/<year>/"` into a
+fresh output directory outside the repository. Copy that output into
+`static/<year>/`, excluding older archives. Do not copy output from `hugo server`:
+it can contain localhost URLs and the LiveReload script. Keep images and other
+assets within the archive; root-relative URLs such as `/hero/image.png` bypass
+the archive and must instead include the year prefix. Match the existing archives:
+use `<base href="/<year>/">` and image paths such as `/<year>/hero/image.png`.
+This keeps archive assets on the current host in both local previews and production.
+
 ## Contributing
 
 Contributions are welcome! Please follow these steps:
