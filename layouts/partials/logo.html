@@ -1,0 +1,8 @@
+{{/* Renders the ComoCamp logo with 1x/2x/3x variants so it stays sharp on HiDPI displays. */}}
+{{ $p := site.GetPage "hero" }}
+{{ with $p.Resources.Get "comocamp.png" }}
+  {{ $x1 := .Process "resize 107x" }}
+  {{ $x2 := .Process "resize 214x" }}
+  {{ $x3 := .Process "resize 321x" }}
+  <img src="{{ $x1.RelPermalink }}" srcset="{{ $x1.RelPermalink }} 1x, {{ $x2.RelPermalink }} 2x, {{ $x3.RelPermalink }} 3x" decoding="async" alt="{{ $.alt }}"{{ with $.title }} title="{{ . }}"{{ end }}>
+{{ end }}

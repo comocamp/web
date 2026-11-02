@@ -2,12 +2,7 @@
 
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="." class="logo d-flex align-items-center">
-        {{ $p := site.GetPage "hero" }}
-        {{ $image := $p.Resources.Get "comocamp.png"}}
-        {{ $image := $image.Process "resize width 107x" }}
-        {{ with $image }}
-          <img src="{{ .RelPermalink }}" alt="{{ site.Title }}" title="{{ site.Title }}">
-        {{ end }} 
+        {{ partial "logo.html" (dict "alt" site.Title "title" site.Title) }}
       </a>
       <nav id="navbar" class="navbar">
         <ul>
