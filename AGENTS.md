@@ -23,7 +23,7 @@ Sections = ["hero", "como", "camp", "community", "bring-your-topics", "location"
             "media-partners", "team", "we-are-looking-forward"]
 ```
 
-Each section is a content page under `content/<section-name>/index.md`. The main layout (`layouts/index.html`) iterates over `Sections` and renders each via its dedicated template in `layouts/page/<section-name>.html`.
+Each section is a content page under `content/<section-name>/index.md`. The main layout (`layouts/index.html`) iterates over `Sections` and renders each via its dedicated template in `layouts/page/<section-name>.html`. Section pages are never rendered standalone: a `cascade` in `hugo.toml` sets `build.render = 'never'` for all pages, and taxonomies are disabled.
 
 ---
 

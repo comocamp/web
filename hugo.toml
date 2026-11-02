@@ -5,6 +5,16 @@ title = 'ComoCamp 2027'
 enableInlineShortcodes = true
 enableRobotsTXT = true
 
+# The site is a single page: sections are rendered by layouts/index.html only,
+# never as standalone pages. Taxonomies (tags/categories) are not used.
+disableKinds = ['taxonomy', 'term']
+[[cascade]]
+  [cascade.build]
+    render = 'never'
+    list = 'never'
+  [cascade.target]
+    kind = 'page'
+
 extensions = [
   "hardLineBreak", # newlines result in line breaks
 ]

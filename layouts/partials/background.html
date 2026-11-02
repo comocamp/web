@@ -1,5 +1,5 @@
 {{ $page := . }}
-{{ $this := printf "%s" ( .RelPermalink | replaceRE ".*\\/(.+?)\\/" "$1") }}
+{{ $this := path.Base .Path }}
 {{ if eq .Params.background "grey" }}
     sections-bg
 {{ else if eq .Params.background "white" }}
@@ -7,14 +7,12 @@
     {{ $page.Scratch.Set "background" false }}
     {{ range $other := site.Params.Sections }}
         {{ with site.GetPage . }}
-            {{ if or (not .Draft) site.BuildDrafts }}
-                {{ if eq .Params.background "grey" }}
-                    {{ $page.Scratch.Set "background" true }}
-                {{ else if eq .Params.background "white" }}
-                    {{ $page.Scratch.Set "background" false }}
-                {{ else if eq .Params.background "alternate" }}
-                    {{ $page.Scratch.Set "background" (not ($page.Scratch.Get "background")) }}
-                {{ end }}
+            {{ if eq .Params.background "grey" }}
+                {{ $page.Scratch.Set "background" true }}
+            {{ else if eq .Params.background "white" }}
+                {{ $page.Scratch.Set "background" false }}
+            {{ else if eq .Params.background "alternate" }}
+                {{ $page.Scratch.Set "background" (not ($page.Scratch.Get "background")) }}
             {{ end }}
         {{ end }}
         {{ if eq $this $other }}
