@@ -8,6 +8,8 @@ enableRobotsTXT = true
 # The site is a single page: sections are rendered by layouts/index.html only,
 # never as standalone pages. Taxonomies (tags/categories) are not used.
 disableKinds = ['taxonomy', 'term']
+[outputs]
+  home = ['html']
 [[cascade]]
   [cascade.build]
     render = 'never'

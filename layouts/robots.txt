@@ -1,4 +1,13 @@
 User-agent: *
-Disallow: /2024
-Disallow: /2025
-{{ if not (strings.Contains site.BaseURL "https://comocamp.org") }}Disallow: /{{ end }}
+{{- /* Archived editions live in static/<year>/ and are excluded from indexing. */ -}}
+{{- range readDir "static" }}
+{{- if and .IsDir (findRE `^\d{4}$` .Name) }}
+Disallow: /{{ .Name }}/
+{{- end }}
+{{- end }}
+{{- if strings.Contains site.BaseURL "https://comocamp.org" }}
+
+Sitemap: {{ "sitemap.xml" | absURL }}
+{{- else }}
+Disallow: /
+{{- end }}
