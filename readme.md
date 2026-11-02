@@ -1,92 +1,130 @@
 # ComoCamp Website
 
-This repository contains the source code for the **ComoCamp** website, built using the [Hugo](https://gohugo.io/) static site generator. The website serves as the central hub for information about the Collaborative Modeling Camp, including event details, participation, sponsors, and more.
-
-## Project Structure
-
-- **`archetypes/`**: Default content templates for Hugo.
-- **`content/`**: Markdown files for the website's content, organized by sections such as `community`, `camp`, `participation`, etc.
-- **`layouts/`**: Custom HTML templates for rendering the website, including partials like `header.html` and `footer.html`.
-- **`static/`**: Static assets like images, CSS, and JavaScript files.
-- **`resources/`**: Generated resources, such as resized images.
-- **`config.toml`**: Hugo configuration file for site settings.
-- **`.editorconfig`**: Editor configuration for consistent coding styles.
-- **`.gitignore`**: Specifies files and directories to ignore in version control.
-
-## Key Features
-
-- **Dynamic Sections**: The website is modular, with sections like "Community," "Sponsors," and "FAQs" dynamically rendered based on Hugo's configuration.
-- **Responsive Design**: Built with Bootstrap for mobile-friendly layouts.
-- **Custom Styling**: Includes custom CSS for branding and design consistency.
-- **SEO-Friendly**: Automatically generates `robots.txt` and supports metadata for social sharing.
-
-## Prerequisites
-
-- [Hugo](https://gohugo.io/)
-- Node.js (optional, for managing additional dependencies)
+The [ComoCamp website](https://comocamp.org/), built with [Hugo](https://gohugo.io/)
+and deployed to GitHub Pages. CSS and JavaScript are bundled; no npm or asset build
+step is required.
 
 ## Getting Started
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/your-repo/comocamp.git
-    cd comocamp
-    ```
-2. Run the development server:
-    ```bash
-    docker compose up
-    ```
+Clone the repository, then choose **one** of the options below:
 
-3. Open your browser and navigate to `http://localhost:1313`.
+```bash
+git clone https://github.com/comocamp/web.git
+cd web
+```
 
-### Without Docker
+All options serve the site at **http://localhost:1313** with live reload.
 
-1. Install Hugo:
-    Follow the [Hugo installation guide](https://gohugo.io/getting-started/installing/).
+### VS Code Dev Container (recommended)
 
-2. Run the development server:
-    ```bash
-    hugo server
+Requires Docker with Docker Compose and the VS Code **Dev Containers** extension
+(`ms-vscode-remote.remote-containers`).
 
-    # command to rebuild all, open browser and navigate to changed
-    # https://gohugo.io/commands/hugo_server/
-    hugo server -D --cleanDestinationDir --printPathWarnings --disableFastRender -O --navigateToChanged
-    ```
+1. Open the repository in VS Code and run **Dev Containers: Reopen in Container**.
+2. If the server is not already running, start it in the container terminal:
+   ```bash
+   hugo server --bind 0.0.0.0
+   ```
+
+The [Dev Container](.devcontainer/devcontainer.json) reuses the Hugo Compose service,
+opens `/site`, and installs Hugo editor extensions. After changing its configuration
+or the Hugo version, run **Dev Containers: Rebuild Container**.
+
+We keep Docker Compose even though there is only one service: it reads
+`HUGO_VERSION` from [`.env`](.env), sharing the version pin with CI without
+duplicating it in the Dev Container configuration. It also lets contributors
+run the same environment without VS Code via `docker compose up`.
+
+#### VS Code shortcuts
+
+With the default VS Code keybindings:
+
+| Action | Windows / Linux | macOS |
+|---|---|---|
+| Command Palette (e.g. **Dev Containers: Reopen in Container** or **Rebuild Container**) | `Ctrl+Shift+P` or `F1` | `Cmd+Shift+P` or `F1` |
+| Toggle integrated terminal (run Hugo commands) | `` Ctrl+` `` | `` Ctrl+` `` |
+| Preview the current Markdown file | `Ctrl+Shift+V` | `Cmd+Shift+V` |
+
+The repository does not define custom keybindings or build/debug tasks.
+
+### Docker Compose
+
+With Docker and Docker Compose installed:
+
+```bash
+docker compose up
+```
+
+### Local Hugo
+
+Install [Hugo Extended](https://gohugo.io/getting-started/installing/) matching
+`HUGO_VERSION` in [`.env`](.env), then run:
+
+```bash
+hugo server
+```
+
+Docker and CI also use the version pinned in `.env`. Add `-D` to the Hugo server
+command to preview drafts.
+
+## Editing the Site
+
+The site is a single page assembled by [`layouts/index.html`](layouts/index.html).
+
+| File or directory | Purpose |
+|---|---|
+| `content/_index.md` | Global event metadata |
+| `content/<section>/index.md` | Section content and structured data |
+| `layouts/page/<section>.html` | Matching section template |
+| `layouts/partials/` | Shared header, footer, and helpers |
+| `hugo.toml` | Site settings, navigation, and section order (`Params.Sections`) |
+| `static/` | CSS, JavaScript, images, and archived editions |
+| `resources/_gen/`, `public/` | Generated output, ignored by Git |
+
+Section content uses TOML front matter (`+++`) with `type = "page"`.
+Store structured data (FAQs, tickets, team members) in front matter and prose
+in the Markdown body. Use `draft = true` to hide a section from normal builds.
+
+To add a section, create its content and template, add it to `Params.Sections`
+in [`hugo.toml`](hugo.toml), and optionally add a `menu.main` navigation entry.
 
 ## Deployment
 
-The website is configured for deployment to `https://comocamp.org/`. To build the site for production, run:
+Push to `main` to deploy to **https://comocamp.org/** via
+[GitHub Actions](.github/workflows/hugo.yaml), or start the workflow manually
+from the Actions tab. Do not commit generated output.
+
+For a local production build:
 
 ```bash
-hugo
+hugo --environment production --gc --minify --baseURL "https://comocamp.org/"
+
+# Or with Docker:
+docker compose run --rm hugo --environment production --gc --minify --baseURL "https://comocamp.org/"
 ```
 
-The generated files will be located in the `public/` directory.
+Output is written to `public/`.
 
 ### Archived editions
 
-Previous editions are stored as self-contained static snapshots in `static/<year>/`.
-Hugo copies these files unchanged into `public/<year>/` during the normal build.
-Fixes to an existing snapshot can therefore be deployed without checking out or
-merging an old source revision.
+Previous editions live in `static/<year>/` as self-contained snapshots. Hugo copies
+them unchanged to `public/<year>/`, so existing archives can be fixed directly
+without rebuilding an old source revision.
 
-When creating an archive, build the corresponding year's sources with
-`hugo --environment production --baseURL "/<year>/"` into a
-fresh output directory outside the repository. Copy that output into
-`static/<year>/`, excluding older archives. Do not copy output from `hugo server`:
-it can contain localhost URLs and the LiveReload script. Keep images and other
-assets within the archive; root-relative URLs such as `/hero/image.png` bypass
-the archive and must instead include the year prefix. Match the existing archives:
-use `<base href="/<year>/">` and image paths such as `/<year>/hero/image.png`.
-This keeps archive assets on the current host in both local previews and production.
+To create an archive:
+
+1. Build that year's sources with `hugo --environment production --baseURL "/<year>/"`
+   into a fresh output directory outside the repository (`--destination <directory>`).
+2. Copy the output into `static/<year>/`, excluding older archives.
+3. Check that `<base href="/<year>/">` and image paths such as
+   `/<year>/hero/image.png` include the year prefix and all assets exist in the archive.
+
+Never archive output from `hugo server`: it can contain localhost URLs and LiveReload.
+Year-prefixed paths keep the archive working both locally and in production.
 
 ## Contributing
 
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bugfix.
-3. Submit a pull request with a detailed description of your changes.
+Create a branch (or fork), make your changes, and open a pull request describing them.
 
 ## License
 
