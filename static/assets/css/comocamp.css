@@ -199,6 +199,11 @@ a.anchor {
     margin: 0;
 }
 
+/* Location photos fill the card on every breakpoint instead of being capped at 240px. */
+.blog.location .posts-list .post-img {
+    max-height: none;
+}
+
 section.follow {
     padding-top: 0 !important;
 }
