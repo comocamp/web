@@ -13,7 +13,7 @@
           {{ with $.Resources.Get "image-1.jpg" }}
           {{ $x1 := .Process "resize 1296x webp q80" }}
           {{ $x2 := .Process (printf "resize %dx webp q80" (int (math.Min 2592 .Width))) }}
-          <img src="{{ $x1.RelPermalink }}" srcset="{{ $x1.RelPermalink }} 1x, {{ $x2.RelPermalink }} 2x" width="{{ $x1.Width }}" height="{{ $x1.Height }}" loading="lazy" decoding="async" class="img-fluid rounded-4 mb-4" alt="">
+          <img src="{{ $x1.RelPermalink }}" srcset="{{ $x1.RelPermalink }} 1x, {{ $x2.RelPermalink }} 2x" width="{{ $x1.Width }}" height="{{ $x1.Height }}" loading="lazy" decoding="async" class="img-fluid rounded-4 mb-4" alt="{{ index $.Params.alt "image-1" }}">
           {{ end }}
         </div>
       </div>
@@ -35,7 +35,7 @@
               {{ with $.Resources.Get "image-2.jpg" }}
               {{ $x1 := .Process "resize 628x webp q80" }}
               {{ $x2 := .Process (printf "resize %dx webp q80" (int (math.Min 1256 .Width))) }}
-              <img src="{{ $x1.RelPermalink }}" srcset="{{ $x1.RelPermalink }} 1x, {{ $x2.RelPermalink }} 2x" width="{{ $x1.Width }}" height="{{ $x1.Height }}" loading="lazy" decoding="async" class="img-fluid rounded-4" alt="">
+              <img src="{{ $x1.RelPermalink }}" srcset="{{ $x1.RelPermalink }} 1x, {{ $x2.RelPermalink }} 2x" width="{{ $x1.Width }}" height="{{ $x1.Height }}" loading="lazy" decoding="async" class="img-fluid rounded-4" alt="{{ index $.Params.alt "image-2" }}">
               {{ end }}
             </div>
           </div>
@@ -47,7 +47,7 @@
               {{ with $.Resources.Get "image-3.jpg" }}
               {{ $x1 := .Process "resize 612x webp q80" }}
               {{ $x2 := .Process (printf "resize %dx webp q80" (int (math.Min 1224 .Width))) }}
-              <img src="{{ $x1.RelPermalink }}" srcset="{{ $x1.RelPermalink }} 1x, {{ $x2.RelPermalink }} 2x" width="{{ $x1.Width }}" height="{{ $x1.Height }}" loading="lazy" decoding="async" class="img-fluid rounded-4" alt="">
+              <img src="{{ $x1.RelPermalink }}" srcset="{{ $x1.RelPermalink }} 1x, {{ $x2.RelPermalink }} 2x" width="{{ $x1.Width }}" height="{{ $x1.Height }}" loading="lazy" decoding="async" class="img-fluid rounded-4" alt="{{ index $.Params.alt "image-3" }}">
               {{ end }}
             </div>
           </div>

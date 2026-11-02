@@ -1,5 +1,7 @@
 +++
 title = "ComoCamp"
+# Appended to the site title in <title> and og:title.
+subtitle = "The Collaborative Modeling Unconference in Vienna"
 description = "ComoCamp is the annual gathering of modeling practitioners and visionaries. We teach the status quo, and we explore the next innovations."
 author = "Collaborate Vienna"
 authorweb = "http://collab.or.at"

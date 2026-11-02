@@ -12,10 +12,11 @@
                 <div class="post-img align-items-center" style="vertical-align: middle; text-align: center;">
                   {{ $link := .link }}
                   {{ $logo := .logo }}
+                  {{ $name := .name | default (.logo | humanize) }}
                   {{ with $.Resources.Get (print .logo ".png") }}
                   {{ $x1 := .Process "resize 400x webp q90" }}
                   {{ $x2 := .Process (printf "resize %dx webp q90" (int (math.Min 800 .Width))) }}
-                    <a href="{{ $link }}"><img src="{{ $x1.RelPermalink }}" srcset="{{ $x1.RelPermalink }} 1x, {{ $x2.RelPermalink }} 2x" loading="lazy" decoding="async" alt="Logo {{ $link }}" class="mx-auto d-block {{ $logo }}"></a>
+                    <a href="{{ $link }}"><img src="{{ $x1.RelPermalink }}" srcset="{{ $x1.RelPermalink }} 1x, {{ $x2.RelPermalink }} 2x" loading="lazy" decoding="async" alt="{{ $name }} logo" class="mx-auto d-block {{ $logo }}"></a>
                   {{ end }}
                 </div>
                 <p class="post-category centered">{{ .text | markdownify }}</p>  

@@ -3,6 +3,11 @@ draft = false
 title = "What is the ComoCamp?"
 background = "white"
 type = "page"
+# Alt texts for the photos in this section (by file name).
+[alt]
+"image-1" = "ComoCamp participants listening to a session in the plenary room"
+"image-2" = "Participant arranging sticky notes on the ground during an outdoor modeling session"
+"image-3" = "Small group modeling with LEGO bricks and sticky notes in a workshop room"
 text1 = """
 Some Collaborative Modeling methods and mashups are ...
 """

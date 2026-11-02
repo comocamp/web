@@ -1,5 +1,5 @@
 baseURL = 'https://comocamp.org/'
-languageCode = 'en-us'
+languageCode = 'en-US'
 title = 'ComoCamp 2027'
 
 enableInlineShortcodes = true

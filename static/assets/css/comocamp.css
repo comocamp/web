@@ -236,3 +236,17 @@ section.follow {
         max-width: 83.333333%;
     }
 }
+
+/* The hero claim is the page's only h1; styled identically to the theme's .hero h2. */
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+@media (max-width: 640px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+}

@@ -35,6 +35,7 @@ Each section is a content page under `content/<section-name>/index.md`. The main
 - `type = "page"` must be set explicitly in front matter for Hugo to recognize the page
 - `background` controls alternating section colors: `"white"`, `"alternate"`, or `"follow"` (inherits previous)
 - `draft = true` hides a section from the rendered output
+- SEO metadata lives in `layouts/_default/baseof.html` and is assembled from existing content: `_index.md` (`subtitle`, `description`, organizer), `program` (dates), `location` (`[venue]` block), `participation` (featured ticket) → JSON-LD `Event`
 
 ---
 

@@ -14,10 +14,11 @@
                 <article style="padding: 0px; margin: 0px;">
 
                     <div class="post-img">
+                        {{ $alt := index $.Params.alt (sub . 1) }}
                         {{ with $.Resources.Get (printf "%d.png" .) }}
                         {{ $small := .Fill "416x277 webp q80" }}
                         {{ $large := .Fill "832x554 webp q80" }}
-                        <img src="{{ $small.RelPermalink }}" srcset="{{ $small.RelPermalink }} 416w, {{ $large.RelPermalink }} 832w" sizes="(min-width: 1200px) 416px, (min-width: 768px) 50vw, 100vw" width="{{ $small.Width }}" height="{{ $small.Height }}" loading="lazy" decoding="async" class="img-fluid w-100" alt="">
+                        <img src="{{ $small.RelPermalink }}" srcset="{{ $small.RelPermalink }} 416w, {{ $large.RelPermalink }} 832w" sizes="(min-width: 1200px) 416px, (min-width: 768px) 50vw, 100vw" width="{{ $small.Width }}" height="{{ $small.Height }}" loading="lazy" decoding="async" class="img-fluid w-100" alt="{{ $alt }}">
                         {{ end }}
                     </div>
 
