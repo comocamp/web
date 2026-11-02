@@ -1,5 +1,5 @@
     <!-- ======= Frequently Asked Questions Section ======= -->
-{{ if not .Site.Params.SaveTheDate  }}
+{{ if not site.Params.saveTheDate.enabled }}
     <section id="faq" class='faq {{ $.Params.background }} {{ printf "%s" ((partial "background.html" .) | replaceRE "\\s+" "") }}'>
         <div class="container" data-aos="fade-up">
   

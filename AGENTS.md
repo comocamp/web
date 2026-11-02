@@ -53,6 +53,16 @@ When adding a new section:
 
 ---
 
+# Tito Ticket Shop URLs
+
+All Tito URLs (ticket shop, waiting list, small print / terms) live in `[Params.tito]` in `hugo.toml` (`shop`, `waitinglist`, `smallprint`) and are read via `site.Params.tito.*`. Never hardcode `ti.to` or `smallprint.tito.io` URLs in content or templates.
+
+For a new edition, update the three URLs in `[Params.tito]`.
+
+Tickets may still set an explicit `bookingLink` / `waitingLink` for non-Tito links (e.g. the hotel booking); otherwise they fall back to the Tito URLs.
+
+---
+
 # Running Locally
 
 ```bash
@@ -77,7 +87,7 @@ Pushing to `main` triggers the GitHub Actions workflow (`.github/workflows/hugo.
 
 | Path | Purpose |
 |---|---|
-| `hugo.toml` | Site config, nav menu, section order |
+| `hugo.toml` | Site config, nav menu, section order, Tito ticket shop (`Params.tito`) |
 | `content/_index.md` | Global front matter (event title, email, social links, organizers) |
 | `content/<section>/index.md` | Per-section content and structured data |
 | `layouts/index.html` | Single-page assembly |

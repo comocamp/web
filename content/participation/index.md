@@ -25,9 +25,8 @@ included = [
     "Bonus! Join the optional 'Hiking Day' on Ascension Day May 6<sup>th</sup> 2027" 
 ]
 bookingText = "Buy Now"
-bookingLink = "https://ti.to/collaborate-vienna/comocamp-2027/with/9dwgwjmgnmg"
+# No bookingLink/waitingLink: falls back to the Tito URLs in [Params.tito] in hugo.toml.
 waitingText = "Join the waiting list"
-waitingLink = "https://ti.to/collaborate-vienna/comocamp-2026?source=waitinglist"
 [[ tickets ]]
 title = """
     ... and book your Hotel Room

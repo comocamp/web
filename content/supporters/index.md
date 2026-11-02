@@ -18,7 +18,7 @@ text = "[WPS](https://www.wps.de/) has believed in the ComoCamp idea right from 
 [[supporters]]
 logo = "become-a-sponsor"
 link = "mailto:hello@comocamp.org"
-text = """Do you also want to become a ComoCamp 2026 sponsor? That's awesome, [get in touch with us](mailto:hello@comocamp.org)!"""
+text = """Do you also want to become a ComoCamp 2027 sponsor? That's awesome, [get in touch with us](mailto:hello@comocamp.org)!"""
 +++
 
 The ComoCamp and its affordable ticket prices would not be possible without financial support. Thank you **very much** for making the camp fly!

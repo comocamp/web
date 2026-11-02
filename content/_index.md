@@ -1,7 +1,6 @@
 +++
 title = "ComoCamp"
 description = "ComoCamp is the annual gathering of modeling practitioners and visionaries. We teach the status quo, and we explore the next innovations."
-smallprint = "https://smallprint.tito.io/collaborate-vienna/comocamp-2027"
 author = "Collaborate Vienna"
 authorweb = "http://collab.or.at"
 authorlinkedin = "https://www.linkedin.com/company/collaborate-vienna/"
@@ -31,5 +30,5 @@ name = "Henning Schwentner"
 link = "https://hschwentner.io/"
 [[authors]]
 name = "Daniel Sack"
-link = "https://www.linkedin.com/in/daniel-sack-7298b020/"
+link = "https://danielsack.me/"
 +++

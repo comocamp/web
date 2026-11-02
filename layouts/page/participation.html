@@ -6,7 +6,7 @@
   
           <div class="section-header">
             <h2>{{ .Title }}</h2>
-            {{ if .Site.Params.SaveTheDate   }}
+            {{ if site.Params.saveTheDate.enabled }}
             <p>
               The ticket shop is not open yet — but it will be launched soon!<br/>
               In the meantime, mark your calendar and stay tuned.<br/>
@@ -17,7 +17,7 @@
             {{ end }}
           </div>
 
-          {{ if .Site.Params.SaveTheDate   }}
+          {{ if site.Params.saveTheDate.enabled }}
           {{ else }}
           {{ $width := div 12 (len (where .Params.tickets "display" true)) }}
   
@@ -47,11 +47,13 @@
                     <li><i class="bi bi-check"></i><span>{{ . | safeHTML }}</span></li>
                     {{ end }}
                   </ul>
-                  {{ if and .soldout .waitingLink }}
-                  <div class="text-center"><a href="{{ .waitingLink }}" target="_blank" class="buy-btn">{{ .waitingText | safeHTML }}</a></div> 
+                  {{ if and .soldout .waitingText }}
+                  {{ $waitingLink := .waitingLink | default site.Params.tito.waitinglist }}
+                  <div class="text-center"><a href="{{ $waitingLink }}" target="_blank" class="buy-btn">{{ .waitingText | safeHTML }}</a></div> 
                   {{ end }}
                   {{ if not .soldout }}
-                  <div class="text-center"><a href="{{ .bookingLink }}" target="_blank" class="buy-btn">{{ .bookingText | safeHTML }}</a></div> 
+                  {{ $bookingLink := .bookingLink | default site.Params.tito.shop }}
+                  <div class="text-center"><a href="{{ $bookingLink }}" target="_blank" class="buy-btn">{{ .bookingText | safeHTML }}</a></div> 
                   {{ end }}
                   {{ if .note }}
                   <ul>

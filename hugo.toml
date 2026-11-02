@@ -37,5 +37,14 @@ weight = 7
 
 [Params]
 	DateForm = "2006-01-02"
-  SaveTheDate = false
   Sections = ["hero", "como", "camp", "community", "bring-your-topics", "location", "program", "program-hands-on-intro-day", "program-open-space", "timekeeper", "participation", "faqs", "supporters", "supporters-2", "media-partners", "team", "we-are-looking-forward"]
+
+# Save-the-date mode: hides the ticket shop and FAQs until the shop is launched.
+[Params.saveTheDate]
+  enabled = false
+
+# Tito ticket shop. All Tito URLs live here, so a new edition only needs this block updated.
+[Params.tito]
+  shop = "https://ti.to/collaborate-vienna/comocamp-2027/with/9dwgwjmgnmg"
+  waitinglist = "https://ti.to/collaborate-vienna/comocamp-2027?source=waitinglist"
+  smallprint = "https://smallprint.tito.io/collaborate-vienna/comocamp-2027"

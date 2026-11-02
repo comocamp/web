@@ -114,6 +114,10 @@ in the Markdown body. Use `draft = true` to hide a section from normal builds.
 To add a section, create its content and template, add it to `Params.Sections`
 in [`hugo.toml`](hugo.toml), and optionally add a `menu.main` navigation entry.
 
+Tito URLs (ticket shop, waiting list, small print) live in `Params.tito` in
+[`hugo.toml`](hugo.toml). For a new edition, update the three URLs there; do not
+hardcode Tito URLs elsewhere.
+
 For photos, generate display-sized images with Hugo's image processing rather
 than embedding full-resolution originals. Use WebP where appropriate, include
 image dimensions, and lazy-load images below the initial viewport. For detailed
