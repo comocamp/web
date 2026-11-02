@@ -39,17 +39,20 @@ jobs:
           fetch-depth: 0
       - name: Load Hugo version
         run: echo "HUGO_VERSION=$(grep '^HUGO_VERSION=' .env | cut -d'=' -f2)" >> $GITHUB_ENV
+      - name: Cache Hugo generated resources
+        uses: actions/cache@v4
+        with:
+          path: resources/_gen
+          key: ${{ runner.os }}-${{ runner.arch }}-hugo-${{ env.HUGO_VERSION }}-resources-v1-${{ hashFiles('content/**', 'layouts/**', 'hugo.toml') }}
+          restore-keys: |
+            ${{ runner.os }}-${{ runner.arch }}-hugo-${{ env.HUGO_VERSION }}-resources-v1-
       - name: Install Hugo CLI
         run: |
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb          
-    #   - name: Install Dart Sass
-    #     run: sudo snap install dart-sass
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v6
-      - name: Install Node.js dependencies
-        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules

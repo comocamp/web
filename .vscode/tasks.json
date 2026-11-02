@@ -1,0 +1,25 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Hugo: Fast preview (without archives)",
+			"type": "process",
+			"command": "hugo",
+			"args": [
+				"server",
+				"--buildDrafts",
+				"--renderToMemory",
+				"--bind",
+				"0.0.0.0",
+				"--config",
+				"hugo.toml,hugo.fast.toml"
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			}
+		}
+	]
+}

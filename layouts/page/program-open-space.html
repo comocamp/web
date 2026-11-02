@@ -13,7 +13,10 @@
             <div class="row" data-aos="fade-up">
                 {{ $image := .Resources.Get "timetable-open-space-day-1.jpg" }}
                 {{ if $image }}
-                <img src="{{ $image.RelPermalink }}" alt="Timetable Open Space Day 1" class="img-fluid">
+                {{ $preview := $image.Process "fit 1600x1600 webp q85" }}
+                <a href="{{ $image.RelPermalink }}" aria-label="View timetable Open Space Day 1 in full resolution">
+                    <img src="{{ $preview.RelPermalink }}" width="{{ $preview.Width }}" height="{{ $preview.Height }}" loading="lazy" decoding="async" alt="Timetable Open Space Day 1 (click for full resolution)" class="img-fluid">
+                </a>
                 {{ end }}
             </div>
         </div>
@@ -24,7 +27,10 @@
             <div class="row" data-aos="fade-up">
                 {{ $image := .Resources.Get "timetable-open-space-day-2.jpg" }}
                 {{ if $image }}
-                <img src="{{ $image.RelPermalink }}" alt="Timetable Open Space Day 1" class="img-fluid">
+                {{ $preview := $image.Process "fit 1600x1600 webp q85" }}
+                <a href="{{ $image.RelPermalink }}" aria-label="View timetable Open Space Day 2 in full resolution">
+                    <img src="{{ $preview.RelPermalink }}" width="{{ $preview.Width }}" height="{{ $preview.Height }}" loading="lazy" decoding="async" alt="Timetable Open Space Day 2 (click for full resolution)" class="img-fluid">
+                </a>
                 {{ end }}
             </div>
         </div>

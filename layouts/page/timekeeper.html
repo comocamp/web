@@ -16,7 +16,8 @@
                     <div class="post-img" style="position: relative; width: 100%; padding-bottom: 100%; overflow: hidden;">
                         {{ $image := $.Resources.Get (printf "%d.jpg" .)}}
                         {{ with $image }}
-                        <img src="{{ .RelPermalink }}" class="img-fluid" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                        {{ $thumbnail := .Process "fill 672x672 webp q80" }}
+                        <img src="{{ $thumbnail.RelPermalink }}" width="{{ $thumbnail.Width }}" height="{{ $thumbnail.Height }}" loading="lazy" decoding="async" class="img-fluid" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
                         {{ end }}
                     </div>
 

@@ -18,7 +18,7 @@
                             {{ $image := $.Resources.Get . }}
                             {{ if $image }}
                             {{ $image = $image.Process "resize 80x80" }}
-                            <img src="{{ $image.RelPermalink }}" alt="" style="width:40px;height:40px;border-radius:50%;object-fit:cover;">
+                            <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" loading="lazy" decoding="async" alt="" style="width:40px;height:40px;border-radius:50%;object-fit:cover;">
                             {{ end }}
                             {{ end }}
                             <span class="text-muted">{{ .speaker }}</span>
