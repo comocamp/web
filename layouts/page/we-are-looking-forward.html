@@ -8,8 +8,10 @@
         <div class="col-lg-12">
           {{ $image := $.Resources.GetMatch "*" }}
           {{ with $image }}
-          {{ $preview := .Process "fit 1296x1296 webp q80" }}
-          <img src="{{ $preview.RelPermalink }}" width="{{ $preview.Width }}" height="{{ $preview.Height }}" loading="lazy" decoding="async" class="img-fluid rounded-4 mb-4" alt="">
+          {{ $preview := .Process "fit 1600x1600 webp q85" }}
+          <a href="{{ .RelPermalink }}" aria-label="View the ComoCamp community group photo in full resolution">
+            <img src="{{ $preview.RelPermalink }}" width="{{ $preview.Width }}" height="{{ $preview.Height }}" loading="lazy" decoding="async" class="img-fluid rounded-4 mb-4" alt="ComoCamp community group photo (click for full resolution)">
+          </a>
           {{ end }}
         </div>
       </div>
