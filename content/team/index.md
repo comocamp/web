@@ -26,6 +26,7 @@ linkedin = "https://www.linkedin.com/in/henningschwentner/"
 name = "Daniel Sack"
 line = "Software Architect, Developer, Team Player"
 image = "daniel-sack.png"
+web = "https://danielsack.me/"
 linkedin = "https://www.linkedin.com/in/daniel-sack-7298b020/"
 [[helpingHand]]
 name = "Andra Stefanescu"
