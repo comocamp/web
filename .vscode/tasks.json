@@ -9,8 +9,13 @@
 				"server",
 				"--buildDrafts",
 				"--renderToMemory",
+				"--disableFastRender",
+				"--poll",
+				"700ms",
 				"--bind",
 				"0.0.0.0",
+				"--port",
+				"1313",
 				"--config",
 				"hugo.toml,hugo.fast.toml"
 			],

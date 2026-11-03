@@ -21,7 +21,9 @@ Requires Docker with Docker Compose and the VS Code **Dev Containers** extension
 (`ms-vscode-remote.remote-containers`).
 
 1. Open the repository in VS Code and run **Dev Containers: Reopen in Container**.
-2. If the server is not already running, start it in the container terminal:
+2. Start **Hugo: Fast preview (without archives)** via **Tasks: Run Task**.
+   VS Code forwards port 1313 and opens the preview in your external browser.
+   Alternatively, start the full site in the container terminal:
    ```bash
    hugo server --bind 0.0.0.0
    ```
@@ -29,6 +31,13 @@ Requires Docker with Docker Compose and the VS Code **Dev Containers** extension
 The [Dev Container](.devcontainer/devcontainer.json) reuses the Hugo Compose service,
 opens `/site`, and installs Hugo editor extensions. After changing its configuration
 or the Hugo version, run **Dev Containers: Rebuild Container**.
+It also installs Ripgrep and configures Todo Tree to use `/usr/bin/rg` rather
+than relying on VS Code's bundled executable. If Todo Tree reports
+"Failed to find vscode-ripgrep" in an existing container, rebuild the container
+to apply this setup.
+The container does not start Hugo automatically, so the preview task can use port
+1313 without competing with a second server. Plain `docker compose up` still
+starts the full site automatically.
 
 We keep Docker Compose even though there is only one service: it reads
 `HUGO_VERSION` from [`.env`](.env), sharing the version pin with CI without
@@ -81,12 +90,23 @@ that overhead when working on the current edition.
 To skip loading archived editions and serve output from memory:
 
 ```bash
-hugo server --buildDrafts --renderToMemory --bind 0.0.0.0 --config hugo.toml,hugo.fast.toml
+hugo server --buildDrafts --renderToMemory --disableFastRender --poll 700ms --bind 0.0.0.0 --port 1313 --config hugo.toml,hugo.fast.toml
 ```
 
 In VS Code, select **Hugo: Fast preview (without archives)** via `Ctrl+Shift+B`
 (macOS: `Cmd+Shift+B`) or **Tasks: Run Task**. Stop any existing server on port
 1313 first, then leave the preview running while editing.
+
+The explicit port makes a second server fail visibly instead of silently serving
+on a different port while the browser still shows the old server. Polling detects
+changes on Docker bind mounts even when filesystem notifications are unavailable.
+Full re-renders ensure changes to embedded sections update the single-page site;
+the preview remains faster by excluding archived assets.
+
+In the Dev Container, VS Code detects Hugo listening on port 1313, forwards it,
+and opens the preview in your external browser. This avoids trying to launch a
+browser inside the container. If the port is already forwarded, use **Open in
+Browser** in VS Code's **Ports** view.
 
 [`hugo.fast.toml`](hugo.fast.toml) excludes four-digit year directories from the
 static mount; current assets and content are retained. Archive links such as

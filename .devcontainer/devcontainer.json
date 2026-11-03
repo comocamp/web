@@ -3,8 +3,19 @@
   "dockerComposeFile": "../docker-compose.yaml",
   "service": "hugo",
   "workspaceFolder": "/site",
+  "overrideCommand": true,
+  "postCreateCommand": "apk add --no-cache ripgrep bash",
+  "portsAttributes": {
+    "1313": {
+      "label": "ComoCamp preview",
+      "onAutoForward": "openBrowser"
+    }
+  },
   "customizations": {
     "vscode": {
+      "settings": {
+        "todo-tree.ripgrep.ripgrep": "/usr/bin/rg"
+      },
       "extensions": [
         "budparr.language-hugo-vscode",
         "rusnasonov.vscode-hugo",
