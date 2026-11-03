@@ -122,6 +122,17 @@ For photos, generate display-sized images with Hugo's image processing rather
 than embedding full-resolution originals. Use WebP where appropriate, include
 image dimensions, and lazy-load images below the initial viewport. For detailed
 timetables, link the optimized preview to the original so text remains readable.
+Alt texts for photos are kept in the section's front matter (`alt`), sponsor
+logos use the `name` field of the sponsor entry.
+
+The design template ([BootstrapMade "Impact"](https://bootstrapmade.com/)) lives in
+`static/assets/vendor/`, `static/assets/js/main.js` and `static/assets/css/main.css`.
+Leave these files unchanged; put project-specific styles into
+`static/assets/css/comocamp.css`.
+
+Before the ticket shop opens, set `enabled = true` under `[Params.saveTheDate]` in
+[`hugo.toml`](hugo.toml) to hide the ticket and FAQ sections and show a
+save-the-date notice instead.
 
 Image optimization happens at build time: Hugo resizes and compresses the
 originals, trading a longer build for smaller downloads and faster page loads.
@@ -156,6 +167,14 @@ docker compose run --rm hugo --environment production --gc --minify --baseURL "h
 ```
 
 Output is written to `public/`.
+
+### Updating Hugo
+
+The Hugo version is pinned once in [`.env`](.env) and shared by Docker Compose, the
+Dev Container and CI. To update: check the
+[release notes](https://github.com/gohugoio/hugo/releases) for deprecations, bump
+`HUGO_VERSION`, run a local production build and make sure it prints no
+`WARN` or `deprecated` messages, rebuild the Dev Container if you use it, then push.
 
 ### Archived editions
 
