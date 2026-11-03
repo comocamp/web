@@ -26,4 +26,4 @@ ComoCamp is the annual gathering of modeling practitioners and visionaries.
 
 We teach the status quo, and we explore the next innovations.
 
-Our mission is to provide a home for the global Collaborative Modelling community.
+Our mission is to provide a home for the global Collaborative Modeling community.

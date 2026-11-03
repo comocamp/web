@@ -10,7 +10,7 @@ logo = "techtalk"
 name = "TechTalk"
 link = "https://techtalk.at/"
 class = ""
-text = "[TechTalk](https://techtalk.at/) deeply believes in the principles behind collaborative modelling and sociotechnical architectures. They enabled us to bring the first ComoCamp 2023 to Vienna."
+text = "[TechTalk](https://techtalk.at/) deeply believes in the principles behind Collaborative Modeling and sociotechnical architectures. They enabled us to bring the first ComoCamp 2023 to Vienna."
 [[supporters]]
 logo = "wps"
 name = "WPS – Workplace Solutions"

@@ -68,7 +68,7 @@ date = 2027-05-06
 name = "Hiking in the Wienerwald"
 from = "10:00"
 to = "13:00"
-description = "On **Thursday (Ascension Day in Austria)**, you meet the ComoCamp organizers and go on a little tour (max 3 hours max 300m altitude): with a little bit of weather luck leading us to a nice view over Vienna."
+description = "On **Thursday (Ascension Day in Austria)**, you meet the ComoCamp organizers and go on a little tour (max. 3 hours, max. 300 m altitude): with a little bit of weather luck leading us to a nice view over Vienna."
 [[days.activities]]
 name = "Pizza with La Mama"
 from = "13:00"
