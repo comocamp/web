@@ -40,7 +40,7 @@ jobs:
       - name: Load Hugo version
         run: echo "HUGO_VERSION=$(grep '^HUGO_VERSION=' .env | cut -d'=' -f2)" >> $GITHUB_ENV
       - name: Cache Hugo generated resources
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: resources/_gen
           key: ${{ runner.os }}-${{ runner.arch }}-hugo-${{ env.HUGO_VERSION }}-resources-v1-${{ hashFiles('content/**', 'layouts/**', 'hugo.toml') }}
